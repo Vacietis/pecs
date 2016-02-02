@@ -1,0 +1,71 @@
+body{
+    background: #F0C27B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F0C27B , #4B1248); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F0C27B , #4B1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-items{
+    height: 200px;
+    border: 1px solid black;
+    /* margin: 10px; */
+    background-color: gainsboro;
+    border-radius: 25px;
+    /* position: relative; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    /* padding: 10px; */
+    /* margin: 10px; */
+    cursor: pointer;
+    text-align: center;
+}
+.center-content{
+    margin: auto;
+    /* position: absolute; */
+    top: 17px;
+    /* left: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    width: 80%;
+    /* height: 80%; */
+    /* border: 1px solid red; */
+    height: 601px;
+}
+
+.inner-div{
+   /* margin:10px; */
+   /* padding:10px; */
+   /* position: relative; */
+   /* top: -50%; */
+   /* transform-origin: 50%; */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 30px;
+ }
+
+ .headName{
+     text-align: center;
+     font-size: 40px;
+     color: aliceblue;
+     margin-bottom: 40px;
+     margin-top: 40px;
+ }
+ 
+ .lang{
+     display: block;
+     right: 0;
+     font-size: 40px;
+     bottom: 0;
+     position: absolute;
+     /* list-style: none; */
+     margin: 10px;
+     /* border: 1px solid red; */
+     padding: 0;
+     list-style-type: none;
+     color: #0089FF;
+     cursor: pointer;
+     font-style: italic;
+ }
+
+ul.lang {}

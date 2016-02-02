@@ -1,0 +1,46 @@
+{
+    "stendi" : {
+        "hist" : "Komsoa vēsture",
+        "vid" : "Video galerija",
+        "newton" : "Ņūtona 3 likums",
+        "factMyth" : " Fakti un mīti",
+        "iss" : "Kur atrodas ISS?",
+        "tourIss" : "Tūre pa ISS"
+    },
+    "factOrMyth" : {
+        "test" : "Tests",
+        "start" : "Sākt",
+        "fomViews" : 
+            {
+                "missions" : "Kosmosa missijas",
+                "compares" : "Tests, ksa salidzina menesi un zemi",
+                "dragGame" : "Vilkšanas spēle ar faktiem",
+                "quiz" : "Tests mīts vai fakts",
+                "otherSciences" : "Citas zinātnes",
+                "pictureGallery" : "Bilžu galerija"
+            },
+        "questions" :[
+            {
+                "question": "Pareiza atbilde ir Jā?",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "question": "Pareiza atbilde ir Jā?",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            }
+        ]   
+    }
+    
+}

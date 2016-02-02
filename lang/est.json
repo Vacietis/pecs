@@ -1,0 +1,35 @@
+{
+    "stendi" : {
+        "hist" : "Igauniski vesture",
+        "vid" : "igaunu galerija",
+        "newton" : "Ņūtona 3 likumanis ",
+        "factMyth" : " Fakti un mīti",
+        "iss" : "Igaunu ISS?",
+        "tourIss" : "Igaunu Tūre pa ISS"
+    },
+    "factOrMyth" : {
+        "questions" :[
+            {
+                "question": "Pareiza atbilde ir Jā?",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "question": "Pareiza atbilde ir Jā?",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            }
+        ]   
+    }
+    
+}

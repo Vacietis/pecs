@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="css/home.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="app/views/factOrMyth/factOrMyth.css" />
+        <link href="libs/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        
+        <title>InfoKiosk</title>
+    </head>
+    
+    <body>
+        <a  class="btn btn-info btn-lg" ng-click='back()'>
+          <span class="glyphicon glyphicon-hand-left"></span> BACK
+        </a>
+        <a  class="btn btn-info btn-lg" ng-click='home()'>
+          <span class="glyphicon glyphicon-home"></span> HOME
+        </a>
+        
+        
+        <a ng-repeat="(key, value) in languages" class="btn btn-info btn-lg" ng-click='lang(key)'>
+          <span class="glyphicon glyphicon-flag"></span> {{value}}
+        </a>
+<!--        <a  class="btn btn-info btn-lg" ng-click='lang("eng")'>
+          <span class="glyphicon glyphicon-thumbs-down"></span> ENG
+        </a>-->
+        
+        <div class="headName">INFO KIOSKS</div>
+        <div ng-view></div>
+    
+        <!-- Libraries -->
+        <script src="libs/jquery/jquery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="libs/angulary/angular.js"></script>
+        <script src="libs/angulary/angular-route.js" type="text/javascript"></script>
+        <script src="libs/angulary/angular-animate.js" type="text/javascript"></script>
+        
+        <!-- bootstraping angular -->
+        <script src="app/core/app.module.js" type="text/javascript"></script>
+    <!--    <script src="app/core/app.controller.js" type="text/javascript"></script>-->
+        <script src="app/core/app.run.js" type="text/javascript"></script>
+        <script src="app/core/app.routes.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).on('ready', function(){
+                angular.bootstrap($('html'), ['mainApp']);
+            });
+        </script>
+
+        <!-- FACT OR MYTH -->
+        <script src="app/views/factOrMyth/factOrMyth.module.js" type="text/javascript"></script>
+        <script src="app/views/factOrMyth/factOrMyth.controller.js" type="text/javascript"></script>
+        
+            <!-- Test -->
+            <script src="app/views/factOrMyth/fomTest/fomTest.module.js" type="text/javascript"></script>
+            <script src="app/views/factOrMyth/factOrMyth.routes.js" type="text/javascript"></script>
+            <script src="app/views/factOrMyth/fomTest/fomTest.directive.js" type="text/javascript"></script>
+            <script src="app/views/factOrMyth/fomTest/fomTest.service.js" type="text/javascript"></script>
+    
+    </body>
+</html>
+
+

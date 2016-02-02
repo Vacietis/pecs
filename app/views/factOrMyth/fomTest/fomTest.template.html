@@ -1,0 +1,35 @@
+<div class="quiz-area" ng-show="inProgress">
+    <div ng-show="!quizOver">
+		<h2 id="question">{{question}}</h2>
+		<div id="options">
+            <div ng-repeat="option in options" class="answerDiv">
+					<input class="btn btn-lg answerButtons" type="button" name="answer" value="{{option}}" ng-click="checkAnswer(option)">
+			</div>
+		</div>
+        <div class="ovalButtons">
+            <div ng-repeat="k in idArr track by $index" class="navigationButtons">
+                <div ng-if="$index <= id" class="indexFullButton animate-if"></div>
+                <div ng-if="$index > id" class="indexRoundButton"></div>
+            </div>
+        </div>
+        
+        <div class="answerDisplay" ng-show="!answerMode">
+			<button ng-click="nextQuestion()" class="next-question">Next</button>
+			<span ng-show="correctAns">Pareizi!</span>
+			<span ng-show="!correctAns">Nepareizi!</span>
+		</div>
+	</div>
+ 
+	<div class="endQuiz" ng-show="quizOver">
+		<h2>Tests ir beidzies</h2>
+        <div id="score">
+            Score: {{score}}
+        </div>
+		<button ng-click="reset()">Spēlēt vēlreiz</button>
+	</div>
+    
+</div>
+ 
+<div class="intro" ng-show="!inProgress">
+	<button id="startQuiz" ng-click="start()" class="btn btn-lg start-button">SĀKT</button>
+</div>
