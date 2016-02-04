@@ -5,7 +5,8 @@
         'ngRoute',
 //        'ngAnimate',
         'factOrMyth',
-        'fomTest'
+        'fomTest',
+        'dragTop'
         
     ]);
     

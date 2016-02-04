@@ -1,16 +1,77 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>DRAG AND DROP GAME</div>
-    </body>
-</html>
+<div class="dropContent">
+    <div class="leftSide">
+<!--        <div ng-repeat="q in dragQuestions" class="draggableElements" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable="{animate:true}">
+            <div>
+                {{q.question}}
+            </div>
+        </div>-->
+
+
+
+           <div class="floatleft">
+            <div class="questions">
+              <h2>Questions</h2>
+              <div class="apps-container">
+                <div ui-sortable="draggableOptions" class="screen draggable-element-container"
+                ng-repeat="draggableArray in draggables track by $index"
+                ng-model="draggableArray">
+                  <div ng-repeat="draggable in draggableArray" class="app">{{draggable.title}}</div>
+                </div>
+              </div>
+            </div>
+               <ol class="topOrder">
+                    <li ng-repeat="draggableArray in draggables track by $index"></li>
+                </ol>
+            <div class="questionTop">
+              <h2>Drag to create Top</h2>
+              
+              <div ui-sortable="sortableOptions" class="apps-container screen connected-drop-target-sortable" ng-model="selectedComponents">
+                  <div class="app" ng-repeat="component in selectedComponents track by $index">{{component.title}}</div>
+              </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+          <div class="floatright">
+            <button type="button" ng-click="logModels()">Save to db</button>
+<!--            <ul class="list logList">
+              <li ng-repeat="entry in sortingLog" class="logItem">
+                {{entry}}
+              </li>
+            </ul>-->
+            <ul >
+              <li ng-repeat="entry in newArray" class="logItem">
+                {{entry}}
+              </li>
+            </ul>
+          </div>
+
+
+
+
+        
+        <!--<span data-drag="true" jqyoui-draggable>So you think you can drag</span>-->
+<!--<div class="btn btn-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{animate:true}" ng-hide="!list1.title">{{list1.title}}</div>
+    </div>
+    <div class="rightSide">
+        
+        <div ng-repeat="q in dragQuestions" data-drag="true" class="thumbnail" data-drop="true" data-jqyoui-options  jqyoui-droppable style='height:50px;'>
+            
+            <div data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable jqyoui-droppable="{index: {{$index}}}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-direction="{{item.jqyouiDirection}}"></div>    
+                
+        </div>
+        
+        <div class='contentWrapper ng-cloak'>
+        <div class='content'>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+              <li class="thumbnail vthumbnail" ng-repeat="item in list1" data-drop="true" data-drag="true" ng-model="list1" jqyoui-droppable="{index: {{$index}}}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-direction="{{item.jqyouiDirection}}">
+                <h1>{{item.title}}</h1>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+    </div>-->
+</div>

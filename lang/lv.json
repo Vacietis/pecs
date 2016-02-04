@@ -40,7 +40,29 @@
                 "options": ["Jā", "Nē"],
                 "answer": 1
             }
-        ]   
+        ],
+        "dragQuestions" :[
+            {
+                "question": "Pareiza atbilde ir Jā?",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "question": "Pareiza atbilde ir Jā?",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            }
+        ]
     }
     
 }

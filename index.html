@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link href="css/home.css" rel="stylesheet" type="text/css"/>
+        <link href="app/views/factOrMyth/dragTop/dragTop.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="app/views/factOrMyth/factOrMyth.css" />
         <link href="libs/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="images/favicon.ico"/>
@@ -33,15 +34,20 @@
     
         <!-- Libraries -->
         <script src="libs/jquery/jquery.js" type="text/javascript"></script>
+        <script src="libs/jquery/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+        <script src="libs/jquery/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="libs/angulary/angular.js"></script>
         <script src="libs/angulary/angular-route.js" type="text/javascript"></script>
         <script src="libs/angulary/angular-animate.js" type="text/javascript"></script>
+        
+        <script src="libs/sortable/sortable.js" type="text/javascript"></script>
         
         <!-- bootstraping angular -->
         <script src="app/core/app.module.js" type="text/javascript"></script>
     <!--    <script src="app/core/app.controller.js" type="text/javascript"></script>-->
         <script src="app/core/app.run.js" type="text/javascript"></script>
         <script src="app/core/app.routes.js" type="text/javascript"></script>
+        <script src="libs/angulary/angular-dragdrop.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(document).on('ready', function(){
                 angular.bootstrap($('html'), ['mainApp']);
@@ -57,7 +63,11 @@
             <script src="app/views/factOrMyth/factOrMyth.routes.js" type="text/javascript"></script>
             <script src="app/views/factOrMyth/fomTest/fomTest.directive.js" type="text/javascript"></script>
             <script src="app/views/factOrMyth/fomTest/fomTest.service.js" type="text/javascript"></script>
-    
+            
+            <!-- DRAG & DROP -->
+            <script src="app/views/factOrMyth/dragTop/dragTop.module.js" type="text/javascript"></script>
+            <script src="app/views/factOrMyth/dragTop/dragTop.controller.js" type="text/javascript"></script>
+            
     </body>
 </html>
 

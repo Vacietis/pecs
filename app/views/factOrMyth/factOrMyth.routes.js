@@ -15,6 +15,7 @@
             templateUrl: 'app/views/factOrMyth/compareMoonEarth/compares.html',
         }).when('/factMyth/dragGame', {
             templateUrl: 'app/views/factOrMyth/dragTop/dragGame.html',
+            controller: 'dragTopController'
         }).when('/factMyth/otherSciences', {
             templateUrl: 'app/views/factOrMyth/otherScinces/otherSciences.html',
         }).when('/factMyth/pictureGallery', {
