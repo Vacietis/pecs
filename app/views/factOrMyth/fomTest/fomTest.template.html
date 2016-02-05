@@ -1,3 +1,22 @@
+<style>
+    #options.ng-enter{
+        transition: 0.75s;
+        opacity: 0;
+    }
+    #options.ng-enter-stagger{
+        transition-delay: 0.1s;
+    }
+    #options.ng-enter-active{
+        opacity: 1;
+    }
+    #options.ng-leave{
+        transition: 0.75s;
+        opacity: 1;
+    }
+    #options.ng-leave-active{
+        opacity: 0;
+    }
+</style>
 <div class="quiz-area" ng-show="inProgress">
     <div ng-show="!quizOver">
 		<h2 id="question">{{question}}</h2>

@@ -1,10 +1,8 @@
 (function(){
     'use strict';
 
-    angular.module('fomTest', [
-        'ngAnimate',
+    angular.module('spaceHistory', [
         'ngDialog'
     ]);
     
 })();
- 

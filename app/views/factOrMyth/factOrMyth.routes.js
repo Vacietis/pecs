@@ -9,6 +9,7 @@
         
         $routeProvider.when('/factMyth/quiz', {
             templateUrl: 'app/views/factOrMyth/fomTest/fomTest.html',
+            controller: "fomTestController"
         }).when('/factMyth/missions', {
             templateUrl: 'app/views/factOrMyth/moonMissions/missions.html',
         }).when('/factMyth/compares', {
@@ -20,6 +21,7 @@
             templateUrl: 'app/views/factOrMyth/otherScinces/otherSciences.html',
         }).when('/factMyth/pictureGallery', {
             templateUrl: 'app/views/factOrMyth/picGallery/pictureGallery.html',
+            controller:'picGalleryController'
         });
                 
     }

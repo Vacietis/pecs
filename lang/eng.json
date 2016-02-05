@@ -10,6 +10,15 @@
     "factOrMyth" : {
         "test" : "Test",
         "start" : "Start",
+         "fomViews" : 
+            {
+                "missions" : "Space missions",
+                "compares" : "Tests, ksa salidzina menesi un zemi",
+                "dragGame" : "Vilkšanas spēle ar faktiem",
+                "quiz" : "Tests mīts vai fakts",
+                "otherSciences" : "Citas zinātnes",
+                "pictureGallery" : "Bilžu galerija"
+            },
         "questions" :[
             {
                 "question": "Pareiza atbilde ir Jā?",

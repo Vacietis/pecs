@@ -3,10 +3,12 @@
 
     angular.module('mainApp', [
         'ngRoute',
-//        'ngAnimate',
+        'ngAnimate',
         'factOrMyth',
         'fomTest',
-        'dragTop'
+        'dragTop',
+        'picGallery',
+        'spaceHistory'
         
     ]);
     

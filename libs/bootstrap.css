@@ -1087,6 +1087,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  /* min-width: 1900px; */
 }
 input,
 button,
@@ -1118,6 +1119,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  width: 100%;
 }
 .img-responsive,
 .thumbnail > img,
@@ -1604,6 +1606,7 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    /* height: 100%; */
   }
 }
 .container-fluid {

@@ -13,6 +13,9 @@
         }).when('/factMyth', {
             templateUrl: 'app/views/factOrMyth/factOrMythView.html',
             controller : 'factOrMythController'
+        }).when('/hist', {
+            templateUrl: 'app/views/spaceHistory/spaceHistory.html',
+            controller : 'spaceHistoryController'
         }).otherwise({
             redirectTo : '/'
         });

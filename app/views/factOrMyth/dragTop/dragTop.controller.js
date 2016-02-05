@@ -58,7 +58,7 @@
               $scope.sortableOptions = {};
               
               $scope.logModels = function () {
-                 $scope.newArray = [];
+                $scope.newArray = [];
                 $scope.sortingLog = [];
                 var count = 9;
                 var place = 0;

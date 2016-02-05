@@ -1,10 +1,9 @@
 (function(){
     'use strict';
 
-    angular.module('fomTest', [
+    angular.module('picGallery', [
         'ngAnimate',
-        'ngDialog'
+        'ngTouch'
     ]);
     
 })();
- 

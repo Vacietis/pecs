@@ -1,0 +1,28 @@
+.object{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: azure;
+    margin: 10px;
+}
+
+.object.ng-binding.ng-scope {}
+
+.objects{
+    border: 1px solid red;
+    /* width: 1400px; */
+    /* overflow-x: auto; */
+    height: 100px;
+    min-width: 1300px;
+    overflow: x-scroll;
+}
+
+.scrollingDIV{
+    width: 380px;
+    /* position: absolute; */
+    border: 5px solid green;
+    margin: auto;
+    overflow-x: scroll;
+    /* overflow-x: hidden; */
+}
