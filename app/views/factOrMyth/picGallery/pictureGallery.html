@@ -3,7 +3,7 @@
     <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
          ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
          ng-src="{{slide.image}}" ng-hide="!isCurrentIndex($index)">
-    
+         {{slide.description}}
 <!--    <a class="arrow prev"  ng-click="nextSlide()"> <<<< </a>
     <a class="arrow next"  ng-click="prevSlide()"> >>>> </a>-->
     
@@ -17,8 +17,13 @@
                     </a>
                 </li>
             </ul>
+            
         </div>
     </nav>
+
+    <div class="objectContents">
+        <div class="objectContent" ng-repeat="slide in slides" ng-hide="!isCurrentIndex($index)">{{slide.description}}</div>
+    </div>
     
     
 </div>
