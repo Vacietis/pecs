@@ -5,17 +5,15 @@
         .module('fomTest')
         .controller('fomTestController', fomTestController);
 
-        function fomTestController($scope, ngDialog){
+        function fomTestController($scope, ngDialog, langService){
             
-//            $scope.stendi = [];
-//            $http.get('lang/lv.json').then(function(response) {
-//                $scope.stendi = response.data.stendi;
-//            });
+            $scope.langText = langService;
+            
             $scope.clickToOpen = function () {
                 ngDialog.open({ template: 'app/views/factOrMyth/fomTest/popUp.html' });
             };
         }
         
-    fomTestController.$inject = ['$scope', 'ngDialog'];
+    fomTestController.$inject = ['$scope', 'ngDialog', 'langService'];
        
 })();

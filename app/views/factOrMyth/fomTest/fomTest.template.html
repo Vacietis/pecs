@@ -18,11 +18,15 @@
     }
 </style>
 <div class="quiz-area" ng-show="inProgress">
+    <div class="btn btn-danger">
+        {{langText.data.titleName}}
+    </div>
+    
     <div ng-show="!quizOver">
 		<h2 id="question">{{question}}</h2>
 		<div id="options">
             <div ng-repeat="option in options" class="answerDiv">
-					<input class="btn btn-lg answerButtons" type="button" name="answer" value="{{option}}" ng-click="checkAnswer(option)">
+                <input class="btn btn-lg answerButtons" type="button" name="answer" value="{{option}}" ng-click="checkAnswer(option)">
 			</div>
 		</div>
         <div class="ovalButtons">
@@ -33,7 +37,7 @@
         </div>
         
         <div class="answerDisplay" ng-show="!answerMode">
-			<button ng-click="nextQuestion()" class="next-question">Next</button>
+			<button ng-click="nextQuestion()" class="next-question">{{lang.data.titleName}}</button>
 			<span ng-show="correctAns">Pareizi!</span>
 			<span ng-show="!correctAns">Nepareizi!</span>
 		</div>

@@ -5,18 +5,12 @@
         .module('factOrMyth')
         .controller('factOrMythController', factOrMythController);
 
-        function factOrMythController($scope, $http){
-           
-            $scope.language = 'lv';
+        function factOrMythController($scope, langService){
 
-            $scope.fomViews = [];
-            
-            $http.get('lang/'+$scope.language+'.json').then(function(response) {
-                $scope.fomViews = response.data.factOrMyth.fomViews;
-            });
-            
+            $scope.fomView = langService;
+
         }
         
-    factOrMythController.$inject = ['$scope', '$http'];
+    factOrMythController.$inject = ['$scope', 'langService'];
        
 })();

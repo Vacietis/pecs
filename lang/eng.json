@@ -1,5 +1,6 @@
 {
-    "stendi" : {
+    "titleName" : "INFO KIOSK",
+    "stands" : {
         "hist" : "SPACE HISTORY",
         "vid" : "Video exhibit",
         "newton" : "Newtons 3rd law",
@@ -8,6 +9,7 @@
         "tourIss" : "Take a tour around ISS"
     },
     "factOrMyth" : {
+        "titleName" : "Fact or myth",
         "test" : "Test",
         "start" : "Start",
          "fomViews" : 
@@ -21,7 +23,7 @@
             },
         "questions" :[
             {
-                "question": "Pareiza atbilde ir Jā?",
+                "question": "Pareiza atbilde ir Jā? ENG",
                 "options": ["Jā", "Nē"],
                 "answer": 0
             },
@@ -31,7 +33,7 @@
                 "answer": 1
             },
             {
-                "question": "Pareiza atbilde ir Jā?",
+                "question": "Pareiza atbilde ir Jā? ENG",
                 "options": ["Jā", "Nē"],
                 "answer": 0
             },

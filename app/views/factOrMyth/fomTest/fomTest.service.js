@@ -5,13 +5,10 @@
         .module('fomTest')
         .factory('quizFactory', quizFactory);
 
-    function quizFactory($http){
+    function quizFactory(langService){
            
-            var questions = [];
-            $http.get('lang/lv.json').then(function(response) {
-                questions = response.data.factOrMyth.questions;
-            });
-
+        var questions = langService.data.factOrMyth.questions;
+       
         return {
             getQuestion: function(id) {
                 if(id < questions.length) {
@@ -27,5 +24,5 @@
         }
     }
     
-    quizFactory.$inject = ['$http'];
+    quizFactory.$inject = ['langService'];
 })();

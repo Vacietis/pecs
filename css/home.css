@@ -45,11 +45,15 @@ body{
  }
 
  .headName{
+     width: auto;
+     height: 50px;
+     /* color: wheat; */
      text-align: center;
      font-size: 40px;
      color: aliceblue;
      margin-bottom: 40px;
      margin-top: 40px;
+     /* position: absolute; */
  }
  
  .lang{

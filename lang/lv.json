@@ -1,5 +1,6 @@
 {
-    "stendi" : {
+    "titleName" : "INFO KIOSKS",
+    "stands" : {
         "hist" : "Komsoa vēsture",
         "vid" : "Video galerija",
         "newton" : "Ņūtona 3 likums",
@@ -8,6 +9,7 @@
         "tourIss" : "Tūre pa ISS"
     },
     "factOrMyth" : {
+        "titleName" : "Fakts vai mīts",
         "test" : "Tests",
         "start" : "Sākt",
         "fomViews" : 

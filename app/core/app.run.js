@@ -5,9 +5,10 @@
         .module('mainApp')
         .run(startRun);
 
-    function startRun($rootScope, $location, $http){
+    function startRun($rootScope, $location, $http, langService){
         $rootScope.defaultLanguage = 'lv';
         var history = [];
+        $rootScope.lang = langService;
 
         $rootScope.$on('$routeChangeSuccess', function() {
             history.push($location.$$path);
@@ -23,16 +24,20 @@
             $location.path("/");
         };
 
-        $rootScope.stendi = [];
-        $http.get('lang/'+$rootScope.defaultLanguage+'.json').then(function(response) {
-            $rootScope.stendi = response.data.stendi;
-        });
-
-        $rootScope.lang = function (language) {
-            $http.get('lang/'+language+'.json').then(function(response) {
-                $rootScope.stendi = response.data.stendi;
-            });
-        };
+//        $rootScope.stendi = [];
+//        $http.get('lang/'+$rootScope.defaultLanguage+'.json').then(function(response) {
+//            $rootScope.stendi = response.data.stendi;
+//            
+//        });
+//
+//        $rootScope.langChange = function (language) {
+//            $http.get('lang/'+language+'.json').then(function(response) {
+//                $rootScope.stendi = response.data.stendi;
+//                console.log(response.data.stendi);
+//            });
+//        };
+        
+        
 
         $rootScope.languages = [];
         $http.get('app/core/config.json').then(function(response) {
@@ -40,6 +45,6 @@
         });
     }
     
-    startRun.$inject = ['$rootScope', '$location', '$http'];
+    startRun.$inject = ['$rootScope', '$location', '$http', 'langService'];
     
 })();

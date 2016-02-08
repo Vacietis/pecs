@@ -8,8 +8,7 @@
     function config($routeProvider){
         
         $routeProvider.when('/', {
-            templateUrl: 'app/views/homePage.html',
-//            controller : 'mainController'
+            templateUrl: 'app/views/homePage.html'
         }).when('/factMyth', {
             templateUrl: 'app/views/factOrMyth/factOrMythView.html',
             controller : 'factOrMythController'
