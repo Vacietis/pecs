@@ -5,6 +5,7 @@
     border: 1px solid black;
     background-color: azure;
     margin: 10px;
+    cursor: pointer;
 }
 
 .object.ng-binding.ng-scope {}
