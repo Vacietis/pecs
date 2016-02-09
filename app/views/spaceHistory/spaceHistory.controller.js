@@ -31,6 +31,13 @@
                 $anchorScroll();
             }
             
+            document.getElementById('testDIV').addEventListener('scroll',function(){
+    
+                //console.log(document.getElementById('testDIV').scrollLeft);
+                $(".log").html("scroll x:"+document.getElementById('testDIV').scrollLeft);
+
+            });
+            
 //            $location.hash('object-id-19');
 //            $anchorScroll();
             

@@ -10,9 +10,9 @@
         return {
             getScrollPosition: function() {
                 
-                $location.hash('object-id-19');
+//                $location.hash('object-id-19');
                 
-                return $anchorScroll();
+                return true;
             }
         }
     }
