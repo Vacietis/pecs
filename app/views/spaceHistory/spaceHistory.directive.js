@@ -3,7 +3,7 @@
 
     angular
         .module('spaceHistory')
-        .directive('scroll-watcher', scrollWatcher);
+        .directive('scrollWatcher', scrollWatcher);
 
     function scrollWatcher(){
         return {
