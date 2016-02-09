@@ -2,7 +2,8 @@
     'use strict';
 
     angular.module('spaceHistory', [
-        'ngDialog'
+        'ngDialog',
+        'duScroll'
     ]);
     
 })();

@@ -12,6 +12,12 @@
         "titleName" : "Fakts vai mīts",
         "test" : "Tests",
         "start" : "Sākt",
+        "playAgain" : "Spēlēt vēlreiz?",
+        "score" : "rezultāts",
+        "endOfTest" : "Tests ir beidzies",
+        "right" : "Pareizi",
+        "wrong" : "Nepareizi",
+        "next" : "nākamais",
         "fomViews" : 
             {
                 "missions" : "Kosmosa missijas",

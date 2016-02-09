@@ -8,10 +8,13 @@
     function quiz(quizFactory){
         return {
         restrict: 'EA',
-        scope: {},
+        scope: {
+            langText: '='
+        },
         templateUrl: 'app/views/factOrMyth/fomTest/fomTest.template.html',
             link: function(scope, elem, attrs) {
                 scope.start = function() {
+                    quizFactory.reloadQuestions();
                     scope.id = 0;
                     scope.quizOver = false;
                     scope.inProgress = true;

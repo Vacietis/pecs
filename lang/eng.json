@@ -12,6 +12,12 @@
         "titleName" : "Fact or myth",
         "test" : "Test",
         "start" : "Start",
+        "playAgain" : "Play again?",
+        "score" : "Score",
+        "endOfTest" : "End of test",
+        "right" : "Right",
+        "wrong" : "Wrong",
+        "next" : "Next",
          "fomViews" : 
             {
                 "missions" : "Space missions",

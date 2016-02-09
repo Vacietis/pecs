@@ -5,36 +5,37 @@
         .module('spaceHistory')
         .controller('spaceHistoryController', spaceHistoryController);
 
-        function spaceHistoryController($scope, ngDialog){
+        function spaceHistoryController($scope, ngDialog, $anchorScroll, $location, $document, $window, $rootScope){  
             
-//            $scope.stendi = [];
-//            $http.get('lang/lv.json').then(function(response) {
-//                $scope.stendi = response.data.stendi;
-//            });
-            $scope.language = 'lv';
-
+//            var executedOnce = false;
+//            if(!executedOnce){
+//                $location.hash('object-id-19');
+//                $anchorScroll();
+//                executedOnce = true;
+//            }
+            
             $scope.historyObejcts = [];
-            
-            
-            for(var i=0; i<10; i++){
+            for(var i=0; i<30; i++){
                 $scope.historyObejcts.push({'titles':'item'+i})
             }
             
             $scope.clickToOpenHistory = function () {
-                ngDialog.open({ template: 'app/views/factOrMyth/fomTest/popUp.html' });
+                ngDialog.open({ 
+                    template: 'app/views/factOrMyth/fomTest/popUp.html',
+                    controller: 'SomeController'
+                });
             };
             
+            $scope.scrollto = function (scrollPath){
+                $location.hash(scrollPath);
+                $anchorScroll();
+            }
             
+//            $location.hash('object-id-19');
+//            $anchorScroll();
             
-//            $scope.fomViews = [];
-//            $scope.lang = function (language) {
-//                $http.get('lang/'+language+'.json').then(function(response) {
-//                    $scope.stendi = response.data.stendi;
-////                    $scope.fomViews = response.data.factOrMyth.fomViews;
-//                });
-//            };
         }
         
-    spaceHistoryController.$inject = ['$scope', 'ngDialog'];
+    spaceHistoryController.$inject = ['$scope', 'ngDialog', '$anchorScroll', '$location', '$document', '$window', '$rootScope'];
        
 })();

@@ -8,6 +8,7 @@
     function startRun($rootScope, $location, $http, langService){
         $rootScope.defaultLanguage = 'lv';
         var history = [];
+        $rootScope.currentPath = null;
         $rootScope.lang = langService;
 
         $rootScope.$on('$routeChangeSuccess', function() {
@@ -23,6 +24,30 @@
             history.length = 0;
             $location.path("/");
         };
+        
+        $rootScope.$on('$routeChangeStart', function() { 
+            $rootScope.currentPath = $location.path();
+            if($rootScope.currentPath === '/'){
+                $rootScope.isHomePage = true;
+                $rootScope.isQuizPage = false;
+            } else if($rootScope.currentPath === '/factMyth/quiz'){
+                $rootScope.isQuizPage = true;
+                $rootScope.isHomePage = false;
+            } else{
+                $rootScope.isHomePage = false;
+                $rootScope.isQuizPage = false;
+            }
+        });
+        
+//        $routeScope.checkPath = function(path){
+//            $rootScope.currentPath = $location.path();
+//        }
+        
+//        $rootScope.isActive = function(viewLocation) {
+//            return viewLocation === $location.path();
+//        };
+        
+        $rootScope.isHomePage = $location.path() === '#/';
 
 //        $rootScope.stendi = [];
 //        $http.get('lang/'+$rootScope.defaultLanguage+'.json').then(function(response) {
