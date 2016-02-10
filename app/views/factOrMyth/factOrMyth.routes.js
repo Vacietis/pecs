@@ -17,8 +17,9 @@
         }).when('/factMyth/dragGame', {
             templateUrl: 'app/views/factOrMyth/dragTop/dragGame.html',
             controller: 'dragTopController'
-        }).when('/factMyth/otherSciences', {
-            templateUrl: 'app/views/factOrMyth/otherScinces/otherSciences.html',
+        }).when('/factMyth/otherScience', {
+            templateUrl: 'app/views/factOrMyth/otherScience/otherScience.html',
+            controller: 'otherScienceController'
         }).when('/factMyth/pictureGallery', {
             templateUrl: 'app/views/factOrMyth/picGallery/pictureGallery.html',
             controller:'picGalleryController'

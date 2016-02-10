@@ -8,7 +8,9 @@
         'fomTest',
         'dragTop',
         'picGallery',
-        'spaceHistory'
+        'spaceHistory',
+        'otherScience',
+        'videoExhibit'
         
     ]);
     

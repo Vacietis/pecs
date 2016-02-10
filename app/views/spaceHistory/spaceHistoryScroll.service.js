@@ -5,14 +5,20 @@
         .module('spaceHistory')
         .factory('spaceHistoryScroll', spaceHistoryScroll);
 
-    function spaceHistoryScroll($location, $anchorScroll){
+    function spaceHistoryScroll(){
+        
+        var tempScrollValue = 0;
        
         return {
             getScrollPosition: function() {
                 
-//                $location.hash('object-id-19');
+                return tempScrollValue;
                 
-                return true;
+            },
+            saveScrollPosition: function(prieviousScroll){
+                
+                tempScrollValue = prieviousScroll;
+                
             }
         }
     }

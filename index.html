@@ -4,13 +4,16 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- CSS -->
         <link href="css/home.css" rel="stylesheet" type="text/css"/>
         <link href="app/views/factOrMyth/dragTop/dragTop.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="app/views/factOrMyth/factOrMyth.css" />
         <link href="app/views/factOrMyth/picGallery/picGallery.css" rel="stylesheet" type="text/css"/>
         <link href="app/views/spaceHistory/spaceHistory.css" rel="stylesheet" type="text/css"/>
+        <link href="app/views/factOrMyth/otherScience/otherScience.css" rel="stylesheet" type="text/css"/>
         <link href="libs/ngDialog/ngDialog.css" rel="stylesheet" type="text/css"/>
         <link href="libs/ngDialog/ngDialog-theme-default.css" rel="stylesheet" type="text/css"/>
+        
         <link href="libs/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="images/favicon.ico"/>
         
@@ -67,9 +70,15 @@
         <!-- History of space -->
         <script src="app/views/spaceHistory/spaceHistory.module.js" type="text/javascript"></script>
         <script src="app/views/spaceHistory/spaceHistory.controller.js" type="text/javascript"></script>
-        <script src="app/views/spaceHistory/spaceHistory.directive.js" type="text/javascript"></script>
-        <script src="app/views/spaceHistory/spaceHistory.service.js" type="text/javascript"></script>
-        <script src="app/views/spaceHistory/spaceHistory.SecondController.js" type="text/javascript"></script>
+        <script src="app/views/spaceHistory/scrollWatcher.directive.js" type="text/javascript"></script>
+        <script src="app/views/spaceHistory/spaceHistoryScroll.service.js" type="text/javascript"></script>
+        <script src="app/views/spaceHistory/PopupController.controller.js" type="text/javascript"></script>
+        
+        <!-- Video Exhibit -->
+        <script src="app/views/videoExhibit/videoExhibit.module.js" type="text/javascript"></script>
+        <script src="app/views/videoExhibit/videoExhibitController.controller.js" type="text/javascript"></script>
+        <script src="app/views/videoExhibit/videoPopupController.controller.js" type="text/javascript"></script>
+        
         <!-- FACT OR MYTH -->
         <script src="app/views/factOrMyth/factOrMyth.module.js" type="text/javascript"></script>
         <script src="app/views/factOrMyth/factOrMyth.controller.js" type="text/javascript"></script>
@@ -88,6 +97,12 @@
             <!-- Picture Gallery -->
             <script src="app/views/factOrMyth/picGallery/picGallery.module.js" type="text/javascript"></script>
             <script src="app/views/factOrMyth/picGallery/picGallery.controller.js" type="text/javascript"></script>
+            
+            <!-- Other Science -->
+            <script src="app/views/factOrMyth/otherScience/otherScience.module.js" type="text/javascript"></script>
+            <script src="app/views/factOrMyth/otherScience/otherScienceController.controller.js" type="text/javascript"></script>
+            <script src="app/views/factOrMyth/otherScience/SciencePopupController.controller.js" type="text/javascript"></script>
+            
     </body>
 </html>
 

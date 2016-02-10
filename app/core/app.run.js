@@ -12,6 +12,8 @@
         $rootScope.lang = langService;
 
         $rootScope.$on('$routeChangeSuccess', function() {
+            
+            //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
             history.push($location.$$path);
         });
 

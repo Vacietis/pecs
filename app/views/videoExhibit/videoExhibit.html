@@ -1,0 +1,7 @@
+<div class="headName">{{videoList.data.videoExhibit.title}}</div>
+<div class="center-content">
+    <div class="col-md-6 main-items" ng-repeat="video in videoList.data.videoExhibit.videoList"
+         ng-click="showVideoPopup(video.videoTitle)">
+        <a class = "inner-div" href="javascript: void(0);" >{{video.videoTitle}}</a>
+    </div>
+</div>

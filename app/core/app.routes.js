@@ -15,6 +15,9 @@
         }).when('/hist', {
             templateUrl: 'app/views/spaceHistory/spaceHistory.html',
             controller : 'spaceHistoryController'
+        }).when('/vid', {
+            templateUrl: 'app/views/videoExhibit/videoExhibit.html',
+            controller : 'videoExhibitController'
         }).otherwise({
             redirectTo : '/'
         });

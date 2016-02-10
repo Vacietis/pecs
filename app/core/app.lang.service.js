@@ -7,7 +7,7 @@
 
     function langService($http){
         
-        var defaultLanguage = 'eng';
+        var defaultLanguage = 'lv';
         
         var serviceObj = {
             data : {},

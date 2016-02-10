@@ -8,6 +8,71 @@
         "iss" : "Kur atrodas ISS?",
         "tourIss" : "Tūre pa ISS"
     },
+    "spaceHistory":{
+        "spaceObjects": [
+            {
+                "objectTitle": "Object 1",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 2",
+                "objectText": "Object 2 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 3",
+                "objectText": "Object 3 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 4",
+                "objectText": "Object 4 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 5",
+                "objectText": "Object 5 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 6",
+                "objectText": "Object 6 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 7",
+                "objectText": "Object 7 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 7",
+                "objectText": "Object 7 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            }
+        ]
+    },
+    "videoExhibit" : {
+        "title" : "Video sadaļa",
+        "videoList": [
+            {
+                "videoTitle" : "video1",
+                "video": "images/SampleVideo.mp4"
+            },
+            {
+                "videoTitle" : "video2",
+                "video" : "images/SampleVideo.mp4"
+            },
+            {
+                "videoTitle" : "video3",
+                "video" : "images/SampleVideo.mp4"
+            },
+            {
+                "videoTitle" : "video4",
+                "video" : "images/SampleVideo.mp4"
+            }
+        ]
+    },
     "factOrMyth" : {
         "titleName" : "Fakts vai mīts",
         "test" : "Tests",
@@ -24,7 +89,7 @@
                 "compares" : "Tests, ksa salidzina menesi un zemi",
                 "dragGame" : "Vilkšanas spēle ar faktiem",
                 "quiz" : "Tests mīts vai fakts",
-                "otherSciences" : "Citas zinātnes",
+                "otherScience" : "Citas zinātnes",
                 "pictureGallery" : "Bilžu galerija"
             },
         "questions" :[
@@ -70,7 +135,55 @@
                 "options": ["Jā", "Nē"],
                 "answer": 1
             }
-        ]
+        ],
+        "otherScience":
+            {
+                "titleName" : "Citas zinātnes",
+                "otherScienceViews" : [
+                    {
+                        "title" : "Pirmā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Otrā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Trešā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Ceturtā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Piektā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Sestā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    }
+                ]
+            }
     }
     
 }

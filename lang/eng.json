@@ -8,6 +8,35 @@
         "iss" : "Where is ISS?",
         "tourIss" : "Take a tour around ISS"
     },
+    "spaceHistory":{
+        "spaceObjects": [
+            {
+                "objectTitle": "Object 1",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 2",
+                "objectText": "Object 2 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 3",
+                "objectText": "Object 3 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 4",
+                "objectText": "Object 4 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 5",
+                "objectText": "Object 5 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            }
+        ]
+    },
     "factOrMyth" : {
         "titleName" : "Fact or myth",
         "test" : "Test",
