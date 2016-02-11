@@ -9,7 +9,7 @@
             
             $scope.objName = name;
             
-            var tempArr = langService.data.videoExhibit;
+            var tempArr = langService.data.videoExhibit.videoList1;
             
             angular.forEach(tempArr, function(value, key) {
                 if(value.videoTitle === name){
@@ -17,6 +17,7 @@
                     console.log(value.video);
                 }
                 //console.log(value.video);
+                console.log(value.video);
               });
             
             

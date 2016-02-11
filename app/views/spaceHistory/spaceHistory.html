@@ -1,12 +1,17 @@
 <div class="scrollingDIV" scroll-watcher id="testDIV">
     <div class="objects" >
         <div class="object" id="object-id-{{$index}}" ng-click="clickToOpenHistory(o.objectTitle) 
-             "ng-repeat="o in historyObejcts.data.spaceHistory.spaceObjects">{{o.objectTitle}}</div>
+             "ng-repeat="o in historyObejcts">
+            <div class="inner-object" >
+                {{o.objectTitle}}
+            </div>
+        </div>
     </div>
     
 </div>
 <div class="btn btn-danger first" ng-click="scrollto('object-id-0')">First element</div>
-<div class="btn btn-success last" ng-click="scrollto('object-id-6')">Last element</div>
+<div class="btn btn-success last" ng-click="scrollto('object-id-7')">Last element</div>
+<div ng-class="latviaLogo"  class="latviaLogo" ng-click="openOtherHistory(debugLatvianHistory)" ng-show="debugLatvianHistory"></div>
 <div class="log">{{scrollValue}}</div>
       
 <!--        <script>

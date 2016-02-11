@@ -5,19 +5,9 @@
         .module('spaceHistory')
         .controller('spaceHistoryController', spaceHistoryController);
 
-        function spaceHistoryController($scope, ngDialog, $anchorScroll, $location, $controller, langService){  
-            
-//            var executedOnce = false;
-//            if(!executedOnce){
-//                $location.hash('object-id-19');
-//                $anchorScroll();
-//                executedOnce = true;
-//            }
-            
-            $scope.historyObejcts = langService;
-//            for(var i=0; i<30; i++){
-//                $scope.historyObejcts.push({'titles':'item'+i})
-//            }
+        function spaceHistoryController($scope, ngDialog, $anchorScroll, $location, $controller, langService, $rootScope){  
+                
+            $scope.historyObejcts = langService.data.spaceHistory.spaceObjects;
             
             $scope.clickToOpenHistory = function (objIndex) {
                 ngDialog.open({ 
@@ -25,30 +15,34 @@
                     template: 'app/views/spaceHistory/historyPopUP.html',
                     controller: $controller('PopupController', {
                         $scope: $scope,
-                        name: objIndex
+                        name: objIndex,
+                        historyObj : $scope.tempVal
                     })
                 });
             };
             
-            $scope.scrollto = function (scrollPath){
-                $location.hash(scrollPath);
-                $anchorScroll();
+            $scope.openOtherHistory = function(changeLang){
+                if($scope.tempVal === 'latvian' && changeLang === true){
+                    $scope.historyObejcts = langService.data.spaceHistory.spaceObjects;
+                    $scope.tempVal = "english";
+                    console.log("ENGLISH");
+                    $scope.latviaLogo = 'latviaLogo';
+                    
+                } else {
+                    $scope.historyObejcts = langService.data.spaceHistory.latvianSpaceObjects;
+                    $scope.tempVal = "latvian";
+                    console.log("LATVIAN");
+                    $scope.latviaLogo = 'englishLogo';
+                }
             }
             
-            //$scope.scrollValue = spaceHistoryScroll;
-            
-//            document.getElementById('testDIV').addEventListener('scroll',function(){
-//    
-//                //console.log(document.getElementById('testDIV').scrollLeft);
-//                $(".log").html("scroll x:"+document.getElementById('testDIV').scrollLeft);
-//
-//            });
-            
-//            $location.hash('object-id-19');
-//            $anchorScroll();
-            
+            $scope.scrollto = function (scrollPath){
+                $location.hash(scrollPath);
+                //$anchorScroll.xOffset = 250;
+                $anchorScroll();
+            } 
         }
         
-    spaceHistoryController.$inject = ['$scope', 'ngDialog', '$anchorScroll', '$location', '$controller', 'langService'];
+    spaceHistoryController.$inject = ['$scope', 'ngDialog', '$anchorScroll', '$location', '$controller', 'langService', '$rootScope' ];
        
 })();

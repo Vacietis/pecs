@@ -5,9 +5,20 @@
         .module('spaceHistory')
         .controller('PopupController', PopupController);
 
-        function PopupController($scope, name, langService){
+        function PopupController($scope, name, langService, historyObj){
+            var tempArr = [];
+            console.log(historyObj);
             
-            var tempArr = langService.data.spaceHistory.spaceObjects;
+//            isUndefined = function(thing){
+//                return (typeof thing === "undefined");
+//            }
+            
+            if(typeof historyObj === "undefined" || historyObj === "english"){
+                tempArr = langService.data.spaceHistory.spaceObjects;
+                console.log("trapijju");
+            } else {
+                tempArr = langService.data.spaceHistory.latvianSpaceObjects;
+            }
             
             angular.forEach(tempArr, function(value, key) {
                 if(value.objectTitle == name){
@@ -18,6 +29,6 @@
               });
         }
         
-    PopupController.$inject = ['$scope', 'name', 'langService'];
+    PopupController.$inject = ['$scope', 'name', 'langService', 'historyObj'];
        
 })();

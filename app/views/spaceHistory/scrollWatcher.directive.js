@@ -15,6 +15,16 @@
                 
 //                $location.hash("object-id-"+scope.scrollValue);
 //                $anchorScroll();
+
+                elem.on('scroll', function(){
+                    var left = this.scrollLeft;
+                    scope.$apply(function(){
+                        scope.scrollValue = left;
+                    });
+                });
+                
+                elem.scrollLeft(scope.scrollValue);
+                
                 
                 scope.$on('$destroy', function(){
                     console.log("destroyed at scroll x:"+elem.scrollLeft());

@@ -1,4 +1,5 @@
 {
+    "lang" : "Lat",
     "titleName" : "INFO KIOSKS",
     "stands" : {
         "hist" : "Komsoa vēsture",
@@ -11,7 +12,7 @@
     "spaceHistory":{
         "spaceObjects": [
             {
-                "objectTitle": "Object 1",
+                "objectTitle": "Vēstures notikums 1",
                 "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
                 "objImgPath" : "images/foto_1_10.png"
             },
@@ -46,32 +47,104 @@
                 "objImgPath" : "images/foto_1_10.png"
             },
             {
+                "objectTitle": "Object 8",
+                "objectText": "Object 8 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            }
+        ],
+        "latvianSpaceObjects": [
+            {
+                "objectTitle": "Latvijas vēstures notikums 1",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 2",
+                "objectText": "Object 2 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 3",
+                "objectText": "Object 3 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 4",
+                "objectText": "Object 4 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 5",
+                "objectText": "Object 5 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 6",
+                "objectText": "Object 6 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
                 "objectTitle": "Object 7",
                 "objectText": "Object 7 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 8",
+                "objectText": "Object 8 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
                 "objImgPath" : "images/foto_1_10.png"
             }
         ]
     },
     "videoExhibit" : {
-        "title" : "Video sadaļa",
-        "videoList": [
+        "title" : "Video Part",
+        "videoParts" :[
             {
-                "videoTitle" : "video1",
-                "video": "images/SampleVideo.mp4"
+                "videoList": {
+                    "title": "videoListSun",
+                    "videoListSun": [
+                        {
+                            "videoTitle" : "video1",
+                            "video": "images/SampleVideo.mp4"
+                        },
+                        {
+                            "videoTitle" : "video2",
+                            "video" : "images/SampleVideo.mp4"
+                        },
+                        {
+                            "videoTitle" : "video3",
+                            "video" : "images/SampleVideo.mp4"
+                        },
+                        {
+                            "videoTitle" : "video4",
+                            "video" : "images/SampleVideo.mp4"
+                        }
+                    ]
+                }
             },
             {
-                "videoTitle" : "video2",
-                "video" : "images/SampleVideo.mp4"
-            },
-            {
-                "videoTitle" : "video3",
-                "video" : "images/SampleVideo.mp4"
-            },
-            {
-                "videoTitle" : "video4",
-                "video" : "images/SampleVideo.mp4"
+                "videoList" : {
+                    "title" : "videoListMoon",
+                    "videoListMoon": [
+                        {
+                            "videoTitle" : "video1",
+                            "video": "images/SampleVideo.mp4"
+                        },
+                        {
+                            "videoTitle" : "video2",
+                            "video" : "images/SampleVideo.mp4"
+                        },
+                        {
+                            "videoTitle" : "video3",
+                            "video" : "images/SampleVideo.mp4"
+                        },
+                        {
+                            "videoTitle" : "video4",
+                            "video" : "images/SampleVideo.mp4"
+                        }
+                    ]
+                }
             }
-        ]
+        ]  
     },
     "factOrMyth" : {
         "titleName" : "Fakts vai mīts",

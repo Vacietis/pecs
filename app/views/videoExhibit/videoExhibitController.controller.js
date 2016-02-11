@@ -9,6 +9,7 @@
             
             $scope.videoList = langService;
             $scope.showVideoPopup = function(videPar){
+                if( $scope.swiping ) { return; }
                 ngDialog.open({ 
                     scope: $scope,
                     template: 'app/views/videoExhibit/videoExhibit.popUp.html',

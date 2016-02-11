@@ -2,8 +2,10 @@
     'use strict';
 
     angular.module('videoExhibit', [
-        'ngDialog'
-        
+        'ngDialog',
+        'gilbox.kineticSlider',
+        'slick',
+        'ngRoute' 
     ]);
     
 })();

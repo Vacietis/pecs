@@ -6,7 +6,7 @@
         .run(startRun);
 
     function startRun($rootScope, $location, $http, langService){
-        $rootScope.defaultLanguage = 'lv';
+        $rootScope.defaultLanguage = 'eng';
         var history = [];
         $rootScope.currentPath = null;
         $rootScope.lang = langService;
@@ -15,6 +15,20 @@
             
             //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
             history.push($location.$$path);
+//            if(history.length == 0){
+//                history.push($location.$$path);
+//            } else {
+//                angular.forEach(history, function(value, key) {
+//
+//                    if(value !== $location.$$path){
+//                        console.log("JAUNS array elements : "+$location.$$path);   
+//                        history.push($location.$$path);
+//                    } else {
+//                        console.log("esošie: "+$location.$$path);
+//                    }
+//                    
+//                });
+//            }
         });
 
         $rootScope.back = function () {
@@ -69,6 +83,7 @@
         $rootScope.languages = [];
         $http.get('app/core/config.json').then(function(response) {
             $rootScope.languages = response.data.languages;
+            $rootScope.debugLatvianHistory = response.data.latvianSpaceHistory;
         });
     }
     
