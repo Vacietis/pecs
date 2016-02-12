@@ -100,49 +100,55 @@
         "videoParts" :[
             {
                 "videoList": {
-                    "title": "videoListSun",
+                    "title": "Sun",
+                    "code": "sun",
                     "videoListSun": [
-                        {
-                            "videoTitle" : "video1",
-                            "video": "images/SampleVideo.mp4"
-                        },
-                        {
-                            "videoTitle" : "video2",
-                            "video" : "images/SampleVideo.mp4"
-                        },
-                        {
-                            "videoTitle" : "video3",
-                            "video" : "images/SampleVideo.mp4"
-                        },
-                        {
-                            "videoTitle" : "video4",
-                            "video" : "images/SampleVideo.mp4"
-                        }
-                    ]
-                }
+                            {
+                                "videoTitle" : "video1",
+                                "video": "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video2",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video3",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video4",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            }
+                        ]
+                    }
             },
             {
                 "videoList" : {
-                    "title" : "videoListMoon",
+                    "title" : "Moon",
+                    "code": "moon",
                     "videoListMoon": [
-                        {
-                            "videoTitle" : "video1",
-                            "video": "images/SampleVideo.mp4"
-                        },
-                        {
-                            "videoTitle" : "video2",
-                            "video" : "images/SampleVideo.mp4"
-                        },
-                        {
-                            "videoTitle" : "video3",
-                            "video" : "images/SampleVideo.mp4"
-                        },
-                        {
-                            "videoTitle" : "video4",
-                            "video" : "images/SampleVideo.mp4"
-                        }
-                    ]
-                }
+                            {
+                                "videoTitle" : "video1",
+                                "video": "images/SampleVideo.mp4"
+                            },
+                            {
+                                "videoTitle" : "video2",
+                                "video" : "images/SampleVideo.mp4"
+                            },
+                            {
+                                "videoTitle" : "video3",
+                                "video" : "images/SampleVideo.mp4"
+                            },
+                            {
+                                "videoTitle" : "video4",
+                                "video" : "images/SampleVideo.mp4"
+                            }
+                        ]
+                    }
             }
         ]  
     },

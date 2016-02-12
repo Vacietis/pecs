@@ -8,9 +8,10 @@
     function config($routeProvider){
         
         $routeProvider.when('/vid/sun', {
-            templateUrl: 'app/videoExhibit/templates/sun.template.html',
+            templateUrl: 'app/views/videoExhibit/templates/sun.template.html',
+            controller : "videoExhibitController"
         }).when('/vid/moon', {
-            templateUrl: 'app/videoExhibit/templates/moon.template.html',
+            templateUrl: 'app/views/videoExhibit/templates/moon.template.html',
         });
                 
     }

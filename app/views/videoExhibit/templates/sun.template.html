@@ -1,7 +1,7 @@
 <slick dots="true" infinite="true" speed="300" slides-to-show="3" touch-move="true" slides-to-scroll="1">
-    <div ng-repeat="video in videoList.data.videoExhibit.videoList1" 
+    <div ng-repeat="video in videoList.data.videoExhibit.videoParts.videoList.videoListSun" 
          ng-swipe-left="swiping=true;" ng-click="swiping ? ( swiping = false ) : showVideoPopup(video.videoTitle)" >
-        <img src="{{video.sampleImage}}">
-         {{slide.description}}
+        <img src="{{video.videoListSun.objImgPath}}">
+         {{video.videoTitle}}
     </div>
 </slick>

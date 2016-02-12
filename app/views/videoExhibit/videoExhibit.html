@@ -1,7 +1,7 @@
 <div class="headName">{{videoList.data.videoExhibit.title}}</div>
 <div class="center-content">
     <div class="col-md-6 main-items" ng-repeat="video in videoList.data.videoExhibit.videoParts">
-        <a class="inner-div" href="/#{{video}}" >{{video.videoList.title}}</a>
+        <a class="inner-div" href="#vid/{{video.videoList.code}}" >{{video.videoList.title}}</a>
     </div>
 </div>
 

@@ -100,10 +100,12 @@
         "videoParts" :{
             "videoList": {
                 "title": "videoListSun",
+                "code": "sun",
                 "videoListSun": [
                     {
                         "videoTitle" : "video1",
-                        "video": "images/SampleVideo.mp4"
+                        "video" : "images/SampleVideo.mp4",
+                        "objImgPath" : "images/foto_1_10.png"
                     },
                     {
                         "videoTitle" : "video2",
