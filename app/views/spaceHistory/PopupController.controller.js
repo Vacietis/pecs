@@ -8,11 +8,7 @@
         function PopupController($scope, name, langService, historyObj){
             var tempArr = [];
             console.log(historyObj);
-            
-//            isUndefined = function(thing){
-//                return (typeof thing === "undefined");
-//            }
-            
+          
             if(typeof historyObj === "undefined" || historyObj === "english"){
                 tempArr = langService.data.spaceHistory.spaceObjects;
                 console.log("trapijju");

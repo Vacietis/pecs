@@ -15,6 +15,7 @@
             
             //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
             history.push($location.$$path);
+            
 //            if(history.length == 0){
 //                history.push($location.$$path);
 //            } else {

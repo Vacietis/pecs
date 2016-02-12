@@ -1,3 +1,8 @@
 <h2>{{objName}}</h2>
     <p>{{objText}}</p>
-    <img ng-src="{{imagePath}}" />
+    <img ng-src="{{imagePath}}" ng-hide="imagePath == ''"/>
+    <div class="videoClass" ng-hide="videoSrc == ''">
+        <video controls>
+            <source ng-src="{{videoSrc}}" type="video/mp4">
+        </video>
+    </div>

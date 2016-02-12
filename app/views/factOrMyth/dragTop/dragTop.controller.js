@@ -5,31 +5,19 @@
         .module('dragTop')
         .controller('dragTopController', dragTopController);
 
-        function dragTopController($scope, $http){
-           
-            $scope.language = 'lv';
+        function dragTopController($scope, langService){
 
-            $scope.dragQuestions = [];
-            
-            $http.get('lang/'+$scope.language+'.json').then(function(response) {
-                $scope.dragQuestions = response.data.factOrMyth.dragQuestions;
-            });
-            
-//            $scope.list1 = {title: 'AngularJS - Drag Me'};
-//            $scope.list2 = {};
-
-            var tmpList = [];
-
-              var originalDraggables = [
-                { title: 'jautajums 1' },
-                { title: 'jaut 2' },
-                { title: 'j3??' },
-                { title: 'waz4?' },
-                { title: 'cool5??' },
-                { title: 'laps6' },
-                { title: '77777' },
-                { title: 'notike8' }
-              ];
+              var originalDraggables = langService.data.factOrMyth.dragQuestions;
+//              [
+//                { title: 'jautajums 1' },
+//                { title: 'jaut 2' },
+//                { title: 'j3??' },
+//                { title: 'waz4?' },
+//                { title: 'cool5??' },
+//                { title: 'laps6' },
+//                { title: '77777' },
+//                { title: 'notike8' }
+//              ];
 
               $scope.draggables = originalDraggables.map(function(x){
                 return [x];
@@ -76,6 +64,6 @@
             
         }
         
-    dragTopController.$inject = ['$scope', '$http'];
+    dragTopController.$inject = ['$scope', 'langService'];
        
 })();

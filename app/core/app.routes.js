@@ -12,6 +12,7 @@
         }).when('/factMyth', {
             templateUrl: 'app/views/factOrMyth/factOrMythView.html',
             controller : 'factOrMythController'
+            //noradit servisam laiieladejas pec serivsa
         }).when('/hist', {
             templateUrl: 'app/views/spaceHistory/spaceHistory.html',
             controller : 'spaceHistoryController'

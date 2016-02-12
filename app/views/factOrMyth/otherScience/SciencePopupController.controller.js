@@ -18,6 +18,7 @@
                     $scope.objName = value.title;
                     $scope.objText = value.content.text;
                     $scope.imagePath = value.content.picture;
+                    $scope.videoSrc = value.content.video;
                     console.log(value.title);
                 }
                 console.log(value.title);

@@ -7,7 +7,7 @@
 
         function factOrMythController($scope, langService){
 
-            $scope.fomView = langService;
+            //$scope.fomView = langService;
 
         }
         

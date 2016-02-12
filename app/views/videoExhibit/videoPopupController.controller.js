@@ -5,20 +5,24 @@
         .module('videoExhibit')
         .controller('videoPopupController', videoPopupController);
 
-        function videoPopupController($scope, name, langService){
+        function videoPopupController($scope, name, langService, list){
             
-            $scope.objName = name;
+            console.log("asfasfasf: "+list);
             
-            var tempArr = langService.data.videoExhibit.videoList1;
+            var tempArr = langService.data.videoExhibit.videoParts;
             
             angular.forEach(tempArr, function(value, key) {
-                if(value.videoTitle === name){
-                    $scope.videoSrc = value.video;
-                    console.log(value.video);
-                }
-                //console.log(value.video);
-                console.log(value.video);
-              });
+                    
+                    angular.forEach(value.videoList.videoListSun, function(value, key) {
+                        
+                        if(value.videoTitle === name){
+                            $scope.videoSrc = value.video;
+                            console.log(value.videoTitle);
+                        }
+                
+                    });
+                    
+            });
             
             
             
@@ -28,6 +32,6 @@
             
         }
         
-    videoPopupController.$inject = ['$scope', 'name', 'langService'];
+    videoPopupController.$inject = ['$scope', 'name', 'langService', 'list'];
        
 })();

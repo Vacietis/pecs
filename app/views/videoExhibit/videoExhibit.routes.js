@@ -9,9 +9,12 @@
         
         $routeProvider.when('/vid/sun', {
             templateUrl: 'app/views/videoExhibit/templates/sun.template.html',
-            controller : "videoExhibitController"
+            controller : "videoExhibitController",
+            paramExample: 'sun'
         }).when('/vid/moon', {
-            templateUrl: 'app/views/videoExhibit/templates/moon.template.html',
+            templateUrl: 'app/views/videoExhibit/templates/sun.template.html',
+            controller : "videoExhibitController",
+            paramExample: 'moon'
         });
                 
     }

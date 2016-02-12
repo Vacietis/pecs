@@ -17,6 +17,13 @@
         <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css"/>
         <link href="bower_components/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
         
+        <!-- For angular to hide flickr and show already loaded contetn -->
+        <style>
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+              }
+        </style>
+        
         <link href="libs/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link rel="shortcut icon" href="images/favicon.ico"/>
         
@@ -33,7 +40,7 @@
         
         
         <a ng-repeat="(key, value) in languages" class="btn btn-info btn-lg" 
-           ng-click='lang.changeLanguage(key)' ng-show="!isQuizPage">
+           ng-click='lang.changeLanguage(key)' ng-show="!isQuizPage" ng-cloak>
           <span class="glyphicon glyphicon-flag"></span> {{value}}
         </a>
 <!--        <a  class="btn btn-info btn-lg" ng-click='lang("eng")'>

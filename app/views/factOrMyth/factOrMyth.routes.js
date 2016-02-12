@@ -13,7 +13,8 @@
         }).when('/factMyth/missions', {
             templateUrl: 'app/views/factOrMyth/moonMissions/missions.html',
         }).when('/factMyth/compares', {
-            templateUrl: 'app/views/factOrMyth/compareMoonEarth/compares.html',
+            templateUrl: 'app/views/factOrMyth/fomTest/fomTest.html',
+            controller: "fomTestController"
         }).when('/factMyth/dragGame', {
             templateUrl: 'app/views/factOrMyth/dragTop/dragGame.html',
             controller: 'dragTopController'
