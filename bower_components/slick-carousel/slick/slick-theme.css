@@ -110,11 +110,12 @@
 .slick-slider
 {
     margin-bottom: 30px;
-    width: 1500px;
+    width: 1200px;
     height: auto;
-    background-color: red;
+    /* background-color: red; */
     margin: auto;
     margin-top: 150px;
+    /* padding: 10px; */
 }
 
 .ng-scope.ng-isolate-scope.slick-initialized.slick-slider {}

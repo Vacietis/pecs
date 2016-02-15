@@ -67,7 +67,11 @@
 	user-select: none;
 }
 
-.app:nth-child(even) {background-color: #CCC !important}
+.bomb:nth-child(even) {background-color: #CCC !important}
+
+.saved{
+    background-color: steelblue;
+}
 
 
 /***  Extra ***/

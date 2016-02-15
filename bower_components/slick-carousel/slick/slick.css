@@ -23,11 +23,10 @@
 .slick-list
 {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     margin: 0;
+    border: none;
     padding: 0;
 }
 .slick-list:focus
@@ -101,11 +100,14 @@
 .slick-initialized .slick-slide
 {
     display: block;
-    color: white;
+    /* color: white; */
     height: auto;
     /* width: 400px !important; */
     cursor: pointer;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    /* padding: 10px; */
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .slick-loading .slick-slide
 {
@@ -123,14 +125,14 @@
 .slick-initialized .slick-slide:after{
     display: block;
     content: "";
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     top: 0;
     /* right: 0; */
     /* margin: auto; */
-    margin-top: 42px;
-    margin-left: 133px;
+    margin-top: 84px;
+    margin-left: 226px;
     /* left: 0; */
     background: transparent url(/InfoKiosk/images/video-play.png);
     background-size: 100% 100%;

@@ -29,7 +29,7 @@
             <div class="questionTop">
               
               <div ui-sortable="sortableOptions" class="apps-container screen connected-drop-target-sortable" ng-model="selectedComponents">
-                  <div class="app" ng-repeat="component in selectedComponents track by $index">{{component.title}}</div>
+                  <div class="app" ng-class="notDragged" ng-repeat="component in selectedComponents track by $index">{{component.title}}</div>
               </div>
             </div>
             <div style="clear: both;"></div>

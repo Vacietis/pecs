@@ -1118,6 +1118,7 @@ figure {
   margin: 0;
 }
 img {
+  border: none;
   vertical-align: middle;
   width: 100%;
 }
@@ -1605,9 +1606,9 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
-    height: 700px;
-    overflow-y: scroll;
+    width: 1300px;
+    height: auto;
+    /* overflow-y: scroll; */
   }
 }
 .container-fluid {

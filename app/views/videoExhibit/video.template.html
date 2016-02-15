@@ -1,11 +1,24 @@
 <div ng-repeat="part in videoList.data.videoExhibit.videoParts" ng-show="clickedPath == part.code" ng-cloak>
-    <slick dots="true" infinite="true" speed="300" slides-to-show="3" 
-           touch-move="true" slides-to-scroll="1" focusOnSelect = "true">
     
-        <div ng-repeat="(key, value) in part.videoList" ng-swipe-left="swiping=true;" 
-             ng-click="swiping ? ( swiping = false ) : showVideoPopup(value.videoTitle, key)" ng-cloak>
+    
+        
+    <slick dots="true" infinite="true" speed="300" slides-to-show="1" 
+           touch-move="true" slides-to-scroll="1" center-padding="200px" 
+           center-mode="true" arrows="false" focus-on-select="false" break-point="500">
+        <!--center-padding controlle cik daudz grib redzet nakamas bildes -->
+        
+    
+        <div ng-repeat="(key, value) in part.videoList" 
+             ng-swipe-left="swiping=true;" ng-swipe-right="swiping=true;" 
+             ng-click="swiping ? ( swiping = false ) : showVideoPopup(value.videoTitle, key)">
             <img src="{{value.objImgPath}}">
         </div> 
+        
+        
    
     </slick>
+    
+    <div class="rightBlur"></div>
+        <div class="leftBlur"></div>
+    
 </div>

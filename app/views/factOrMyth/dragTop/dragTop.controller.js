@@ -32,7 +32,7 @@
                     className: 'ngdialog-theme-default dragngDialog',
                      controller: $controller('PopupDragController', {
                         $scope: $scope,
-                        isShown: isShown,
+                        isShown: isShown
                         })
                     
                     });
@@ -65,6 +65,8 @@
 //                    ui.item.sortable.sourceModel.push(ui.item.sortable.model);
 //                    ui.item.sortable.sourceModel.slice(ui.item.sortable.model);
                         $scope.dragQuestionCount++;
+                        
+                        $scope.notDragged = "saved";
                   }
                     
                 }
