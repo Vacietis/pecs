@@ -1,5 +1,7 @@
 {
-    "stendi" : {
+    "lang" : "Est",
+    "titleName" : "INFO KIOSK EST",
+    "stands" : {
         "hist" : "Igauniski vesture",
         "vid" : "igaunu galerija",
         "newton" : "Ņūtona 3 likumanis ",
@@ -7,7 +9,168 @@
         "iss" : "Igaunu ISS?",
         "tourIss" : "Igaunu Tūre pa ISS"
     },
+    "spaceHistory":{
+        "spaceObjects": [
+            {
+                "objectTitle": "History event 1 EST",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 2",
+                "objectText": "Object 2 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 3",
+                "objectText": "Object 3 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 4",
+                "objectText": "Object 4 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 5",
+                "objectText": "Object 5 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 6",
+                "objectText": "Object 6 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 7",
+                "objectText": "Object 7 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 8",
+                "objectText": "Object 8 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            }
+        ],
+        "latvianSpaceObjects": [
+            {
+                "objectTitle": "Latvian history event 1 EST",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 2",
+                "objectText": "Object 2 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 3",
+                "objectText": "Object 3 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 4",
+                "objectText": "Object 4 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 5",
+                "objectText": "Object 5 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 6",
+                "objectText": "Object 6 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 7",
+                "objectText": "Object 7 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Object 8",
+                "objectText": "Object 8 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            }
+        ]
+    },
+     "videoExhibit" : {
+        "title" : "Video Part",
+        "videoParts" :[
+            {
+                    "title": "Sun",
+                    "code": "sun",
+                    "videoList": [
+                            {
+                                "videoTitle" : "video1",
+                                "video": "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video2",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video3",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video4",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            }
+                        ]
+            },
+            {
+                    "title" : "Moon",
+                    "code": "moon",
+                    "videoList": [
+                            {
+                                "videoTitle" : "video1",
+                                "video": "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            },
+                            {
+                                "videoTitle" : "video2",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            },
+                            {
+                                "videoTitle" : "video3",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            },
+                            {
+                                "videoTitle" : "video4",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            }
+                        ]
+            }
+        ]  
+    },
     "factOrMyth" : {
+        "titleName" : "Fact or myth",
+        "test" : "Test",
+        "start" : "Start",
+        "playAgain" : "Play again?",
+        "score" : "Score",
+        "endOfTest" : "End of test",
+        "right" : "Right",
+        "wrong" : "Wrong",
+        "next" : "Next",
+         "fomViews" : 
+            {
+                "missions" : "Space missions",
+                "compares" : "Tests, ksa salidzina menesi un zemi",
+                "dragGame" : "Vilkšanas spēle ar faktiem",
+                "quiz" : "Tests mīts vai fakts",
+                "otherSciences" : "Citas zinātnes",
+                "pictureGallery" : "Bilžu galerija"
+            },
         "questions" :[
             {
                 "question": "Pareiza atbilde ir Jā?",
@@ -29,7 +192,107 @@
                 "options": ["Jā", "Nē"],
                 "answer": 1
             }
-        ]   
+        ],
+        "dragQuestions" :[
+            {
+                "title": "jautajums 1",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "title": "jaut 2",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "j3??",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "title": "waz4?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "cool5??",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "laps6",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "77777",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "notike8",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "brum 9",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "ir 10",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            }
+        ],
+        "otherScience":
+            {
+                "titleName" : "Citas zinātnes",
+                "otherScienceViews" : [
+                    {
+                        "title" : "Pirmā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Otrā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Trešā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Ceturtā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Piektā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    },
+                    {
+                        "title" : "Sestā zinātne",
+                        "content" : {
+                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "picture" : "images/foto_1_10.png"
+                        }
+                    }
+                ]
+            }
     }
     
 }

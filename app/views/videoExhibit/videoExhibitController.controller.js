@@ -17,7 +17,7 @@
                 ngDialog.open({ 
                     scope: $scope,
                     template: 'app/views/videoExhibit/videoExhibit.popUp.html',
-                    className: 'ngdialog-theme-default sciencengDialog',
+                    className: 'ngdialog-theme-default videongDialog',
                     controller: $controller('videoPopupController', {
                         $scope: $scope,
                         name: videPar,

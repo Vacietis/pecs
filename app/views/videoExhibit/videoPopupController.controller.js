@@ -7,17 +7,15 @@
 
         function videoPopupController($scope, name, langService, list){
             
-            console.log("asfasfasf: "+list);
-            
             var tempArr = langService.data.videoExhibit.videoParts;
             
             angular.forEach(tempArr, function(value, key) {
                     
-                    angular.forEach(value.videoList.videoListSun, function(value, key) {
+                    angular.forEach(value.videoList, function(value, key) {
                         
                         if(value.videoTitle === name){
                             $scope.videoSrc = value.video;
-                            console.log(value.videoTitle);
+                            console.log(value.video);
                         }
                 
                     });

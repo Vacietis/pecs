@@ -10,7 +10,9 @@
         'picGallery',
         'spaceHistory',
         'otherScience',
-        'videoExhibit'
+        'videoExhibit',
+        
+        'ngDialog'
         
     ]);
     

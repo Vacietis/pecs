@@ -9,7 +9,7 @@
                 
             $scope.historyObejcts = langService;
             
-            var oneContainerwidth = 250;
+            var oneContainerwidth = 240;
             var scrollContainerDivSize = ($scope.historyObejcts.data.spaceHistory.spaceObjects.length * oneContainerwidth);
             
             $scope.scrollEndPosition = scrollContainerDivSize;

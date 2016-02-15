@@ -8,7 +8,8 @@
     function config($routeProvider){
         
         $routeProvider.when('/', {
-            templateUrl: 'app/views/homePage.html'
+            templateUrl: 'app/views/homePage.html',
+            //controller: "PopupCheckController"
         }).when('/factMyth', {
             templateUrl: 'app/views/factOrMyth/factOrMythView.html',
             controller : 'factOrMythController'

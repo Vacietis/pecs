@@ -1,5 +1,10 @@
 .videoClass video{
-    width: 770px;
+    width: 1170px;
+}
+
+.videongDialog .ngdialog-content{
+    border: 1px solid red;
+    width: 1200px !important;
 }
 
 ///////////////slider

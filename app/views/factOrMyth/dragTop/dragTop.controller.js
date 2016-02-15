@@ -5,9 +5,15 @@
         .module('dragTop')
         .controller('dragTopController', dragTopController);
 
-        function dragTopController($scope, langService){
+        function dragTopController($scope, langService, ngDialog, $controller){
 
-              var originalDraggables = langService.data.factOrMyth.dragQuestions;
+              var originalDraggables = langService.data.factOrMyth.dragGame.dragQuestions;
+              
+              $scope.save = langService.data.factOrMyth.dragGame.save;
+              
+              $scope.dragQuestionCount = 0;
+              
+              $scope.dbIsClicked = false;
 //              [
 //                { title: 'jautajums 1' },
 //                { title: 'jaut 2' },
@@ -18,6 +24,25 @@
 //                { title: '77777' },
 //                { title: 'notike8' }
 //              ];
+
+              $scope.clickToOpenDragGame = function(isShown){
+                  ngDialog.open({ 
+                    scope: $scope,
+                    template: 'app/views/factOrMyth/dragTop/dragTop.popup.html',
+                    className: 'ngdialog-theme-default dragngDialog',
+                     controller: $controller('PopupDragController', {
+                        $scope: $scope,
+                        isShown: isShown,
+                        })
+                    
+                    });
+              }
+              
+              $scope.clickToOpenDragGame(false);
+              
+              $scope.closePop = function(){
+                  ngDialog.close();
+              }
 
               $scope.draggables = originalDraggables.map(function(x){
                 return [x];
@@ -39,16 +64,19 @@
                     // restore the removed item
 //                    ui.item.sortable.sourceModel.push(ui.item.sortable.model);
 //                    ui.item.sortable.sourceModel.slice(ui.item.sortable.model);
+                        $scope.dragQuestionCount++;
                   }
+                    
                 }
               };
 
               $scope.sortableOptions = {};
               
               $scope.logModels = function () {
+                  $scope.dbIsClicked = true;
                 $scope.newArray = [];
                 $scope.sortingLog = [];
-                var count = 9;
+                var count = 11;
                 var place = 0;
                 var logEntry = $scope.selectedComponents.map(function (x) {
                     place++;
@@ -64,6 +92,6 @@
             
         }
         
-    dragTopController.$inject = ['$scope', 'langService'];
+    dragTopController.$inject = ['$scope', 'langService', 'ngDialog', '$controller'];
        
 })();

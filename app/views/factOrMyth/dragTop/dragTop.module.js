@@ -3,7 +3,8 @@
 
     angular.module('dragTop', [
         'ngDragDrop',
-        'ui.sortable'
+        'ui.sortable',
+        'ngDialog'
     ]);
     
 })();

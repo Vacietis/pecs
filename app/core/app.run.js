@@ -5,7 +5,7 @@
         .module('mainApp')
         .run(startRun);
 
-    function startRun($rootScope, $location, $http, langService){
+    function startRun($rootScope, $location, $http, langService, ngDialog, $controller){
         $rootScope.defaultLanguage = 'eng';
         var history = [];
         $rootScope.currentPath = null;
@@ -33,9 +33,25 @@
         });
 
         $rootScope.back = function () {
-            var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
-            $location.path(prevUrl);
+            if($rootScope.currentPath === '/factMyth/quiz'){
+                ngDialog.open({ 
+                    template: 'app/widgets/checkPopup/check.Popup.html',
+                    });
+            } else {
+                 var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
+                 $location.path(prevUrl);
+            }   
         };
+        
+        $rootScope.goBackHistory = function(){
+             var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
+             $location.path(prevUrl);
+             ngDialog.close();
+        }
+        
+        $rootScope.closePopup = function(){
+            ngDialog.close();
+        }
 
         $rootScope.home = function () {
             history.length = 0;
@@ -88,6 +104,6 @@
         });
     }
     
-    startRun.$inject = ['$rootScope', '$location', '$http', 'langService'];
+    startRun.$inject = ['$rootScope', '$location', '$http', 'langService', 'ngDialog', '$controller'];
     
 })();

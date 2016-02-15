@@ -2,7 +2,40 @@ body{
     background: #F0C27B; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #F0C27B , #4B1248); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #F0C27B , #4B1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
 }
+
+.main-view{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* z-index:9999; */
+    /* top:0; */
+    /* left:0; */
+    /* width:100%; */
+    /* height:100%; */
+    /* background-color:#000000; */
+    /* opacity: 0.8; */
+    /* z-index: 10000; */
+    position: absolute;
+    width: 100%;/* Default *//* Center the dialog */
+    height: 82%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    /* background-color: #fff; */
+    box-shadow: 4px 4px 80px #000;
+}
+
+.main-view.ng-scope {}
 
 .main-items{
     height: 200px;
@@ -52,7 +85,7 @@ body{
      font-size: 40px;
      color: aliceblue;
      margin-bottom: 40px;
-     margin-top: 40px;
+     /* margin-top: 40px; */
      /* position: absolute; */
  }
  

@@ -1,4 +1,6 @@
+<div class="headName">{{lang.data.factOrMyth.dragGame.title}}</div>
 <div class="dropContent">
+    <div class="dragGameQuestion">{{lang.data.factOrMyth.dragGame.mainQuestion}}</div>
     <div class="leftSide">
 <!--        <div ng-repeat="q in dragQuestions" class="draggableElements" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable="{animate:true}">
             <div>
@@ -6,24 +8,25 @@
             </div>
         </div>-->
 
-
-
            <div class="floatleft">
             <div class="questions">
-              <h2>Questions</h2>
               <div class="apps-container">
                 <div ui-sortable="draggableOptions" class="screen draggable-element-container"
                 ng-repeat="draggableArray in draggables track by $index"
                 ng-model="draggableArray">
                   <div ng-repeat="draggable in draggableArray" class="app">{{draggable.title}}</div>
                 </div>
+                  <ul >
+                    <li ng-repeat="entry in newArray" ng-show="dbIsClicked" class="logItem">
+                      {{entry}}
+                    </li>
+                  </ul>
               </div>
             </div>
                <ol class="topOrder">
                     <li ng-repeat="draggableArray in draggables track by $index"></li>
                 </ol>
             <div class="questionTop">
-              <h2>Drag to create Top</h2>
               
               <div ui-sortable="sortableOptions" class="apps-container screen connected-drop-target-sortable" ng-model="selectedComponents">
                   <div class="app" ng-repeat="component in selectedComponents track by $index">{{component.title}}</div>
@@ -31,20 +34,21 @@
             </div>
             <div style="clear: both;"></div>
         </div>
+        <button type="button" class="dbButton" ng-click="logModels()" ng-show="dragQuestionCount == 10">{{save}}</button>
 
           <div class="floatright">
-            <button type="button" ng-click="logModels()">Save to db</button>
+              
 <!--            <ul class="list logList">
               <li ng-repeat="entry in sortingLog" class="logItem">
                 {{entry}}
               </li>
             </ul>-->
-            <ul >
-              <li ng-repeat="entry in newArray" class="logItem">
-                {{entry}}
-              </li>
-            </ul>
+            
           </div>
+
+
+          
+</div>
 
 
 
@@ -75,3 +79,4 @@
         
     </div>-->
 </div>
+<div class="btn btn-info" ng-click="clickToOpenDragGame(true)">PopUP</div>

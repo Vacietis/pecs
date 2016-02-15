@@ -95,54 +95,62 @@
             }
         ]
     },
-    "videoExhibit" : {
+     "videoExhibit" : {
         "title" : "Video Part",
-        "videoParts" :{
-            "videoList": {
-                "title": "videoListSun",
-                "code": "sun",
-                "videoListSun": [
-                    {
-                        "videoTitle" : "video1",
-                        "video" : "images/SampleVideo.mp4",
-                        "objImgPath" : "images/foto_1_10.png"
-                    },
-                    {
-                        "videoTitle" : "video2",
-                        "video" : "images/SampleVideo.mp4"
-                    },
-                    {
-                        "videoTitle" : "video3",
-                        "video" : "images/SampleVideo.mp4"
-                    },
-                    {
-                        "videoTitle" : "video4",
-                        "video" : "images/SampleVideo.mp4"
-                    }
-                ]
+        "videoParts" :[
+            {
+                    "title": "Sun",
+                    "code": "sun",
+                    "videoList": [
+                            {
+                                "videoTitle" : "video1",
+                                "video": "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video2",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video3",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            },
+                            {
+                                "videoTitle" : "video4",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_1_10.png"
+                            }
+                        ]
             },
-            "videoList" : {
-                "title" : "videoListMoon",
-                "videoListMoon": [
-                    {
-                        "videoTitle" : "video1",
-                        "video": "images/SampleVideo.mp4"
-                    },
-                    {
-                        "videoTitle" : "video2",
-                        "video" : "images/SampleVideo.mp4"
-                    },
-                    {
-                        "videoTitle" : "video3",
-                        "video" : "images/SampleVideo.mp4"
-                    },
-                    {
-                        "videoTitle" : "video4",
-                        "video" : "images/SampleVideo.mp4"
-                    }
-                ]
+            {
+                    "title" : "Moon",
+                    "code": "moon",
+                    "videoList": [
+                            {
+                                "videoTitle" : "video1",
+                                "video": "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            },
+                            {
+                                "videoTitle" : "video2",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            },
+                            {
+                                "videoTitle" : "video3",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            },
+                            {
+                                "videoTitle" : "video4",
+                                "video" : "images/SampleVideo.mp4",
+                                "objImgPath" : "images/foto_4_01.png"
+                            }
+                        ]
             }
-        }  
+        ]  
     },
     "factOrMyth" : {
         "titleName" : "Fact or myth",
@@ -181,6 +189,58 @@
             },
             {
                 "question": "Pareizā atbilde ir Nē?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            }
+        ],
+        "dragQuestions" :[
+            {
+                "title": "jautajums 1",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "title": "jaut 2",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "j3??",
+                "options": ["Jā", "Nē"],
+                "answer": 0
+            },
+            {
+                "title": "waz4?",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "cool5??",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "laps6",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "77777",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "notike8",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "brum 9",
+                "options": ["Jā", "Nē"],
+                "answer": 1
+            },
+            {
+                "title": "ir 10",
                 "options": ["Jā", "Nē"],
                 "answer": 1
             }
