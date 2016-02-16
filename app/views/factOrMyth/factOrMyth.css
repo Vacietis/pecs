@@ -1,9 +1,10 @@
 quiz{
     display: block;
     width : 100%;
-    height: 600px;
+    height: 629px;
     background-color: lightblue;
     /* border : 1px solid red; */
+    text-align: center;
 }
 
 quiz.ng-isolate-scope {}
@@ -12,7 +13,7 @@ quiz.ng-isolate-scope {}
     text-align: center;
     font-style: italic;
 }
-.start-button{width: 50%;height: 50%;margin: 20px;font-size: 50px !important;/* top: 71%; *//* vertical-align: middle !important; *//* position: absolute; *//* top: 0; *//* right: 0; *//* left: 0; *//* bottom: 0; *//* margin: auto; *//* position: absolute; *//* top: 0; *//* left: 0; *//* bottom: 0; *//* right: 0; */}
+.start-button{width: 70%;height: 70%;margin: 20px;font-size: 50px !important;/* top: 71%; *//* vertical-align: middle !important; *//* position: absolute; *//* top: 0; *//* right: 0; *//* left: 0; *//* bottom: 0; *//* margin: auto; *//* position: absolute; *//* top: 0; *//* left: 0; *//* bottom: 0; *//* right: 0; */}
 .intro{
     height: 100%;
     margin: 0px auto 0px auto; text-align: center;
@@ -27,6 +28,7 @@ quiz.ng-isolate-scope {}
     display: inline-block;
     height: 100px;
     width: 100%;
+    font-size: 30px !important;
 }
 
 #options{
@@ -41,13 +43,15 @@ quiz.ng-isolate-scope {}
     margin: 2%;
 }
 .navigationButtons{
-    width: 50px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
     display: inline-block;
 }
 .ovalButtons{
-    /* display: inline-block; */
+    display: inline-block;
     /* border: 1px solid red; */
-    width: 20%;
+    width: initial;
     margin: auto;
     height: 30px;
 }

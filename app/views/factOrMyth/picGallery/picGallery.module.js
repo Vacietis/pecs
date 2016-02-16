@@ -3,7 +3,8 @@
 
     angular.module('picGallery', [
         'ngAnimate',
-        'ngTouch'
+        'ngTouch',
+        'slick'
     ]);
     
 })();

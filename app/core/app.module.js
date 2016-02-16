@@ -11,6 +11,8 @@
         'spaceHistory',
         'otherScience',
         'videoExhibit',
+        'issModule',
+        'issTourModule',
         
         'ngDialog'
         

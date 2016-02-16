@@ -1,0 +1,11 @@
+.testAnswerngDialog .ngdialog-content{
+    border: 5px solid orange;
+    width: 1270px !important;
+    height: 629px !important;
+}
+.imageDiv{
+    width: 400px;
+    margin: auto;
+}
+
+.answerButtons:nth-child(even) {background-color: #CCC !important}

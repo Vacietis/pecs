@@ -1,6 +1,6 @@
 <style>
     #options.ng-enter{
-        transition: 0.75s;
+        transition: 2s;
         opacity: 0;
     }
     #options.ng-enter-stagger{
@@ -20,9 +20,12 @@
 <div class="quiz-area" ng-show="inProgress">
     <div ng-show="!quizOver">
 		<h2 id="question">{{question}}</h2>
+        <div class="imageDiv" >
+            <image ng-src="{{imageSrc}}" ng-cloak />
+        </div>
 		<div id="options">
             <div ng-repeat="option in options" class="answerDiv">
-                <input class="btn btn-lg answerButtons" type="button" name="answer" value="{{option}}" ng-click="checkAnswer(option)">
+                <input class="btn btn-success answerButtons" type="button" name="answer" value="{{option}}" ng-click="checkAnswer(option)">
 			</div>
 		</div>
         <div class="ovalButtons">
@@ -32,20 +35,20 @@
             </div>
         </div>
         
-        <div class="answerDisplay" ng-show="!answerMode">
+<!--        <div class="answerDisplay" ng-show="!answerMode">
 			<button ng-click="nextQuestion()" class="next-question">{{langText.data.factOrMyth.next}}</button>
 			<span ng-show="correctAns">{{langText.data.factOrMyth.right}}</span>
 			<span ng-show="!correctAns">{{langText.data.factOrMyth.wrong}}</span>
-		</div>
+		</div>-->
 	</div>
  
-	<div class="endQuiz" ng-show="quizOver">
+<!--	<div class="endQuiz" ng-show="quizOver">
 		<h2>{{langText.data.factOrMyth.endOfTest}}</h2>
         <div id="score">
             {{langText.data.factOrMyth.score}} : {{score}}
         </div>
 		<button ng-click="reset()">{{langText.data.factOrMyth.playAgain}}</button>
-	</div>
+	</div>-->
     
 </div>
  

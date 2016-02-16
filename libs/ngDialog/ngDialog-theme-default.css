@@ -77,7 +77,10 @@
   max-width: 100%;
   padding: 1em;
   position: relative;
+  /* height: inherit !important; */
   width: 1200px;
+  height: pare;
+  /* height: initial; */
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-close {

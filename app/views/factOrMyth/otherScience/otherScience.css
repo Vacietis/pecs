@@ -1,3 +1,42 @@
 .sciencengDialog .ngdialog-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    width: 700px !important;
 }
+
+.scienceImage{
+    width: 300px;
+    /* position: absolute; */
+    right: 10px;
+    /* margin: auto; */
+    display: block;
+    align-content: top;
+}
+
+/*.videoClass{
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    position: ab;
+}*/
+.popupContent{
+    /* background-color: yellow; */
+}
+.floatedPic{
+    float: right;
+    width: 300px;
+    margin: 5px;
+    /* border: 1px solid red; */
+    /* display: block; */
+}
+.floatedVid {
+    /* border: 1px solid red; */
+    width: 300px;
+    /* padding-top: 100px; */
+    float: right;
+    /* bottom: 0px; */
+    display: block;
+    /* bottom: -100px; */
+    /* position: static; */
+}
+

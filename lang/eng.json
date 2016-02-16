@@ -173,8 +173,8 @@
             },
         "questions" :[
             {
-                "question": "Pareiza atbilde ir Jā? ENG",
-                "options": ["Jā", "Nē"],
+                "question": "Right answer is Fact? ENG",
+                "options": ["Fact", "Mith"],
                 "answer": 0
             },
             {

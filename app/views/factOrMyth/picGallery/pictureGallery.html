@@ -1,11 +1,11 @@
 
-<div class="container slider">
+<!--<div class="container slider">
     <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
          ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
          ng-src="{{slide.image}}" ng-hide="!isCurrentIndex($index)">
          {{slide.description}}
-<!--    <a class="arrow prev"  ng-click="nextSlide()"> <<<< </a>
-    <a class="arrow next"  ng-click="prevSlide()"> >>>> </a>-->
+    <a class="arrow prev"  ng-click="nextSlide()"> <<<< </a>
+    <a class="arrow next"  ng-click="prevSlide()"> >>>> </a>
     
     <nav class="nav">
         <div class="wrapper">
@@ -26,5 +26,29 @@
     </div>
     
     
-</div>
+</div>-->
+
+    
+    
+        
+    <slick class="customSlick" dots="true" infinite="true" speed="300" slides-to-show="1" 
+           touch-move="true" slides-to-scroll="1" center-padding="200px" 
+           center-mode="true" arrows="false" focus-on-select="false" break-point="500">
+        <!--center-padding controlle cik daudz grib redzet nakamas bildes -->
+     
+    
+            <div ng-repeat="pic in slides.data.factOrMyth.pictureGallery" ng-cloak
+                ng-swipe-left="swiping=true;" ng-swipe-right="swiping=true;" 
+             ng-click="swiping ? ( swiping = false ) : showGalleryPopup(pic.description)">
+                <img src="{{pic.image}}">
+            </div> 
+        
+        
+   
+    </slick>
+    
+    <div class="rightBlur"></div>
+    <div class="leftBlur"></div>
+    
+<!--</div>-->
 

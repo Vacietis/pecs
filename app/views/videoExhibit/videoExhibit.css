@@ -1,5 +1,5 @@
 .videoClass video{
-    width: 1170px;
+    width: 1160px !important;
 }
 
 .videongDialog .ngdialog-content{
@@ -33,6 +33,22 @@
     background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);/* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );/* IE6-9 */
+}
+
+.videoSlick:after{
+    display: block;
+    content: "";
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    /* margin: auto; */
+    margin-top: 84px;
+    margin-left: 226px;
+    /* left: 0; */
+    background: transparent url(/InfoKiosk/images/video-play.png);
+    background-size: 100% 100%;
 }
 
 ///////////////slider

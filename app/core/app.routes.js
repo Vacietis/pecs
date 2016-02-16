@@ -20,6 +20,12 @@
         }).when('/vid', {
             templateUrl: 'app/views/videoExhibit/videoExhibit.html',
             controller : 'videoExhibitController'
+        }).when('/iss', {
+            templateUrl: 'app/views/whereIsISS/whereIsIss.iss.html',
+            controller : 'issController'
+        }).when('/tourIss', {
+            templateUrl: 'app/views/tourISS/tourISS.iss.html',
+            controller : 'issTourController'
         }).otherwise({
             redirectTo : '/'
         });

@@ -175,22 +175,30 @@
             {
                 "question": "Pareiza atbilde ir mīts?",
                 "options": ["mīts", "fakts"],
-                "answer": 0
+                "answer": 0,
+                "answerText" : "Pareizi jo ta ir jabut jopcik 1 ",
+                "image" : "images/foto_1_10.png"
             },
             {
                 "question": "Pareizā atbilde ir fakts?",
                 "options": ["mīts", "fakts"],
-                "answer": 1
+                "answer": 1,
+                "answerText" : "Pareizi jo ta ir jabut jopcik 2 ",
+                "image" : "images/foto_2_03.png"
             },
             {
                 "question": "Pareiza atbilde ir mīts?",
                 "options": ["mīts", "fakts"],
-                "answer": 0
+                "answer": 0,
+                "answerText" : "Pareizi jo ta ir jabut jopcik 3",
+                "image" : "images/foto_2_04.png"
             },
             {
                 "question": "Pareizā atbilde ir fakts?",
                 "options": ["fakts", "mīts"],
-                "answer": 1
+                "answer": 1,
+                "answerText" : "Pareizi jo ta ir jabut jopcik",
+                "image" : "images/foto_4_01.png"
             }
         ],
         "dragGame": {
@@ -259,15 +267,15 @@
                     {
                         "title" : "Pirmā zinātne",
                         "content" : {
-                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma.",
+                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga",
                             "picture" : "images/foto_1_10.png",
-                            "video" : "none"
+                            "video" : ""
                         }
                     },
                     {
                         "title" : "Otrā zinātne",
                         "content" : {
-                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas da",
                             "picture" : "images/foto_4_01.png",
                             "video" : ""
                         }
@@ -283,7 +291,7 @@
                     {
                         "title" : "Ceturtā zinātne",
                         "content" : {
-                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas da",
                             "picture" : "",
                             "video" : "images/SampleVideo.mp4"
                         }
@@ -292,18 +300,52 @@
                         "title" : "Piektā zinātne",
                         "content" : {
                             "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
-                            "picture" : "images/foto_1_10.png"
+                            "picture" : "images/foto_1_10.png",
+                            "video" : ""
                         }
                     },
                     {
                         "title" : "Sestā zinātne",
                         "content" : {
                             "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
-                            "picture" : "images/foto_1_10.png"
+                            "picture" : "images/foto_1_10.png",
+                            "video" : ""
                         }
                     }
                 ]
-            }
+            },
+            "pictureGallery":[
+                {
+                    "image": "images/foto_1_07final.png",
+                    "description": "Image 00"
+                },
+                {
+                    "image": "images/foto_1_10.png",
+                    "description": "Image 01"
+                },
+                {
+                    "image": "images/foto_2_03.png",
+                    "description": "Image 02"
+                },
+                {
+                    "image": "images/foto_2_04.png",
+                    "description": "Image 03"
+                },
+                {
+                    "image": "images/foto_3_03.png",
+                    "description": "Image 04"
+                },
+                {
+                    "image": "images/foto_4_01.png",
+                    "description": "Image 05"
+                }
+            ]
+    },
+    "whereIsIss":{
+        "titleName" : "Kur atrodas ISS"
+    },
+    "issTour":{
+        "titleName" : "Kur atrodas ISS"
     },
     "checkPopup":
         {

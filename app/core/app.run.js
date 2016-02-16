@@ -33,7 +33,7 @@
         });
 
         $rootScope.back = function () {
-            if($rootScope.currentPath === '/factMyth/quiz'){
+            if($rootScope.currentPath === '/factMyth/quiz' && $rootScope.testInProgress){
                 ngDialog.open({ 
                     template: 'app/widgets/checkPopup/check.Popup.html',
                     });
@@ -47,6 +47,7 @@
              var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
              $location.path(prevUrl);
              ngDialog.close();
+             $rootScope.testInProgress = false;
         }
         
         $rootScope.closePopup = function(){

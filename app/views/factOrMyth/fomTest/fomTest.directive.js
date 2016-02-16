@@ -5,7 +5,7 @@
         .module('fomTest')
         .directive('quiz', quiz);
 
-    function quiz(quizFactory){
+    function quiz(quizFactory, ngDialog, $controller, $rootScope){
         return {
         restrict: 'EA',
         scope: {
@@ -24,9 +24,11 @@
                     scope.idArr = quizFactory.getArray();
                 };
 
-                scope.reset = function() {
+                $rootScope.reset = function() {
                     scope.inProgress = false;
                     scope.score = 0;
+                    $rootScope.score = scope.score;
+                    ngDialog.close();
                 }
 
                 scope.getQuestion = function() {
@@ -36,35 +38,69 @@
                         scope.options = q.options;
                         scope.answer = q.answer;
                         scope.answerMode = true;
+                        scope.imageSrc = q.image;
+                        $rootScope.answerText = q.answerText;
+                        $rootScope.testInProgress = true;
+                        console.log("testInProgress: "+$rootScope.testInProgress);
                     } else {
-                        scope.quizOver = true;
+//                        scope.quizOver = true;
+                        $rootScope.testInProgress = false;
+                        console.log("testInProgress: "+$rootScope.testInProgress);
+                        ngDialog.open({ 
+                        template: 'app/views/factOrMyth/fomTest/fomTest.endResult.popup.html',
+                        className: 'ngdialog-theme-default testAnswerngDialog',
+                        showClose: false,
+                        overlay: false
+                        
+//                        controller: $controller('testPopupController', {
+//                            checkAnswer:  scope.correctAns,
+//                            score: scope.score
+//                        })
+                    });
                     }
                 };
 
                 scope.checkAnswer = function(val) {
                     if(val === scope.options[scope.answer]) {
                         scope.score++;
+                        $rootScope.score = scope.score;
                         scope.correctAns = true;
-                        $('quiz').css("background-color", "green");
+                        $rootScope.correctAns = scope.correctAns;
+//                        $('quiz').css("background-color", "green");
                     } else {
                         scope.correctAns = false;
-                        $('quiz').css("background-color", "red");
+                        $rootScope.correctAns = scope.correctAns;
+                        $rootScope.score = scope.score;
+//                        $('quiz').css("background-color", "red");
                     }
+                    
+                    ngDialog.open({ 
+                        template: 'app/views/factOrMyth/fomTest/popup.answer.popup.html',
+                        className: 'ngdialog-theme-default testAnswerngDialog',
+                        showClose: false,
+                        overlay: false
+                        
+//                        controller: $controller('testPopupController', {
+//                            checkAnswer:  scope.correctAns,
+//                            score: scope.score
+//                        })
+                    });
 
                     scope.answerMode = false;
                 };
 
-                scope.nextQuestion = function() {
+                $rootScope.nextQuestion = function() {
                     scope.id++;
                     scope.getQuestion();
-                    $('quiz').css("background-color", "cadetblue");   
+//                    $('quiz').css("background-color", "cadetblue");   
+                   ngDialog.close();
                 };
                 
                 scope.getIDArr = function(){
                   scope.arr = scope.getQuestion();
                 }
 
-                scope.reset();
+                $rootScope.reset();
             }
         }   
     };

@@ -7,10 +7,10 @@
 
         function spaceHistoryController($scope, ngDialog, $anchorScroll, $location, $controller, langService, $rootScope){  
                 
-            $scope.historyObejcts = langService;
+            $scope.historyObejcts = langService.data.spaceHistory.spaceObjects;
             
             var oneContainerwidth = 240;
-            var scrollContainerDivSize = ($scope.historyObejcts.data.spaceHistory.spaceObjects.length * oneContainerwidth);
+            var scrollContainerDivSize = ($scope.historyObejcts.length * oneContainerwidth);
             
             $scope.scrollEndPosition = scrollContainerDivSize;
             console.log("scrollEndPosition: "+$scope.scrollEndPosition);
@@ -29,13 +29,13 @@
             
             $scope.openOtherHistory = function(changeLang){
                 if($scope.tempVal === 'latvian' && changeLang === true){
-                    $scope.historyObejcts.data.spaceHistory.spaceObjects = langService.data.spaceHistory.spaceObjects;
+                    $scope.historyObejcts = langService.data.spaceHistory.spaceObjects;
                     $scope.tempVal = "english";
                     console.log("ENGLISH");
                     $scope.latviaLogo = 'latviaLogo';
                     
                 } else {
-                    $scope.historyObejcts.data.spaceHistory.spaceObjects = langService.data.spaceHistory.latvianSpaceObjects;
+                    $scope.historyObejcts = langService.data.spaceHistory.latvianSpaceObjects;
                     $scope.tempVal = "latvian";
                     console.log("LATVIAN");
                     $scope.latviaLogo = 'englishLogo';
