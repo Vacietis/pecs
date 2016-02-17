@@ -317,27 +317,27 @@
             "pictureGallery":[
                 {
                     "image": "images/foto_1_07final.png",
-                    "description": "Image 00"
+                    "description": "Image 00 LV"
                 },
                 {
                     "image": "images/foto_1_10.png",
-                    "description": "Image 01"
+                    "description": "Image 01 LV"
                 },
                 {
                     "image": "images/foto_2_03.png",
-                    "description": "Image 02"
+                    "description": "Image 02 LV"
                 },
                 {
                     "image": "images/foto_2_04.png",
-                    "description": "Image 03"
+                    "description": "Image 03 LV"
                 },
                 {
                     "image": "images/foto_3_03.png",
-                    "description": "Image 04"
+                    "description": "Image 04 LV"
                 },
                 {
                     "image": "images/foto_4_01.png",
-                    "description": "Image 05"
+                    "description": "Image 05 LV"
                 }
             ]
     },

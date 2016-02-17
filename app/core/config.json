@@ -2,7 +2,6 @@
     "latvianSpaceHistory" : true,
     "languages" : {
         "lv" : "Latviešu",
-        "eng" : "Angļu",
-        "est" : "Estonian"
+        "eng" : "Angļu"
     }
 }

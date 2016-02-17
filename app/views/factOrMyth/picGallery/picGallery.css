@@ -60,6 +60,27 @@ body {
     /*background-image: url(../assets/img/paddle_next_fff.png);*/
 }
 
+.galleryText{
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    width: 1200px;
+    display: inline-block;
+}
+
+images{
+  z-index: -1;
+  position:absolute;
+  height: 100px;
+  left:0px;
+  right:0px;
+  top:0px;
+  bottom:0px;
+  background-size: 100% 100%;
+  height: auto;
+  width: auto !important;
+}
+
 
 
 /*---------------------------------------------------------

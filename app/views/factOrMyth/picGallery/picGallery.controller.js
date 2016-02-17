@@ -16,7 +16,25 @@
                 ngDialog.open({ template: 'app/views/factOrMyth/fomTest/popUp.html' });
             };
             
-            $scope.slides = langService;
+            $scope.slides = langService.data.factOrMyth.pictureGallery;
+            $scope.slidesText = langService;
+            
+            $scope.image = {
+                path: "",
+                width: 0,
+                height: 0
+            }
+//            $scope.loadimage = function () {
+//                var img = new Image();
+//                img.onload = function () {
+//                    $scope.$apply(function() {
+//                        $scope.image.width = img.width;
+//                        $scope.image.height = img.height;
+//                        $scope.image.path = "images/foto_1_10.png";
+//                      });
+//                }
+//                img.src = 'images/foto_1_10.png';
+//            }
             
             $scope.showGalleryPopup = function(videPar){
 //                console.log("BRA: "+videPar);
