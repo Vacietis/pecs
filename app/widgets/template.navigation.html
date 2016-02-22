@@ -1,0 +1,12 @@
+<a  class="btn btn-info btn-lg" ng-click='back()' ng-disabled="isHomePage">
+    <span class="glyphicon glyphicon-hand-left"></span> BACK
+  </a>
+  <a  class="btn btn-info btn-lg" ng-click='home()' ng-disabled="isHomePage">
+    <span class="glyphicon glyphicon-home"></span> HOME
+  </a>
+
+
+  <a ng-repeat="(key, value) in languages" class="btn btn-info btn-lg" 
+     ng-click='lang.changeLanguage(key)' ng-disabled="isQuizPage" ng-cloak>
+    <span class="glyphicon glyphicon-flag"></span> {{value}}
+  </a>

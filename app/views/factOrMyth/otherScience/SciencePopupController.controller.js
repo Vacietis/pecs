@@ -23,6 +23,9 @@
                 }
                 console.log(value.title);
               });
+              
+              var divHeight = angular.element('.scienceImage').height();
+            console.log("dialog width:"+divHeight);
             
             
             

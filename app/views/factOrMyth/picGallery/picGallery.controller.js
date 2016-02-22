@@ -19,11 +19,11 @@
             $scope.slides = langService.data.factOrMyth.pictureGallery;
             $scope.slidesText = langService;
             
-            $scope.image = {
-                path: "",
-                width: 0,
-                height: 0
-            }
+//            $scope.image = {
+//                path: "",
+//                width: 0,
+//                height: 0
+//            }
 //            $scope.loadimage = function () {
 //                var img = new Image();
 //                img.onload = function () {
@@ -36,8 +36,8 @@
 //                img.src = 'images/foto_1_10.png';
 //            }
             
-            $scope.showGalleryPopup = function(videPar){
-//                console.log("BRA: "+videPar);
+            $scope.showGalleryPopup = function(videPar, obj){
+//                console.log("BRA: "+obj.attrs);
                 if( $scope.swiping ) { return; }
                 ngDialog.open({ 
                     scope: $scope,

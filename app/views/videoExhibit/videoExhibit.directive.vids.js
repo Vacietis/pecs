@@ -2,29 +2,29 @@
     'use strict';
 
     angular
-        .module('picGallery')
-        .directive('inner', images);
+        .module('videoExhibit')
+        .directive('vids', vids);
 
-    function images($q){
+    function vids($q){
         return {
             restrict: 'A',
             link: function(scope, element, attrs){
                 
 //                 console.log(element.prop('height'));
                  
-                 var image = new Image();
-                 image.onload = function () {
-////                    $scope.image.width = img.width;
-////                    $scope.image.height = img.height;
-////                    $scope.image.path = $scope.imageurl;
-//                    
-                    attrs.$set('widthx',image.width);
-                    attrs.$set('heightx',image.height);
-//                        console.log("imageWidth:"+image.width);
-//                        console.log("imageHeight:"+image.height);
-                }
-
-                image.src = attrs.src;
+//                 var video = new Video();
+//                 video.onload = function () {
+//////                    $scope.image.width = img.width;
+//////                    $scope.image.height = img.height;
+//////                    $scope.image.path = $scope.imageurl;
+////                    
+//                    attrs.$set('widthx',video.width);
+//                    attrs.$set('heightx',video.height);
+////                        console.log("imageWidth:"+image.width);
+////                        console.log("imageHeight:"+image.height);
+//                }
+//
+//                video.src = attrs.src;
                  
 //               scope.preload = function(picSrc) {
 //                var deffered = $q.defer(),

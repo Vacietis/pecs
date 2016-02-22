@@ -64,12 +64,6 @@
             if($rootScope.currentPath === '/'){
                 $rootScope.isHomePage = true;
                 $rootScope.isQuizPage = false;
-            } else if($rootScope.currentPath === '/factMyth/quiz'){
-                $rootScope.isQuizPage = true;
-                $rootScope.isHomePage = false;
-            } else{
-                $rootScope.isHomePage = false;
-                $rootScope.isQuizPage = false;
             }
         });
         
@@ -81,7 +75,7 @@
 //            return viewLocation === $location.path();
 //        };
         
-        $rootScope.isHomePage = $location.path() === '#/';
+//        $rootScope.isHomePage = $location.path() === '#/';
 
 //        $rootScope.stendi = [];
 //        $http.get('lang/'+$rootScope.defaultLanguage+'.json').then(function(response) {

@@ -5,7 +5,7 @@
         .module('otherScience')
         .controller('otherScienceController', otherScienceController);
 
-        function otherScienceController($scope, ngDialog, langService, $controller){  
+        function otherScienceController($scope, ngDialog, langService, $controller, $document){  
            
             $scope.otherScienceView = langService;
             
@@ -21,6 +21,9 @@
                 });
             }
             
+            //.ngdialog.ngdialog-theme-default padding top 160pxangular.element('#appBusyIndicator') popupWrapContent
+              
+            
 //            $scope.clickToOpenHistory = function (objIndex) {
 //                ngDialog.open({ 
 //                    scope: $scope,
@@ -34,6 +37,6 @@
             
         }
         
-    otherScienceController.$inject = ['$scope', 'ngDialog', 'langService', '$controller'];
+    otherScienceController.$inject = ['$scope', 'ngDialog', 'langService', '$controller', '$document'];
        
 })();
