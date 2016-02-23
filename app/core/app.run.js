@@ -59,13 +59,13 @@
             $location.path("/");
         };
         
-        $rootScope.$on('$routeChangeStart', function() { 
-            $rootScope.currentPath = $location.path();
-            if($rootScope.currentPath === '/'){
-                $rootScope.isHomePage = true;
-                $rootScope.isQuizPage = false;
-            }
-        });
+//        $rootScope.$on('$routeChangeStart', function() { 
+//            $rootScope.currentPath = $location.path();
+//            if($rootScope.currentPath === '/'){
+//                $rootScope.isHomePage = true;
+//                $rootScope.isQuizPage = false;
+//            }
+//        });
         
 //        $routeScope.checkPath = function(path){
 //            $rootScope.currentPath = $location.path();

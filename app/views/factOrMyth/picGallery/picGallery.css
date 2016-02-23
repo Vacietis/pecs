@@ -64,7 +64,7 @@ body {
     color: white;
     font-size: 30px;
     margin: auto;
-    width: 1200px;
+    width: auto;
     display: inline-block;
 }
 

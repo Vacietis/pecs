@@ -16,6 +16,9 @@
 //                    (elementPath === locationPath) ? $element.addClass("current") : $element.removeClass("current");
 //                });
 
+            $rootScope.isHomePage = true;
+            $rootScope.isQuizPage = false
+
             $rootScope.$on('$routeChangeStart', function() { 
                 $rootScope.currentPath = $location.path();
                 if($rootScope.currentPath === '/'){

@@ -1,7 +1,13 @@
 <div class="scrollingDIV" scroll-watcher id="testDIV">
     <div class="objects" id="scrollLength" >
         <div class="object" id="object-id-{{$index}}" ng-click="clickToOpenHistory(o.objectTitle) 
-             "ng-repeat="o in historyObejcts">
+             "ng-repeat="o in lang.data.spaceHistory.spaceObjects" ng-show="tempVal == 'english'">
+            <div class="inner-object" >
+                {{o.objectTitle}}
+            </div>
+        </div>
+        <div class="object" id="object-id-{{$index}}" ng-click="clickToOpenHistory(o.objectTitle) 
+             "ng-repeat="o in lang.data.spaceHistory.latvianSpaceObjects" ng-show="tempVal == 'latvian'">
             <div class="inner-object" >
                 {{o.objectTitle}}
             </div>

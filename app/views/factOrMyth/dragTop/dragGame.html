@@ -16,11 +16,21 @@
                 ng-model="draggableArray">
                   <div ng-repeat="draggable in draggableArray" class="app">{{draggable.title}}</div>
                 </div>
-                  <ul >
+<!--                  <ul >
                     <li ng-repeat="entry in newArray" ng-show="dbIsClicked" class="logItem">
                       {{entry}}
                     </li>
-                  </ul>
+                  </ul>-->
+                    <table ng-show="dbIsClicked">
+                      <thead>
+                      <td>Jautajums</td>
+                      <td>Punkti</td>
+                      </thead>
+                        <tr ng-repeat="q in questionsDB | orderBy : 'points' : true">
+                          <td>{{ q.question }}</td>
+                          <td>{{ q.points }}</td>
+                        </tr>
+                  </table>
               </div>
             </div>
                <ol class="topOrder">

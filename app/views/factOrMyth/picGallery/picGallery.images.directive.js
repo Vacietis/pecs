@@ -8,6 +8,9 @@
     function images($q){
         return {
             restrict: 'A',
+            scope: {
+                inner: '='
+            },
             link: function(scope, element, attrs){
                 
 //                 console.log(element.prop('height'));
@@ -17,9 +20,12 @@
 ////                    $scope.image.width = img.width;
 ////                    $scope.image.height = img.height;
 ////                    $scope.image.path = $scope.imageurl;
-//                    
-                    attrs.$set('widthx',image.width);
-                    attrs.$set('heightx',image.height);
+//                  
+                    scope.inner.width = image.width;
+                    scope.inner.height = image.height;
+                    
+//                    attrs.$set('widthx',image.width);
+//                    attrs.$set('heightx',image.height);
 //                        console.log("imageWidth:"+image.width);
 //                        console.log("imageHeight:"+image.height);
                 }

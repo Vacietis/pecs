@@ -12,6 +12,10 @@
 //            $http.get('lang/lv.json').then(function(response) {
 //                $scope.stendi = response.data.stendi;
 //            });
+            
+            $scope.activeSlide = 0
+
+
             $scope.clickToOpen = function () {
                 ngDialog.open({ template: 'app/views/factOrMyth/fomTest/popUp.html' });
             };
@@ -36,8 +40,10 @@
 //                img.src = 'images/foto_1_10.png';
 //            }
             
-            $scope.showGalleryPopup = function(videPar, obj){
+            $scope.showGalleryPopup = function(videPar, pic){
 //                console.log("BRA: "+obj.attrs);
+
+                console.log("bra: "+pic.width, pic.height)
                 if( $scope.swiping ) { return; }
                 ngDialog.open({ 
                     scope: $scope,

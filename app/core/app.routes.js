@@ -26,9 +26,13 @@
         }).when('/tourIss', {
             templateUrl: 'app/views/tourISS/tourISS.iss.html',
             controller : 'issTourController'
-        }).otherwise({
+        });
+        
+/**
+ * .otherwise({
             redirectTo : '/'
         });
+ */
                 
     }
 

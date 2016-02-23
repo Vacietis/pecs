@@ -27,15 +27,16 @@
                 });
             };
             
+            $scope.tempVal = "english";
             $scope.openOtherHistory = function(changeLang){
                 if($scope.tempVal === 'latvian' && changeLang === true){
-                    $scope.historyObejcts = langService.data.spaceHistory.spaceObjects;
+                    
                     $scope.tempVal = "english";
                     console.log("ENGLISH");
                     $scope.latviaLogo = 'latviaLogo';
                     
                 } else {
-                    $scope.historyObejcts = langService.data.spaceHistory.latvianSpaceObjects;
+                    
                     $scope.tempVal = "latvian";
                     console.log("LATVIAN");
                     $scope.latviaLogo = 'englishLogo';
