@@ -37,6 +37,24 @@
     /* overflow-x: hidden; */
     margin-top: 100px;
 }
+
+.scrollEnd{
+    color: white;
+    font-size: 50px;
+    float: left;
+    margin-left: 50px;
+    animation: rightLeft 3s infinite ease;
+    position: absolute;
+}
+
+.scrollStart{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    float: left;
+    margin-left: 50px;
+    animation: leftRight 3s infinite ease;
+}
 .last{
     float: right;
     /* width: 101px; */
@@ -92,6 +110,36 @@
     border: 1px solid red;
     width: 50%;
     height: auto;
+}
+
+@keyframes rightLeft {
+    0%, 10%, 20%, 30%, 40%, 60%, 70%, 80%, 90%, 100% {
+        transform: translateX(0);
+  }
+    45% {
+        transform: translateX(4px);
+  }
+    50% {
+        transform: translateX(0px);
+  }
+    55% {
+        transform: translateX(4px);
+  }
+}
+
+@keyframes leftRight {
+    0%, 10%, 20%, 30%, 40%, 60%, 70%, 80%, 90%, 100% {
+        transform: translateX(4px);
+  }
+    45% {
+        transform: translateX(0px);
+  }
+    50% {
+        transform: translateX(4px);
+  }
+    55% {
+        transform: translateX(0px);
+  }
 }
 
 [data-message]{ position:fixed; top:0; left:0; width:100%;}

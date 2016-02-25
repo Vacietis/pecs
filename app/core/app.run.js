@@ -14,7 +14,14 @@
         $rootScope.$on('$routeChangeSuccess', function() {
             
             //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
-            history.push($location.$$path);
+            if (history.indexOf($location.$$path) == -1) {
+                history.push($location.$$path)
+                console.log("history vertibas : "+history);
+            }
+//            angular.forEach(history, function(value, key) {
+//                console.log("history vertibas : "+value);
+//            })
+//            history.push($location.$$path);
             
 //            if(history.length == 0){
 //                history.push($location.$$path);

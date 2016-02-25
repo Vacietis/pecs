@@ -11,9 +11,10 @@
             
             var oneContainerwidth = 240;
             var scrollContainerDivSize = ($scope.historyObejcts.length * oneContainerwidth);
+            //diference between element scroll position and actual conteiner width
+            var diffScrollWidth = 798;
             
-            $scope.scrollEndPosition = scrollContainerDivSize;
-            console.log("scrollEndPosition: "+$scope.scrollEndPosition);
+            $scope.scrollEndPosition = (scrollContainerDivSize-diffScrollWidth);
             
             $scope.clickToOpenHistory = function (objIndex) {
                 ngDialog.open({ 
@@ -46,6 +47,8 @@
             console.log("length: "+$scope.historyObejcts.length);
             
             document.getElementById("scrollLength").style.minWidth = (scrollContainerDivSize) +"px";
+            
+            
             
 //            $scope.scrolltoStart = function(){
 //                    elem.scrollLeft(0);
