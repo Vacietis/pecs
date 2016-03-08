@@ -50,6 +50,36 @@
                 "objectTitle": "Object 8",
                 "objectText": "Object 8 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
                 "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Vēstures notikums 25",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Vēstures notikums 26",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Vēstures notikums 27",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Vēstures notikums 28",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Vēstures notikums 29",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
+            },
+            {
+                "objectTitle": "Vēstures notikums 30",
+                "objectText": "Object 1 sdgsdgsdgsdgsdgsdgsdgsdgsdgsd",
+                "objImgPath" : "images/foto_1_10.png"
             }
         ],
         "latvianSpaceObjects": [
@@ -176,28 +206,28 @@
                 "question": "Pareiza atbilde ir mīts?",
                 "options": ["mīts", "fakts"],
                 "answer": 0,
-                "answerText" : "Pareizi jo ta ir jabut jopcik 1 ",
+                "answerText" : "Tas ir mīts tāpec .. 1 ",
                 "image" : "images/foto_1_10.png"
             },
             {
                 "question": "Pareizā atbilde ir fakts?",
                 "options": ["mīts", "fakts"],
                 "answer": 1,
-                "answerText" : "Pareizi jo ta ir jabut jopcik 2 ",
+                "answerText" : "Tas ir fakts tāpec .. 2 ",
                 "image" : "images/foto_2_03.png"
             },
             {
                 "question": "Pareiza atbilde ir mīts?",
                 "options": ["mīts", "fakts"],
                 "answer": 0,
-                "answerText" : "Pareizi jo ta ir jabut jopcik 3",
+                "answerText" : "Tas ir mīts tāpec .. 3",
                 "image" : "images/foto_2_04.png"
             },
             {
                 "question": "Pareizā atbilde ir fakts?",
-                "options": ["fakts", "mīts"],
+                "options": ["mīts", "fakts"],
                 "answer": 1,
-                "answerText" : "Pareizi jo ta ir jabut jopcik",
+                "answerText" : "Ttas ir fakts tāpec .. 4",
                 "image" : "images/foto_4_01.png"
             }
         ],
@@ -338,6 +368,22 @@
                 {
                     "image": "images/foto_4_01.png",
                     "description": "Image 05 LV"
+                },
+                {
+                    "image": "images/600x400.png",
+                    "description": "600x400 LV"
+                },
+                {
+                    "image": "images/2500x400.png",
+                    "description": "2500x400 LV"
+                },
+                {
+                    "image": "images/100x1200.png",
+                    "description": "100x1200 LV"
+                },
+                {
+                    "image": "images/100x100.png",
+                    "description": "100x100 LV"
                 }
             ]
     },

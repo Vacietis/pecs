@@ -1,6 +1,8 @@
-<h3 ng-show="correctAns">{{lang.data.factOrMyth.right}}</h3>
-<h3 ng-hide="correctAns">{{lang.data.factOrMyth.wrong}}</h3>
-score = {{score}}<br>
-correctAns = {{correctAns}}<br>
-{{answerText}}<br>
-<button type="button" class="btn btn-primary" ng-click="nextQuestion()">Primary</button>
+<div class="quizQuestionAnswer" ng-show="correctAns">{{lang.data.factOrMyth.right}}</div>
+<div class="quizQuestionAnswer" ng-hide="correctAns">{{lang.data.factOrMyth.wrong}}</div>
+<!--score = {{score}}<br>
+correctAns = {{correctAns}}<br>-->
+<br>
+<div class="quizQuestionAnswerText">{{answerText}}</div>
+<br>
+<button type="button" class="btn btn-info nextQuestion" ng-click="nextQuestion()">{{lang.data.factOrMyth.next}}</button>

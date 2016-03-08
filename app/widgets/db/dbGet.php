@@ -3,6 +3,18 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
+//define('DB_HOST', '127.0.0.1');
+//define('DB_NAME', 'dragDrop');
+//define('DB_USERNAME','root');
+//define('DB_PASSWORD','root');
+//
+//
+//$mysqli  = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+//if (mysqli_connect_errno()) {
+// echo("Failed to connect, the error message is : ". mysqli_connect_error());
+// exit();
+//}>
+
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
@@ -28,22 +40,6 @@ if (mysqli_num_rows($result)<1) {
         print "</br>datu nav</br>";
     }
     else {
-
-//print " <table>
-//  <tr>
-//    <th>Vieta</th>
-//    <th>Jautajums</th>
-//    <th>Punkti</th>
-//  </tr>";
-//$i=1;
-//    while($rinda = mysqli_fetch_array($result))
-//    {  
-//        print "<tr>" ;
-//        print "<td>".$i.".</td>" ;
-//        print "<td>".$rinda["jautajums"]."</td>" ;
-//        print "<td>".$rinda["punkti"]."</td>" ;
-//        $i++;
-//    }
         
         $outp = "";
         while($rinda = mysqli_fetch_array($result)) {

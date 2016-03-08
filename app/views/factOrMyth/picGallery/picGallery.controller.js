@@ -6,12 +6,21 @@
         .controller('picGalleryController', picGalleryController);
 //        .animation('.slide-animation', slideAnimation);
 
-        function picGalleryController($scope, ngDialog, langService, $controller){
+        function picGalleryController($scope, ngDialog, langService, $controller, $timeout){
             
-//            $scope.stendi = [];
-//            $http.get('lang/lv.json').then(function(response) {
-//                $scope.stendi = response.data.stendi;
-//            });
+            //json for dummy images
+//            {
+//                "image": "images/600x400.png",
+//                "description": "600x400 LV"
+//            },
+//            {
+//                "image": "images/2500x400.png",
+//                "description": "2500x400 LV"
+//            },
+//            {
+//                "image": "images/100x1200.png",
+//                "description": "100x1200 LV"
+//            }
             
             $scope.activeSlide = 0
 
@@ -22,6 +31,11 @@
             
             $scope.slides = langService.data.factOrMyth.pictureGallery;
             $scope.slidesText = langService;
+            
+            $scope.loaded = false;
+            $timeout(function(){
+               $scope.loaded = true; 
+            }, 500);
             
 //            $scope.image = {
 //                path: "",
@@ -43,7 +57,7 @@
             $scope.showGalleryPopup = function(videPar, pic){
 //                console.log("BRA: "+obj.attrs);
 
-                console.log("bra: "+pic.width, pic.height)
+//                console.log("bra: "+pic.width, pic.height)
                 if( $scope.swiping ) { return; }
                 ngDialog.open({ 
                     scope: $scope,
@@ -51,7 +65,9 @@
                     className: 'ngdialog-theme-default videongDialog',
                     controller: $controller('picturePopupController', {
                         $scope: $scope,
-                        name: videPar
+                        name: videPar,
+                        width: pic.width,
+                        height: pic.height
                     })
                 });
             }
@@ -124,6 +140,6 @@
 //            };
 //        }
         
-    picGalleryController.$inject = ['$scope', 'ngDialog', 'langService', '$controller'];
+    picGalleryController.$inject = ['$scope', 'ngDialog', 'langService', '$controller', '$timeout'];
        
 })();

@@ -9,11 +9,22 @@
                 
             $scope.historyObejcts = langService.data.spaceHistory.spaceObjects;
             
-            var oneContainerwidth = 240;
-            var scrollContainerDivSize = ($scope.historyObejcts.length * oneContainerwidth);
             
-            $scope.scrollEndPosition = scrollContainerDivSize;
-            console.log("scrollEndPosition: "+$scope.scrollEndPosition);
+            $scope.setScrollableWidth = function(spaceObjectArray){
+                var oneContainerwidth = 240;
+                var scrollContainerDivSize = (spaceObjectArray.length * oneContainerwidth);
+                //diference between element scroll position and actual conteiner width
+                var diffScrollWidth = 798;
+                
+                console.log("length: "+spaceObjectArray.length);
+            
+                document.getElementById("scrollLength").style.minWidth = (scrollContainerDivSize) +"px";
+                
+                $scope.scrollEndPosition = (scrollContainerDivSize-diffScrollWidth);
+                
+            }
+            
+            
             
             $scope.clickToOpenHistory = function (objIndex) {
                 ngDialog.open({ 
@@ -35,17 +46,28 @@
                     console.log("ENGLISH");
                     $scope.latviaLogo = 'latviaLogo';
                     
+                    var historyObjects = langService.data.spaceHistory.spaceObjects;
+                    
+                    $scope.setScrollableWidth(historyObjects);
+                    
+                    //lidz galam neiet situacija kad ir uzpiests latvian objects un aizskrolots lidz galam
+                    // un tad nospiests wolrd objects, tad nenomainās dati
+                    
                 } else {
                     
                     $scope.tempVal = "latvian";
                     console.log("LATVIAN");
                     $scope.latviaLogo = 'englishLogo';
+                    
+                    var latvianHistoryObjects = langService.data.spaceHistory.latvianSpaceObjects;
+                    
+                    $scope.setScrollableWidth(latvianHistoryObjects);
                 }
             }
             
-            console.log("length: "+$scope.historyObejcts.length);
             
-            document.getElementById("scrollLength").style.minWidth = (scrollContainerDivSize) +"px";
+            $scope.setScrollableWidth($scope.historyObejcts);
+            
             
 //            $scope.scrolltoStart = function(){
 //                    elem.scrollLeft(0);

@@ -1,62 +1,62 @@
 @-webkit-keyframes ngdialog-flyin {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
+/*    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);*/
   }
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+/*    -webkit-transform: translateY(0);
+    transform: translateY(0);*/
   }
 }
 
 @keyframes ngdialog-flyin {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
+/*    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);*/
   }
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+/*    -webkit-transform: translateY(0);
+    transform: translateY(0);*/
   }
 }
 
 @-webkit-keyframes ngdialog-flyout {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+/*    -webkit-transform: translateY(0);
+    transform: translateY(0);*/
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
+/*    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);*/
   }
 }
 
 @keyframes ngdialog-flyout {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+/*    -webkit-transform: translateY(0);
+    transform: translateY(0);*/
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
+/*    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);*/
   }
 }
 
 .ngdialog.ngdialog-theme-default {
-  padding-bottom: 160px;
-  padding-top: 160px;
+/*  padding-bottom: 160px;
+  padding-top: 160px;*/
 }
 
 .ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
@@ -73,13 +73,18 @@
   font-family: 'Helvetica',sans-serif;
   font-size: 1.1em;
   line-height: 1.5em;
-  margin: 0 auto;
-  max-width: 100%;
+/*  margin: 0 auto;
+  max-width: 100%;*/
   padding: 1em;
-  position: relative;
+  position: absolute;
   /* height: inherit !important; */
-  width: 1200px;
-  height: pare;
+  /*width: 50%; optional*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  z-index: 10000;
+  
   /* height: initial; */
 }
 

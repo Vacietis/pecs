@@ -5,7 +5,7 @@
         .module('fomTest')
         .directive('quiz', quiz);
 
-    function quiz(quizFactory, ngDialog, $controller, $rootScope){
+    function quiz(quizFactory, ngDialog, $controller, $rootScope, $location){
         return {
         restrict: 'EA',
         scope: {
@@ -28,6 +28,12 @@
                     scope.inProgress = false;
                     scope.score = 0;
                     $rootScope.score = scope.score;
+                    ngDialog.close();
+                }
+                
+                $rootScope.backToPrevious = function(){
+                    
+                    $location.path('/factMyth');
                     ngDialog.close();
                 }
 

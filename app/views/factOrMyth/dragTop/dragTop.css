@@ -73,6 +73,14 @@
     background-color: steelblue;
 }
 
+.loadingGIf{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url('/infoKiosk/images/loader.gif');
+    background-size: 100% 100%;
+}
+
 
 /***  Extra ***/
 

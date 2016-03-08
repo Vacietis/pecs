@@ -5,7 +5,7 @@
         .module('dragTop')
         .controller('dragTopController', dragTopController);
 
-        function dragTopController($scope, langService, ngDialog, $controller, $http){
+        function dragTopController($scope, langService, ngDialog, $controller, $http, $timeout){
 
               var originalDraggables = langService.data.factOrMyth.dragGame.dragQuestions;
               
@@ -13,7 +13,9 @@
               
               $scope.dragQuestionCount = 0;
               
-              $scope.dbIsClicked = false;
+              $scope.showLoading = false;
+              $scope.dbIsReady = false;
+              
 //              [
 //                { title: 'jautajums 1' },
 //                { title: 'jaut 2' },
@@ -47,7 +49,16 @@
               $scope.draggables = originalDraggables.map(function(x){
                 return [x];
               });
+            
+            $scope.orderByFunction = function(friend){
+                return parseInt(friend.points);
+            };
+            
               $scope.selectedComponents = [];
+//                for(var i= 0; i<=10; i++){
+//                    $scope.selectedComponents.push({"question": "jautajums"+i});
+//                }
+//            console.log($scope.selectedComponents);
 
 
 
@@ -75,7 +86,8 @@
               $scope.sortableOptions = {};
               
               $scope.logModels = function () {
-                  $scope.dbIsClicked = true;
+                  $scope.showLoading = true;
+                  $scope.dbIsReady = false;
                     $scope.newArray = [];
                     $scope.sortingLog = [];
                     var count = 11;
@@ -83,54 +95,34 @@
                     var logEntry = $scope.selectedComponents.map(function (x) {
                         place++;
                         count--;
-                        var tempObj = {"title":x.title, "punkti":count};
+                        var tempObj = {"question":x.title, "points":count};
                         $scope.newArray.push(tempObj);
                       return tempObj;
                     }).join('');
 
-                    console.log(newArray);
-                    $scope.sortingLog.push(logEntry);
+                    console.log($scope.newArray);
+//                    $scope.sortingLog.push(logEntry);
+//
+                $scope.saveRank();
 
-                $scope.saveUser();
-
-                    
-//                $http.get("http://localhost/infoKiosk/app/widgets/db/dbconection.php")
-//                 .then(function (response) {$scope.questionsDB = response.data.records;});
-         
-                 };
-                 
-                 $scope.saveUser = function(){
+                };
+            
+                $scope.saveRank = function(){
                     $http({
                       method: 'post',
-                      url: 'http://localhost/infoKiosk/app/widgets/db/dbconection.php',
-                      data: $.param({'questionObj' : $scope.newArray, 'type' : 'save_rank' }),
+                      url: 'http://localhost/infoKiosk/app/widgets/db/dbInsert.php',
+                      data: $.param({'questionArr' : $scope.newArray}),
                       headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                        
                     }).
                     success(function(data, status, headers, config) {
-                        console.log("succes Post");
-//                        if(data.success){
-//                            if( $scope.editMode ){
-//                                $scope.post.users[$scope.index].id = data.id;
-//                                $scope.post.users[$scope.index].name = $scope.tempUser.name;
-//                                $scope.post.users[$scope.index].email = $scope.tempUser.email;
-//                                $scope.post.users[$scope.index].companyName = $scope.tempUser.companyName;
-//                                $scope.post.users[$scope.index].designation = $scope.tempUser.designation;
-//                            }else{
-//                                $scope.post.users.push({
-//                                    id : data.id,
-//                                    name : $scope.tempUser.name,
-//                                    email : $scope.tempUser.email,
-//                                    companyName : $scope.tempUser.companyName,
-//                                    designation : $scope.tempUser.designation
-//                                });
-//                            }
-//                            $scope.messageSuccess(data.message);
-//                            $scope.userForm.$setPristine();
-//                            $scope.tempUser = {};
-//
-//                        }else{
-//                            $scope.messageFailure(data.message);
-//                        }
+                        console.log("succses Post");
+                        console.log(data);
+                        
+                        $timeout(function() {
+                            $scope.getRank()
+                        }, 0); 
+                        
                     }).
                     error(function(data, status, headers, config) {
                         //$scope.codeStatus = response || "Request failed";
@@ -139,8 +131,18 @@
                     });
                 }
             
+                $scope.getRank = function(){
+                    $http.get("http://localhost/infoKiosk/app/widgets/db/dbGet.php")
+                     .then(function (response) {
+                            $scope.questionsDB = response.data.records;
+                            $scope.orderByFunction($scope.questionsDB);
+                            $scope.dbIsReady = true;
+                            $scope.showLoading = false;
+                        });
+                }
+            
         }
         
-    dragTopController.$inject = ['$scope', 'langService', 'ngDialog', '$controller', '$http'];
+    dragTopController.$inject = ['$scope', 'langService', 'ngDialog', '$controller', '$http', '$timeout'];
        
 })();

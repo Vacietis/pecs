@@ -29,6 +29,13 @@
 //                        console.log("imageWidth:"+image.width);
 //                        console.log("imageHeight:"+image.height);
                 }
+                
+                element.css({
+                  "background-image": "url('" + attrs.src + "')",
+                  "background-size": "contain",
+                  "background-repeat": "no-repeat",
+                  "background-position": "center center"
+                });
 
                 image.src = attrs.src;
                  

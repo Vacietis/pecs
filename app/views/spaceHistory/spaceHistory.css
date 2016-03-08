@@ -18,13 +18,13 @@
 .object.ng-binding.ng-scope {}
 
 .objects{
-    /* border: 1px solid red; */
-    /* width: 1400px; */
-    /* overflow-x: auto; */
+    /* border: 1px solid red; /
+    / width: 1400px; /
+    / overflow-x: auto; */
     height: 300px;
     min-width: 2000px;
     overflow: x-scroll;
-    background-image: url('/InfoKiosk/images/back-stripe.png');
+    background-image: url('/infoKiosk/images/back-stripe.png');
     background-size: 100% 100%;
 }
 
@@ -36,6 +36,34 @@
     overflow-x: scroll;
     /* overflow-x: hidden; */
     margin-top: 100px;
+}
+
+.scrolIcons{
+    
+    position: absolute;
+    left: 50%;
+}
+
+.scrollStart.ng-hide-add, .scrollEnd.ng-hide-add {
+    display: none  !important;
+}
+
+.scrollEnd{
+    color: white;
+    font-size: 50px;
+    float: left;
+    margin-left: 50px;
+    animation: rightLeft 3s infinite ease;
+    
+}
+
+.scrollStart{
+    
+    color: white;
+    font-size: 50px;
+    float: left;
+    margin-left: 50px;
+    animation: leftRight 3s infinite ease;
 }
 .last{
     float: right;
@@ -64,7 +92,7 @@
     cursor: pointer;
     position: absolute;
     margin: 20px;
-    background: url('/InfoKiosk/images/latvia.png');
+    background: url('/infoKiosk/images/latvia.png');
     background-size: 100% 100%;
 }
 
@@ -76,7 +104,7 @@
     cursor: pointer;
     position: absolute;
     margin: 20px;
-    background: url('/InfoKiosk/images/world.png');
+    background: url('/infoKiosk/images/world.png');
     background-size: 100% 100%;
 }
 
@@ -92,6 +120,36 @@
     border: 1px solid red;
     width: 50%;
     height: auto;
+}
+
+@keyframes rightLeft {
+    0%, 10%, 20%, 30%, 40%, 60%, 70%, 80%, 90%, 100% {
+        transform: translateX(0);
+  }
+    45% {
+        transform: translateX(4px);
+  }
+    50% {
+        transform: translateX(0px);
+  }
+    55% {
+        transform: translateX(4px);
+  }
+}
+
+@keyframes leftRight {
+    0%, 10%, 20%, 30%, 40%, 60%, 70%, 80%, 90%, 100% {
+        transform: translateX(4px);
+  }
+    45% {
+        transform: translateX(0px);
+  }
+    50% {
+        transform: translateX(4px);
+  }
+    55% {
+        transform: translateX(0px);
+  }
 }
 
 [data-message]{ position:fixed; top:0; left:0; width:100%;}

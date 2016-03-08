@@ -1,7 +1,6 @@
 .testAnswerngDialog .ngdialog-content{
-    border: 5px solid orange;
-    width: 1270px !important;
-    height: 629px !important;
+    border: 2px dotted orange;
+    width: auto !important;
 }
 .imageDiv{
     width: 400px;
@@ -9,3 +8,20 @@
 }
 
 .answerButtons:nth-child(even) {background-color: #CCC !important}
+
+.quizQuestionAnswer{
+    font-size: 300px;
+    line-height: 300px;
+}
+
+.quizQuestionAnswerText{
+    font-size: 50px;
+    line-height: 50px;
+    font-style: italic;
+}
+
+.nextQuestion{
+    width: 200px;
+    height: 100px;
+    float: right;
+}

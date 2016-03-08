@@ -21,12 +21,15 @@
                       {{entry}}
                     </li>
                   </ul>-->
-                    <table ng-show="dbIsClicked">
+                <div class="loadingGIf" ng-show="showLoading"></div>
+                <table ng-show="dbIsReady">
                       <thead>
+                        <td>nr.p.k</td>
                       <td>Jautajums</td>
                       <td>Punkti</td>
                       </thead>
-                        <tr ng-repeat="q in questionsDB | orderBy : 'points' : true">
+                        <tr ng-repeat="q in questionsDB | orderBy : orderByFunction : true">
+                        <td>{{$index+1}}.</td>
                           <td>{{ q.question }}</td>
                           <td>{{ q.points }}</td>
                         </tr>
@@ -44,7 +47,7 @@
             </div>
             <div style="clear: both;"></div>
         </div>
-        <button type="button" class="dbButton" ng-click="logModels()" ng-show="dragQuestionCount == 10">{{save}}</button>
+        <button ng-show="dragQuestionCount == 10" type="button" class="dbButton" ng-click="logModels()" >{{save}}</button>
 
           <div class="floatright">
               
@@ -59,34 +62,5 @@
 
           
 </div>
-
-
-
-
-        
-        <!--<span data-drag="true" jqyoui-draggable>So you think you can drag</span>-->
-<!--<div class="btn btn-primary" data-drag="true" data-jqyoui-options="{revert: 'invalid'}" ng-model="list1" jqyoui-draggable="{animate:true}" ng-hide="!list1.title">{{list1.title}}</div>
-    </div>
-    <div class="rightSide">
-        
-        <div ng-repeat="q in dragQuestions" data-drag="true" class="thumbnail" data-drop="true" data-jqyoui-options  jqyoui-droppable style='height:50px;'>
-            
-            <div data-drag="true" data-jqyoui-options="{revert: 'invalid'}" jqyoui-draggable jqyoui-droppable="{index: {{$index}}}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-direction="{{item.jqyouiDirection}}"></div>    
-                
-        </div>
-        
-        <div class='contentWrapper ng-cloak'>
-        <div class='content'>
-          <div class="row-fluid">
-            <ul class="thumbnails">
-              <li class="thumbnail vthumbnail" ng-repeat="item in list1" data-drop="true" data-drag="true" ng-model="list1" jqyoui-droppable="{index: {{$index}}}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-direction="{{item.jqyouiDirection}}">
-                <h1>{{item.title}}</h1>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-        
-    </div>-->
 </div>
 <div class="btn btn-info" ng-click="clickToOpenDragGame(true)">PopUP</div>

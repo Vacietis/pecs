@@ -1,6 +1,7 @@
 
-<h2>{{lang.data.factOrMyth.endOfTest}}</h2>
+<div class="quizQuestionAnswer" ng-show="correctAns">{{lang.data.factOrMyth.endOfTest}}</div>
 <div id="score">
-    {{lang.data.factOrMyth.score}} : {{score}}
+    {{lang.data.factOrMyth.score}} : {{score}} from {{arr.length}}
 </div>
 <button ng-click="reset()">{{lang.data.factOrMyth.playAgain}}</button>
+<button ng-click="backToPrevious()">back</button>

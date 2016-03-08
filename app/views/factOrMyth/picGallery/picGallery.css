@@ -6,6 +6,20 @@ body {
     background-color: #000000;
 }
 
+
+slick{
+    opacity: 0;
+    transition: 500ms opacity linear;
+}
+
+.customSlick{
+    
+}
+
+.slickLoaded{
+    opacity: 1;
+}
+
 .slider {
     width: 800px;
     height: 677px;
