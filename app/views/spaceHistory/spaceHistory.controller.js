@@ -25,7 +25,6 @@
             }
             
             
-            
             $scope.clickToOpenHistory = function (objIndex) {
                 ngDialog.open({ 
                     scope: $scope,
@@ -68,21 +67,6 @@
             
             $scope.setScrollableWidth($scope.historyObejcts);
             
-            
-//            $scope.scrolltoStart = function(){
-//                    elem.scrollLeft(0);
-//                }
-//                
-//            $scope.scrolltoEnd = function(){
-//                //elem.scrollLeft(elem.scrollWidth());
-//                console.log($scope.scrollEndPosition);
-//            }
-            
-//            $scope.scrollto = function (scrollPath){
-//                $location.hash(scrollPath);
-//                //$anchorScroll.xOffset = 250;
-//                $anchorScroll();
-//            } 
         }
         
     spaceHistoryController.$inject = ['$scope', 'ngDialog', '$anchorScroll', '$location', '$controller', 'langService', '$rootScope' ];

@@ -53,12 +53,10 @@
     font-size: 50px;
     float: left;
     margin-left: 50px;
-    animation: rightLeft 3s infinite ease;
-    
+    animation: rightLeft 3s infinite ease;   
 }
 
 .scrollStart{
-    
     color: white;
     font-size: 50px;
     float: left;
