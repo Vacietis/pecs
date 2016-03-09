@@ -34,7 +34,8 @@
                   "background-image": "url('" + attrs.src + "')",
                   "background-size": "contain",
                   "background-repeat": "no-repeat",
-                  "background-position": "center center"
+                  "background-position": "center center",
+                  "border": "3px dotted orange"
                 });
 
                 image.src = attrs.src;

@@ -8,7 +8,43 @@
     function vids($q){
         return {
             restrict: 'A',
+            scope:{
+              vids: '='  
+            },
             link: function(scope, element, attrs){
+                console.log("src = "+element.attr('source'));
+//                 var vid = $('<video style="display: none;"/>');
+//                    vid.append('<source src="'+element.attr('src')+'" type="video/mp4"/></source>')
+//                    vid.on('canplay', function(){
+//
+//                        console.log("imageWidth:"+vid[0].videoWidth);
+//                        console.log("imageHeight:"+vid[0].videoHeight);
+//                        vid.remove();
+//                        
+//                    });
+                
+//                var vdo = element.find('video')[0];
+//                vdo.on('loadstart', function () {
+//                   console.log('onloadstart');
+//                });
+                
+//                var video = document.createElement('video');
+//                video.src = 'images/SampleVideo.mp4';
+//                
+//                video.on('loadedmetadata', function() {
+//        
+//                    console.log("stradaaaa");
+//
+//                });
+//                video.bind('loadeddata', function(e) {
+//                    console.log(e.target.duration);
+//                  });
+//                video.onload('canplay', function(){
+//                    
+//                     console.log("videoWidth:"+video[0].videoWidth);
+//                     console.log("videoHeight:"+video[0].videoHeight);
+//                    video.remove();
+//                });
                 
 //                 console.log(element.prop('height'));
                  

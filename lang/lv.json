@@ -149,8 +149,8 @@
                             },
                             {
                                 "videoTitle" : "video4",
-                                "video" : "images/SampleVideo.mp4",
-                                "objImgPath" : "images/foto_1_10.png"
+                                "video" : "images/fhdvideo.mp4",
+                                "objImgPath" : "images/foto_2_03.png"
                             }
                         ]
             },
@@ -159,22 +159,22 @@
                     "code": "moon",
                     "videoList": [
                             {
-                                "videoTitle" : "video1",
+                                "videoTitle" : "video5",
                                 "video": "images/SampleVideo.mp4",
                                 "objImgPath" : "images/foto_4_01.png"
                             },
                             {
-                                "videoTitle" : "video2",
+                                "videoTitle" : "video6",
                                 "video" : "images/SampleVideo.mp4",
                                 "objImgPath" : "images/foto_4_01.png"
                             },
                             {
-                                "videoTitle" : "video3",
+                                "videoTitle" : "video7",
                                 "video" : "images/SampleVideo.mp4",
                                 "objImgPath" : "images/foto_4_01.png"
                             },
                             {
-                                "videoTitle" : "video4",
+                                "videoTitle" : "video8",
                                 "video" : "images/SampleVideo.mp4",
                                 "objImgPath" : "images/foto_4_01.png"
                             }
@@ -380,10 +380,6 @@
                 {
                     "image": "images/100x1200.png",
                     "description": "100x1200 LV"
-                },
-                {
-                    "image": "images/100x100.png",
-                    "description": "100x100 LV"
                 }
             ]
     },

@@ -1,10 +1,16 @@
-.videoClass video{
-    width: 1160px !important;
-}
 
 .videongDialog .ngdialog-content{
 /*    border: 1px solid red;
     width: auto !important;*/
+}
+
+.slick-wrapper{
+    opacity: 0;
+    transition: 500ms opacity linear;
+}
+
+.slickLoaded{
+    opacity: 1;
 }
 
 .rightBlur{

@@ -6,7 +6,7 @@
         .controller('picturePopupController', picturePopupController);
 //        .animation('.slide-animation', slideAnimation);
 
-        function picturePopupController($scope, name, width, height, $window, langService){
+        function picturePopupController($scope, name, width, height, langService){
             
             var tempArr = langService.data.factOrMyth.pictureGallery;
             

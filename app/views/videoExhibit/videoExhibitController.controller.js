@@ -5,28 +5,34 @@
         .module('videoExhibit')
         .controller('videoExhibitController', videoExhibitController);
 
-        function videoExhibitController($scope, langService, ngDialog, $controller, $route){
+        function videoExhibitController($scope, langService, ngDialog, $controller, $route, $timeout){
             
             $scope.videoList = langService;
             
             var paramValue = $route.current.$$route.paramExample;
             $scope.clickedPath = paramValue;
             
-            $scope.showVideoPopup = function(videPar, fromTemplate){
+            $scope.loaded = false;
+            $timeout(function(){
+               $scope.loaded = true; 
+            }, 500);
+            
+            $scope.showVideoPopup = function(videoObj){
                 if( $scope.swiping ) { return; }
+                
                 ngDialog.open({ 
                     scope: $scope,
                     template: 'app/views/videoExhibit/videoExhibit.popUp.html',
-                    className: 'ngdialog-theme-default videongDialog',
                     controller: $controller('videoPopupController', {
                         $scope: $scope,
-                        name: videPar,
-                        list: fromTemplate
+                        name: videoObj.videoTitle,
+                        videoWidth: videoObj.width,
+                        videoHeight: videoObj.height
                     })
                 });
             }
         }
         
-    videoExhibitController.$inject = ['$scope', 'langService', 'ngDialog', '$controller', '$route'];
+    videoExhibitController.$inject = ['$scope', 'langService', 'ngDialog', '$controller', '$route', '$timeout'];
        
 })();

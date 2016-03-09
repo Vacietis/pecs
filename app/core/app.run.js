@@ -16,7 +16,7 @@
             //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
             if (history.indexOf($location.$$path) == -1) {
                 history.push($location.$$path)
-                console.log("history vertibas : "+history);
+//                console.log("history vertibas : "+history);
             }
 //            angular.forEach(history, function(value, key) {
 //                console.log("history vertibas : "+value);
