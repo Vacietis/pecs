@@ -8,7 +8,7 @@
     function navigation($rootScope, $location){
         return {
             retrict : 'E',
-            templateUrl: 'app/widgets/template.navigation.html',
+            templateUrl: 'app/widgets/templates/template.navigation.html',
             link: function($scope, $element, $attrs) {
 //                var elementPath = $attrs.href.substring(1);
 //                $scope.$location = location;

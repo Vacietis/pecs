@@ -1,0 +1,15 @@
+<div class="controlWrapper">
+    <div ng-class="playPause" class="play-pause-button glyphicon glyphicon-play" ng-click="customPlay()"></div>
+    <div class="volume-button glyphicon glyphicon-volume-up" ng-click="customVolume()">
+        
+        <div ng-show="volumeIsClicked" class="volume-bar">
+            <div class="volume-wrapper"></div>
+            <div class="video-volume">{{currentVideoVolume}}</div>
+            <input class="valume-bar-input" type="range" value="50" min="0" max="100" step="10" orient="vertical">
+        </div>
+    </div>
+    <div class="seek-bar">
+        <input class="seek-bar-input"type="range" min="0" max="100" value="0" step="10">
+    </div>
+    <div class="video-time"></div>
+</div>

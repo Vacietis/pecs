@@ -12,10 +12,18 @@
             var paramValue = $route.current.$$route.paramExample;
             $scope.clickedPath = paramValue;
             
+//            $scope.pauseOrPlay = function(e){
+//                var videoElements = angular.element(e.srcElement);
+//                videoElements[0].pause();
+//                console.log("working");
+//            }
+            
             $scope.loaded = false;
             $timeout(function(){
                $scope.loaded = true; 
             }, 500);
+            
+            
             
             $scope.showVideoPopup = function(videoObj){
                 if( $scope.swiping ) { return; }
@@ -27,7 +35,8 @@
                         $scope: $scope,
                         name: videoObj.videoTitle,
                         videoWidth: videoObj.width,
-                        videoHeight: videoObj.height
+                        videoHeight: videoObj.height,
+                        videoDuration: videoObj.duration
                     })
                 });
             }

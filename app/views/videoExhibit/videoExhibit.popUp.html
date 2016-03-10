@@ -1,5 +1,6 @@
-<div class="videoClass">
-    <video ng-style="{width: {{widthx}} + 'px',height: {{heightx}} + 'px'}" controls>
+<div class="videoClass" video-controls>
+    <video id="video-popup" ng-style="{width: {{widthx}} + 'px',height: {{heightx}} + 'px'}">
         <source ng-src="{{videoSrc}}" type="video/mp4">
     </video>
 </div>
+<video-controls vid="video-popup" duration="videoDur"></video-controls>

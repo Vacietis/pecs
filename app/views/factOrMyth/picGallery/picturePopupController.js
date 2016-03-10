@@ -52,6 +52,6 @@
             });
         }
         
-    picturePopupController.$inject = ['$scope', 'name', 'width', 'height', '$window', 'langService'];
+    picturePopupController.$inject = ['$scope', 'name', 'width', 'height', 'langService'];
        
 })();

@@ -21,6 +21,10 @@
                     
                     scope.saturs.width = vid[0].videoWidth;
                     scope.saturs.height = vid[0].videoHeight;
+                    scope.saturs.duration = vid[0].duration;
+                    
+//                    console.log(" scope.saturs.duration "+ scope.saturs.duration);
+//                    console.log(" scope.saturs.currentTime "+ scope.saturs.currentTime);
                     
                     vid.remove();
                     

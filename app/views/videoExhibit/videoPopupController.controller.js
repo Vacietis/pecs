@@ -5,7 +5,7 @@
         .module('videoExhibit')
         .controller('videoPopupController', videoPopupController);
 
-        function videoPopupController($scope, name, videoWidth, videoHeight, langService){
+        function videoPopupController($scope, name, videoWidth, videoHeight, videoDuration, langService){
             
             var tempArr = langService.data.videoExhibit.videoParts;
             
@@ -39,6 +39,8 @@
             $scope.widthx = vWidth;
             $scope.heightx = vHeight;
             
+            $scope.videoDur = videoDuration;
+            
             console.log("videoTitle : "+name);
             console.log("window : "+windowSize.width+"x"+windowSize.height);
             console.log("video Start: "+videoSize.width+"x"+videoSize.height);
@@ -67,6 +69,6 @@
             
         }
         
-    videoPopupController.$inject = ['$scope', 'name', 'videoWidth', 'videoHeight', 'langService'];
+    videoPopupController.$inject = ['$scope', 'name', 'videoWidth', 'videoHeight', 'videoDuration', 'langService'];
        
 })();

@@ -10,6 +10,11 @@
         var history = [];
         $rootScope.currentPath = null;
         $rootScope.lang = langService;
+    
+        // to prevent inspect element and other stuff
+//        document.addEventListener('contextmenu', function(e){
+//            e.preventDefault();
+//        })
 
         $rootScope.$on('$routeChangeSuccess', function() {
             

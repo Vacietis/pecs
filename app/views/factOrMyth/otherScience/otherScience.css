@@ -1,6 +1,8 @@
 .sciencengDialog .ngdialog-content{
     /* border: 1px solid red; */
     width: 700px !important;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 .scienceImage{
@@ -28,6 +30,13 @@
     margin: 5px;
     /* border: 1px solid red; */
     /* display: block; */
+}
+
+.floatedPic2{
+    float: left;
+    width: auto;
+    margin: 5px;
+    top:100px;
 }
 .floatedVid {
     /* border: 1px solid red; */

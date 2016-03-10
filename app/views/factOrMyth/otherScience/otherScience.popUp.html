@@ -1,8 +1,9 @@
 <h2>{{objName}}</h2>
 <div class="popupContent" id="popupWrapContent">
-    <div class="floatedPic">
+    <div class="floatedPic" >
         <img class="scienceImage" id="imageID" ng-src="{{imagePath}}" ng-hide="imagePath == ''"/>
     </div>
+    
     <div class="floatedVid" ng-hide="videoSrc == ''">
         <video controls>
             <source ng-src="{{videoSrc}}" type="video/mp4">

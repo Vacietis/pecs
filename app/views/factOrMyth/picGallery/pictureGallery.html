@@ -1,5 +1,5 @@
-    
-    <slick ng-class="{slickLoaded: loaded}" dots="true" infinite="true" speed="150" slides-to-show="1" 
+<div ng-class="{slickLoaded: loaded}" class="slick-wrapper">        
+    <slick dots="true" infinite="true" speed="150" slides-to-show="1" 
            touch-move="true" slides-to-scroll="1" center-padding="250px" 
            center-mode="true" arrows="false" focus-on-select="false" break-point="500"
            current-index="activeSlide">
@@ -18,6 +18,7 @@
                ng-show="activeSlide == $index">{{picText.description}}</p>
         
     </slick>
+</div>
     
     <div class="rightBlur" ng-show="loaded"></div>
     <div class="leftBlur" ng-show="loaded"></div>
