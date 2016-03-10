@@ -28,7 +28,8 @@
             $scope.showVideoPopup = function(videoObj){
                 if( $scope.swiping ) { return; }
                 
-                ngDialog.open({ 
+                if(videoObj.isLoaded){
+                    ngDialog.open({ 
                     scope: $scope,
                     template: 'app/views/videoExhibit/videoExhibit.popUp.html',
                     controller: $controller('videoPopupController', {
@@ -39,6 +40,8 @@
                         videoDuration: videoObj.duration
                     })
                 });
+                }
+                
             }
         }
         

@@ -21,6 +21,8 @@
 //                "image": "images/100x1200.png",
 //                "description": "100x1200 LV"
 //            }
+
+            $scope.swiping = false;
             
             $scope.activeSlide = 0
 
@@ -36,29 +38,13 @@
             $timeout(function(){
                $scope.loaded = true; 
             }, 500);
-            
-//            $scope.image = {
-//                path: "",
-//                width: 0,
-//                height: 0
-//            }
-//            $scope.loadimage = function () {
-//                var img = new Image();
-//                img.onload = function () {
-//                    $scope.$apply(function() {
-//                        $scope.image.width = img.width;
-//                        $scope.image.height = img.height;
-//                        $scope.image.path = "images/foto_1_10.png";
-//                      });
-//                }
-//                img.src = 'images/foto_1_10.png';
-//            }
-            
+                     
             $scope.showGalleryPopup = function(videPar, pic){
-//                console.log("BRA: "+obj.attrs);
 
-//                console.log("bra: "+pic.width, pic.height)
-                if( $scope.swiping ) { return; }
+                if( $scope.swiping ) { 
+                    return;
+                }
+                
                 ngDialog.open({ 
                     scope: $scope,
                     template: 'app/views/factOrMyth/picGallery/picGallery.popup.html',
