@@ -5,6 +5,15 @@
         .module('mainApp')
         .factory('resize', resize);
 
+    /**
+     * resize service function is to check if passed object parameters (width x height)
+     * fits in opened window
+     * And edits varibles:
+     *                    windowSize.objectsResizedHeight,
+     *                    windowSize.objectsResizedWidth
+     * stores correct size to use them to modify some objects size;
+     * @returns {app.resize.service_L1.resize.windowSize}
+     */    
     function resize(){
         
         var windowSize = {

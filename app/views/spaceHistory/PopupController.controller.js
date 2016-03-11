@@ -11,7 +11,6 @@
           
             if(typeof historyObj === "undefined" || historyObj === "english"){
                 tempArr = langService.data.spaceHistory.spaceObjects;
-                console.log("trapijju");
             } else {
                 tempArr = langService.data.spaceHistory.latvianSpaceObjects;
             }

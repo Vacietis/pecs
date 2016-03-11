@@ -13,7 +13,6 @@
                 //eleemnta platums
                 var elementWidth = elem[0].offsetWidth;
                 
-                console.log("spaceHistoryScroll.getScrollPosition(): "+$window.Math.round(spaceHistoryScroll.getScrollPosition()));
                 scope.scrollValue = $window.Math.round(spaceHistoryScroll.getScrollPosition());
                 
 //                scope.scrollStartPosition = 0;
@@ -43,9 +42,9 @@
                     var left = this.scrollLeft;
                     scope.$apply(function(){
                         scope.scrollValue = left;
-                        if(left == 0){
+                        if(left === 0){
                             scope.isScrolledToStart = true;
-                        } else if(left == scope.scrollEndPosition){
+                        } else if(left === scope.scrollEndPosition){
                             scope.isScrolledToEnd = true;
                         } else {
                             scope.isScrolledToStart = false;
