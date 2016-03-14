@@ -16,6 +16,8 @@
               $scope.showLoading = false;
               $scope.dbIsReady = false;
               
+              
+              
 //              [
 //                { title: 'jautajums 1' },
 //                { title: 'jaut 2' },
@@ -70,7 +72,7 @@
                   // if the element is removed from the first container
                   if (ui.item.sortable.source.hasClass('draggable-element-container') &&
                       ui.item.sortable.droptarget &&
-                      ui.item.sortable.droptarget != ui.item.sortable.source &&
+                      ui.item.sortable.droptarget !== ui.item.sortable.source &&
                       ui.item.sortable.droptarget.hasClass('connected-drop-target-sortable')) {
                     // restore the removed item
 //                    ui.item.sortable.sourceModel.push(ui.item.sortable.model);
@@ -78,12 +80,14 @@
                         $scope.dragQuestionCount++;
                         
                         $scope.notDragged = "saved";
+                        
+//                        console.log("selectedComponents"+$scope.selectedComponents);
                   }
                     
                 }
               };
 
-              $scope.sortableOptions = {};
+//              $scope.sortableOptions = {};
               
               $scope.logModels = function () {
                   $scope.showLoading = true;

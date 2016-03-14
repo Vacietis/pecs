@@ -19,7 +19,7 @@
         $rootScope.$on('$routeChangeSuccess', function() {
             
             //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
-            if (history.indexOf($location.$$path) == -1) {
+            if (history.indexOf($location.$$path) === -1) {
                 history.push($location.$$path)
 //                console.log("history vertibas : "+history);
             }
@@ -67,9 +67,20 @@
         }
 
         $rootScope.home = function () {
-            history.length = 0;
-            $location.path("/");
+            
+            if($rootScope.currentPath === '/factMyth/quiz' && $rootScope.testInProgress){
+                ngDialog.open({ 
+                    template: 'app/widgets/checkPopup/check.Popup.html',
+                    });
+            } else {
+                
+                history.length = 0;
+                $location.path("/");
+            }   
+            
         };
+        
+        
         
 //        $rootScope.$on('$routeChangeStart', function() { 
 //            $rootScope.currentPath = $location.path();

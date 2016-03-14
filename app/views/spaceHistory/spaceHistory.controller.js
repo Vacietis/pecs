@@ -51,6 +51,13 @@
                     
                     $scope.setScrollableWidth(historyObjects);
                     
+                    console.log("END "+ $scope.isScrolledToEnd);
+                    console.log("START "+$scope.isScrolledToStart);
+                    
+                    if($scope.isScrolledToEnd){
+                        $rootScope.$broadcast('endPosition',{});
+                    }
+                    
                     //lidz galam neiet situacija kad ir uzpiests latvian objects un aizskrolots lidz galam
                     // un tad nospiests wolrd objects, tad neaizscrollojas lidz world object beigam
                     // un neparadas ka var pascrollot pa labi
@@ -62,7 +69,12 @@
                     
                     var latvianHistoryObjects = langService.data.spaceHistory.latvianSpaceObjects;
                     
-                    $scope.isScrolledToEnd = false;
+                    console.log("END "+ $scope.isScrolledToEnd);
+                    console.log("START "+ $scope.isScrolledToStart);
+                    
+                    if($scope.isScrolledToEnd){
+                        $rootScope.$broadcast('endPosition',{});
+                    }
                     
                     $scope.setScrollableWidth(latvianHistoryObjects);
                 }

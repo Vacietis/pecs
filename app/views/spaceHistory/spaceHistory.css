@@ -51,8 +51,8 @@
 .scrollEnd{
     color: white;
     font-size: 50px;
-    float: left;
-    margin-left: 50px;
+    float: right;
+    margin-right: 250px;
     animation: rightLeft 3s infinite ease;   
 }
 
@@ -60,19 +60,34 @@
     color: white;
     font-size: 50px;
     float: left;
-    margin-left: 50px;
+    margin-left: 250px;
     animation: leftRight 3s infinite ease;
 }
+.button-wrapper{
+    width: auto;
+    height: 50px;
+    margin: auto;
+    color: white;
+    font-size: 3em;
+    width: 800px;
+}
+.button-wrapper div{
+    cursor: pointer;
+}
+
+.first{
+    float: left;
+}
+
 .last{
     float: right;
-    /* width: 101px; */
 }
 
 .log{
     margin: auto;
     /* float: none; */
     width: auto;
-    width: 200px;
+    width: 50px;
     color: white;
     font-size: 30px;
 }

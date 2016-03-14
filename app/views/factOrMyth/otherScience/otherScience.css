@@ -1,8 +1,8 @@
 .sciencengDialog .ngdialog-content{
     /* border: 1px solid red; */
-    width: 700px !important;
-    max-height: 500px;
-    overflow-y: scroll;
+    width: 1000px !important;
+    /*max-height: 500px;*/
+/*    overflow-y: scroll;*/
 }
 
 .scienceImage{

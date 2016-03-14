@@ -1,9 +1,6 @@
 
-<div class="scrolIcons">
-    <div class="scrollStart glyphicon glyphicon-chevron-left" ng-hide="isScrolledToStart"></div>
-    <div class="scrollEnd glyphicon glyphicon-chevron-right" ng-hide="isScrolledToEnd"></div>
-</div>
-<div class="scrollingDIV" scroll-watcher id="testDIV">
+<div class="headName">{{lang.data.spaceHistory.title}}</div>
+<div class="scrollingDIV" scroll-watcher control="focusinControl" id="testDIV">
     <div class="objects" id="scrollLength" >
         <div class="object" id="object-id-{{$index}}" ng-click="clickToOpenHistory(o.objectTitle) 
              "ng-repeat="o in lang.data.spaceHistory.spaceObjects" ng-show="tempVal == 'english'">
@@ -19,8 +16,13 @@
         </div>
     </div>
 </div>
-<div class="btn btn-danger first" ng-click="scrolltoStart()">First element</div>
-<div class="btn btn-success last" ng-click="scrolltoEnd()">Last element</div>
+<div class="button-wrapper">
+    <div class="glyphicon glyphicon-fast-backward first" ng-click="scrolltoStart()"></div>
+    <div class="scrollStart glyphicon glyphicon-chevron-left" ng-hide="isScrolledToStart"></div>
+    <div class="glyphicon glyphicon-fast-forward last" ng-click="scrolltoEnd()"></div>
+    <div class="scrollEnd glyphicon glyphicon-chevron-right" ng-hide="isScrolledToEnd"></div>
+    
+</div>
 <div ng-class="latviaLogo"  class="latviaLogo" ng-click="openOtherHistory(debugLatvianHistory)" ng-show="debugLatvianHistory"></div>
 <div class="log">{{scrollValue}}</div>
 

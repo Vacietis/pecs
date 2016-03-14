@@ -10,10 +10,15 @@
             restrict: 'A',
             link: function(scope,elem,attrs){ 
                 
+                scope.$on('endPosition',function(event, data){
+                    scope.scrolltoEnd();
+                });
+                
                 //eleemnta platums
                 var elementWidth = elem[0].offsetWidth;
                 
                 scope.scrollValue = $window.Math.round(spaceHistoryScroll.getScrollPosition());
+                
                 
 //                scope.scrollStartPosition = 0;
                 scope.isScrolledToStart = true;
