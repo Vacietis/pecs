@@ -21,6 +21,13 @@
     margin-top: 5px;
     position: ab;
 }*/
+
+.popup-wrapper{
+    width: auto;
+    height: 500px;
+    overflow-y: scroll;
+    border: 1px solid red;
+}
 .popupContent{
     /* background-color: yellow; */
 }

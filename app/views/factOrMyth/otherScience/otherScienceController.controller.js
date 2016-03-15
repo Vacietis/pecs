@@ -21,6 +21,8 @@
                 });
             }
             
+//            console.log(angular.element('.popup-wrapper').width());
+            
             //.ngdialog.ngdialog-theme-default padding top 160pxangular.element('#appBusyIndicator') popupWrapContent
               
             

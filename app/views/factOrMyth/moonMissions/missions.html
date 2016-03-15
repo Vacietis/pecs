@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>MOON MISSIONS</div>
-    </body>
-</html>
+<div class="headName">{{lang.data.factOrMyth.moonMissions.title}}</div>
+<div class="center-content">
+    {{mm.tempText}}
+    
+    <div ng-repeat=" obj in mm.dragArray">
+        <div class="draggableDiv" ng-class="obj.title" draggable>{{obj.title}}</div>
+        <div class="droppableDiv" droppable>{{obj.titleDrop}}</div>
+    </div>
+    
+</div>

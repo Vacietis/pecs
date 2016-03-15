@@ -21,11 +21,10 @@
                     $scope.videoSrc = value.content.video;
                     console.log(value.title);
                 }
-                console.log(value.title);
               });
               
-              var divHeight = angular.element('.scienceImage').height();
-            console.log("dialog width:"+divHeight);
+//              var divHeight = angular.element('.scienceImage').height();
+//                console.log("dialog width:"+divHeight);
             
             
             

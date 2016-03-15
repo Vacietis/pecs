@@ -6,28 +6,20 @@
         .controller('dragTopController', dragTopController);
 
         function dragTopController($scope, langService, ngDialog, $controller, $http, $timeout){
+            
+            var dt = this;
+            
+            dt.tempText = "yuhuuuu";
 
               var originalDraggables = langService.data.factOrMyth.dragGame.dragQuestions;
               
-              $scope.save = langService.data.factOrMyth.dragGame.save;
+//              $scope.save = langService.data.factOrMyth.dragGame.save;
               
               $scope.dragQuestionCount = 0;
               
               $scope.showLoading = false;
               $scope.dbIsReady = false;
               
-              
-              
-//              [
-//                { title: 'jautajums 1' },
-//                { title: 'jaut 2' },
-//                { title: 'j3??' },
-//                { title: 'waz4?' },
-//                { title: 'cool5??' },
-//                { title: 'laps6' },
-//                { title: '77777' },
-//                { title: 'notike8' }
-//              ];
 
               $scope.clickToOpenDragGame = function(isShown){
                   ngDialog.open({ 
@@ -57,12 +49,8 @@
             };
             
               $scope.selectedComponents = [];
-//                for(var i= 0; i<=10; i++){
-//                    $scope.selectedComponents.push({"question": "jautajums"+i});
-//                }
-//            console.log($scope.selectedComponents);
 
-
+              console.log("$scope.selectedComponents.length"+$scope.selectedComponents.length);
 
               $scope.sortingLog = [];
 
@@ -78,6 +66,9 @@
 //                    ui.item.sortable.sourceModel.push(ui.item.sortable.model);
 //                    ui.item.sortable.sourceModel.slice(ui.item.sortable.model);
                         $scope.dragQuestionCount++;
+                        
+                        console.log("$scope.selectedComponents.length"+$scope.selectedComponents.length);
+                        
                         
                         $scope.notDragged = "saved";
                         

@@ -1,5 +1,6 @@
 <h2>{{objName}}</h2>
-<div class="popupContent" id="popupWrapContent">
+<div class="popup-wrapper">
+    <div class="popupContent" id="popupWrapContent" pop-content>
     <div class="floatedPic" >
         <img class="scienceImage" id="imageID" ng-src="{{imagePath}}" ng-hide="imagePath == ''"/>
     </div>
@@ -10,4 +11,7 @@
         </video>
     </div>
     {{objText}}
+    <div class="btn btn-primary" ng-show="showScroller">bra</div>
+    </div>
+    
 </div>

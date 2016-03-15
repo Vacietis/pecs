@@ -5,6 +5,7 @@
         'ngRoute',
         'ngAnimate',
         'factOrMyth',
+        'moonMissions',
         'fomTest',
         'dragTop',
         'picGallery',

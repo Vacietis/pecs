@@ -34,20 +34,29 @@
                           <td>{{ q.points }}</td>
                         </tr>
                   </table>
-              </div>
+              </div >
             </div>
                <ol class="topOrder">
                     <li ng-repeat="draggableArray in draggables track by $index"></li>
                 </ol>
             <div class="questionTop">
-              
+                
+<!--              <div ui-sortable="sortableOptions" class="apps-container2 screen connected-drop-target-sortable" ng-model="selectedComponents">
+                  <div class="app" ng-class="notDragged" >{{component.title}}</div>
+              </div>-->
+                <!--<div class="app" ng-class="notDragged" >{{component.title}}</div>-->
               <div ui-sortable="sortableOptions" class="apps-container screen connected-drop-target-sortable" ng-model="selectedComponents">
+                  
                   <div class="app" ng-class="notDragged" ng-repeat="component in selectedComponents track by $index">{{component.title}}</div>
+                  <div class="app2" ng-show="true" ng-class="notDragged" ></div>
               </div>
+                
+              
+                
             </div>
             <div style="clear: both;"></div>
         </div>
-        <button ng-show="dragQuestionCount == 10" type="button" class="dbButton" ng-click="logModels()" >{{save}}</button>
+        <button ng-show="dragQuestionCount == 10" type="button" class="dbButton" ng-click="logModels()" >{{lang.data.factOrMyth.dragGame.save}}</button>
 
           <div class="floatright">
               
@@ -63,4 +72,4 @@
           
 </div>
 </div>
-<div class="btn btn-info" ng-click="clickToOpenDragGame(true)">PopUP</div>
+<div class="btn btn-info" ng-click="clickToOpenDragGame(true)">PopUP+ {{dt.tempText}} ++</div>

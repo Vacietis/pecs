@@ -193,8 +193,7 @@
         "right" : "Pareizi",
         "wrong" : "Nepareizi",
         "next" : "nākamais",
-        "fomViews" : 
-            {
+        "fomViews" : {
                 "missions" : "Kosmosa missijas",
                 "compares" : "Tests, ksa salidzina menesi un zemi",
                 "dragGame" : "Vilkšanas spēle ar faktiem",
@@ -202,188 +201,191 @@
                 "otherScience" : "Citas zinātnes",
                 "pictureGallery" : "Bilžu galerija"
             },
-        "questions" :[
-            {
-                "question": "Pareiza atbilde ir mīts?",
-                "options": ["mīts", "fakts"],
-                "answer": 0,
-                "answerText" : "Tas ir mīts tāpec .. 1 ",
-                "image" : "images/foto_1_10.png"
+            "moonMissions":{
+                "title": "Kosmosa missijas"
             },
-            {
-                "question": "Pareizā atbilde ir fakts?",
-                "options": ["mīts", "fakts"],
-                "answer": 1,
-                "answerText" : "Tas ir fakts tāpec .. 2 ",
-                "image" : "images/foto_2_03.png"
-            },
-            {
-                "question": "Pareiza atbilde ir mīts?",
-                "options": ["mīts", "fakts"],
-                "answer": 0,
-                "answerText" : "Tas ir mīts tāpec .. 3",
-                "image" : "images/foto_2_04.png"
-            },
-            {
-                "question": "Pareizā atbilde ir fakts?",
-                "options": ["mīts", "fakts"],
-                "answer": 1,
-                "answerText" : "Ttas ir fakts tāpec .. 4",
-                "image" : "images/foto_4_01.png"
-            }
-        ],
-        "dragGame": {
-            "title": "Vilkšanas spēle",
-            "mainQuestion" : "Kāda būtu dzīve bez mēness?",
-            "popupText" : "Jau sen ir noskaidrots fakts, ka aplūkojotDaudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Jau sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā",
-            "continue" : "turpināt",
-            "save" : "saglabāt",
-            "dragQuestions" :[
+            "questions" :[
                 {
-                    "title": "jautajums 1",
-                    "options": ["Jā", "Nē"],
-                    "answer": 0
+                    "question": "Pareiza atbilde ir mīts?",
+                    "options": ["mīts", "fakts"],
+                    "answer": 0,
+                    "answerText" : "Tas ir mīts tāpec .. 1 ",
+                    "image" : "images/foto_1_10.png"
                 },
                 {
-                    "title": "jaut 2",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
+                    "question": "Pareizā atbilde ir fakts?",
+                    "options": ["mīts", "fakts"],
+                    "answer": 1,
+                    "answerText" : "Tas ir fakts tāpec .. 2 ",
+                    "image" : "images/foto_2_03.png"
                 },
                 {
-                    "title": "j3??",
-                    "options": ["Jā", "Nē"],
-                    "answer": 0
+                    "question": "Pareiza atbilde ir mīts?",
+                    "options": ["mīts", "fakts"],
+                    "answer": 0,
+                    "answerText" : "Tas ir mīts tāpec .. 3",
+                    "image" : "images/foto_2_04.png"
                 },
                 {
-                    "title": "waz4?",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
-                },
-                {
-                    "title": "cool5??",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
-                },
-                {
-                    "title": "laps6",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
-                },
-                {
-                    "title": "77777",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
-                },
-                {
-                    "title": "notike8",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
-                },
-                {
-                    "title": "brum 9",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
-                },
-                {
-                    "title": "ir 10",
-                    "options": ["Jā", "Nē"],
-                    "answer": 1
+                    "question": "Pareizā atbilde ir fakts?",
+                    "options": ["mīts", "fakts"],
+                    "answer": 1,
+                    "answerText" : "Ttas ir fakts tāpec .. 4",
+                    "image" : "images/foto_4_01.png"
                 }
-            ]
-        },
-        "otherScience":
-            {
-                "titleName" : "Citas zinātnes",
-                "otherScienceViews" : [
+            ],
+            "dragGame": {
+                "title": "Vilkšanas spēle",
+                "mainQuestion" : "Kāda būtu dzīve bez mēness?",
+                "popupText" : "Jau sen ir noskaidrots fakts, ka aplūkojotDaudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Jau sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā Pretēji vispārpieņemtai pārliecībai, Lorem Ipsum nav teksts bez satura. Tā pirmsākums meklējams 45.gadā p.m.ē., vienā no klasiskās latīņu literatūras teksta fragmentiem, apstiprinot tā vairāk kā divus tūkstošus gadu seno pagātni. Richard McClintock, latīņu valodas profesors no Hampden-Sydney koledžas, Virdžīnijā, izvēlējās vienu no Lorem Ipsum visneparastākajiem vārdiem 'consectetur' un sāka nodarboties ar tā meklēšanu klasiskajā latīņu valodas literatūrā un atrada neapšaubā",
+                "continue" : "turpināt",
+                "save" : "saglabāt",
+                "dragQuestions" :[
                     {
-                        "title" : "Pirmā zinātne",
-                        "content" : {
-                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga",
-                            "picture" : "images/foto_1_10.png",
-                            "video" : ""
-                        }
+                        "title": "jautajums 1",
+                        "options": ["Jā", "Nē"],
+                        "answer": 0
                     },
                     {
-                        "title" : "Otrā zinātne",
-                        "content" : {
-                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas da",
-                            "picture" : "images/foto_4_01.png",
-                            "video" : ""
-                        }
+                        "title": "jaut 2",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
                     },
                     {
-                        "title" : "Trešā zinātne",
-                        "content" : {
-                            "text" : "Jau sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus lorem ipsum, var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti)",
-                            "picture" : "",
-                            "video" : ""
-                        }
+                        "title": "j3??",
+                        "options": ["Jā", "Nē"],
+                        "answer": 0
                     },
                     {
-                        "title" : "Ceturtā zinātne",
-                        "content" : {
-                            "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas da",
-                            "picture" : "",
-                            "video" : "images/SampleVideo.mp4"
-                        }
+                        "title": "waz4?",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
                     },
                     {
-                        "title" : "Piektā zinātne",
-                        "content" : {
-                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
-                            "picture" : "images/foto_1_10.png",
-                            "video" : ""
-                        }
+                        "title": "cool5??",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
                     },
                     {
-                        "title" : "Sestā zinātne",
-                        "content" : {
-                            "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
-                            "picture" : "images/foto_1_10.png",
-                            "video" : ""
-                        }
+                        "title": "laps6",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
+                    },
+                    {
+                        "title": "77777",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
+                    },
+                    {
+                        "title": "notike8",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
+                    },
+                    {
+                        "title": "brum 9",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
+                    },
+                    {
+                        "title": "ir 10",
+                        "options": ["Jā", "Nē"],
+                        "answer": 1
                     }
                 ]
             },
-            "pictureGallery":[
+            "otherScience":
                 {
-                    "image": "images/latvia.png",
-                    "description": "Image 00 LV"
+                    "titleName" : "Citas zinātnes",
+                    "otherScienceViews" : [
+                        {
+                            "title" : "Pirmā zinātne",
+                            "content" : {
+                                "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfi teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos.jā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kutas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga",
+                                "picture" : "images/foto_1_10.png",
+                                "video" : ""
+                            }
+                        },
+                        {
+                            "title" : "Otrā zinātne",
+                            "content" : {
+                                "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas da",
+                                "picture" : "images/foto_4_01.png",
+                                "video" : ""
+                            }
+                        },
+                        {
+                            "title" : "Trešā zinātne",
+                            "content" : {
+                                "text" : "Jau sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus lorem ipsum, var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti)",
+                                "picture" : "",
+                                "video" : ""
+                            }
+                        },
+                        {
+                            "title" : "Ceturtā zinātne",
+                            "content" : {
+                                "text" : "Lorem Ipsum – tas ir teksta salikums, kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. gadsimta sākuma. kuru izmanto poligrāfijā un maketēšanas darbos. Lorem Ipsum ir kļuvis par vispārpieņemtu teksta aizvietotāju kopš 16. ga kuru izmanto poligrāfijā un maketēšanas da",
+                                "picture" : "",
+                                "video" : "images/SampleVideo.mp4"
+                            }
+                        },
+                        {
+                            "title" : "Piektā zinātne",
+                            "content" : {
+                                "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                                "picture" : "images/foto_1_10.png",
+                                "video" : ""
+                            }
+                        },
+                        {
+                            "title" : "Sestā zinātne",
+                            "content" : {
+                                "text" : "sjdgsdgodsjh jsghilkds gsdkgj skdgj sdkg j",
+                                "picture" : "images/foto_1_10.png",
+                                "video" : ""
+                            }
+                        }
+                    ]
                 },
-                {
-                    "image": "images/foto_1_10.png",
-                    "description": "Image 01 LV"
-                },
-                {
-                    "image": "images/foto_2_03.png",
-                    "description": "Image 02 LV"
-                },
-                {
-                    "image": "images/foto_2_04.png",
-                    "description": "Image 03 LV"
-                },
-                {
-                    "image": "images/foto_3_03.png",
-                    "description": "Image 04 LV"
-                },
-                {
-                    "image": "images/foto_4_01.png",
-                    "description": "Image 05 LV"
-                },
-                {
-                    "image": "images/600x400.png",
-                    "description": "600x400 LV"
-                },
-                {
-                    "image": "images/2500x400.png",
-                    "description": "2500x400 LV"
-                },
-                {
-                    "image": "images/100x1200.png",
-                    "description": "100x1200 LV"
-                }
-            ]
-    },
+                "pictureGallery":[
+                    {
+                        "image": "images/latvia.png",
+                        "description": "Image 00 LV"
+                    },
+                    {
+                        "image": "images/foto_1_10.png",
+                        "description": "Image 01 LV"
+                    },
+                    {
+                        "image": "images/foto_2_03.png",
+                        "description": "Image 02 LV"
+                    },
+                    {
+                        "image": "images/foto_2_04.png",
+                        "description": "Image 03 LV"
+                    },
+                    {
+                        "image": "images/foto_3_03.png",
+                        "description": "Image 04 LV"
+                    },
+                    {
+                        "image": "images/foto_4_01.png",
+                        "description": "Image 05 LV"
+                    },
+                    {
+                        "image": "images/600x400.png",
+                        "description": "600x400 LV"
+                    },
+                    {
+                        "image": "images/2500x400.png",
+                        "description": "2500x400 LV"
+                    },
+                    {
+                        "image": "images/100x1200.png",
+                        "description": "100x1200 LV"
+                    }
+                ]
+        },
     "whereIsIss":{
         "titleName" : "Kur atrodas ISS"
     },

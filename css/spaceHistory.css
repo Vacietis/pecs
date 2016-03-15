@@ -24,7 +24,7 @@
     height: 300px;
     min-width: 2000px;
     overflow: x-scroll;
-    background-image: url('/infoKiosk/images/back-stripe.png');
+    background-image: url('../images/back-stripe.png');
     background-size: 100% 100%;
 }
 
@@ -54,6 +54,7 @@
     float: right;
     margin-right: 250px;
     animation: rightLeft 3s infinite ease;   
+    opacity: 0.7;
 }
 
 .scrollStart{
@@ -62,6 +63,7 @@
     float: left;
     margin-left: 250px;
     animation: leftRight 3s infinite ease;
+    opacity: 0.7;
 }
 .button-wrapper{
     width: auto;
@@ -72,15 +74,17 @@
     width: 800px;
 }
 .button-wrapper div{
-    cursor: pointer;
+    
 }
 
 .first{
     float: left;
+    cursor: pointer;
 }
 
 .last{
     float: right;
+    cursor: pointer;
 }
 
 .log{
@@ -105,7 +109,7 @@
     cursor: pointer;
     position: absolute;
     margin: 20px;
-    background: url('/infoKiosk/images/latvia.png');
+    background: url('../images/latvia.png');
     background-size: 100% 100%;
 }
 
@@ -117,7 +121,7 @@
     cursor: pointer;
     position: absolute;
     margin: 20px;
-    background: url('/infoKiosk/images/world.png');
+    background: url('../images/world.png');
     background-size: 100% 100%;
 }
 
