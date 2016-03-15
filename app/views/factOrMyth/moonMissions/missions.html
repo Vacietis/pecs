@@ -1,10 +1,21 @@
 <div class="headName">{{lang.data.factOrMyth.moonMissions.title}}</div>
 <div class="center-content">
-    {{mm.tempText}}
     
-    <div ng-repeat=" obj in mm.dragArray">
-        <div class="draggableDiv" ng-class="obj.title" draggable>{{obj.title}}</div>
-        <div class="droppableDiv" droppable>{{obj.titleDrop}}</div>
+    <div class="leftDiv">
+        <div class="draggableDiv {{obj.title}}" 
+             ng-repeat="obj in mm.dragArray track by $index" 
+             draggable 
+             
+             >
+            {{obj.title}}</div>
+    </div>
+    
+    <div class="rightDiv">
+        <div class="droppableDiv" droppable-accept="{{obj.title}}" 
+             ng-repeat="obj in mm.dragArray" 
+             droppable>
+            <div class="inner-droppable">{{obj.titleDrop}}</div>
+        </div>
     </div>
     
 </div>

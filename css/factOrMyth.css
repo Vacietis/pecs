@@ -56,14 +56,14 @@ quiz.ng-isolate-scope {}
     height: 30px;
 }
 .indexRoundButton{
-    background-image: url('/InfoKiosk/images/roundEmty.png');
+    background-image: url('../images/roundEmty.png');
     background-size: 100% 100%;
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 .indexFullButton{
-    background-image: url('/InfoKiosk/images/roundFull.png');
+    background-image: url('../images/roundFull.png');
     background-size: 100% 100%;
     width: 35px;
     height: 35px;

@@ -47,7 +47,7 @@
         $rootScope.back = function () {
             if($rootScope.currentPath === '/factMyth/quiz' && $rootScope.testInProgress){
                 ngDialog.open({ 
-                    template: 'app/widgets/checkPopup/check.Popup.html',
+                    template: 'app/widgets/popup/check.Popup.html',
                     });
             } else {
                  var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";

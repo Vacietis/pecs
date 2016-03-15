@@ -1,25 +1,47 @@
 .draggableDiv{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: grey;
-    color: white
-}
-.draggableDiv2{
-    width: 100px;
-    height: 100px;
-    background-color: brown;
     color: white;
-    float: left;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .droppableDiv{
     width: 200px;
     height: 200px;
-    background-color: gainsboro;
     float: right;
-    color: white;
+    color: black;
+    margin: 10px;
+    background-image: url('../images/target.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.inner-droppable{
+/*    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    */
 }
 
 .drop-hover {
     border:5px solid orange
+}
+
+.leftDiv{
+    float: left;
+    width: 200px;
+    height: 400px;
+    border: 1px solid blue;
+    background-color: floralwhite;
+}
+
+.rightDiv{
+    float: left;
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    margin-left: 200px;
+    
 }
