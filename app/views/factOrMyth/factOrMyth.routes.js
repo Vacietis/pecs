@@ -14,8 +14,8 @@
             templateUrl: 'app/views/factOrMyth/moonMissions/missions.html',
             controller: 'moonMissionsControler as mm'
         }).when('/factMyth/compares', {
-            templateUrl: 'app/views/factOrMyth/fomTest/fomTest.html',
-            controller: "fomTestController"
+            templateUrl: 'app/views/factOrMyth/compareMoonEarth/compares.html',
+            controller: "compareControler as co"
         }).when('/factMyth/dragGame', {
             templateUrl: 'app/views/factOrMyth/dragTop/dragGame.html',
             controller: 'dragTopController as dt'
@@ -24,7 +24,7 @@
             controller: 'otherScienceController'
         }).when('/factMyth/pictureGallery', {
             templateUrl: 'app/views/factOrMyth/picGallery/pictureGallery.html',
-            controller:'picGalleryController'
+            controller:'picGalleryController as pg'
         });
                 
     }

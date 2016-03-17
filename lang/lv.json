@@ -347,44 +347,47 @@
                         }
                     ]
                 },
-                "pictureGallery":[
-                    {
-                        "image": "images/latvia.png",
-                        "description": "Image 00 LV"
-                    },
-                    {
-                        "image": "images/foto_1_10.png",
-                        "description": "Image 01 LV"
-                    },
-                    {
-                        "image": "images/foto_2_03.png",
-                        "description": "Image 02 LV"
-                    },
-                    {
-                        "image": "images/foto_2_04.png",
-                        "description": "Image 03 LV"
-                    },
-                    {
-                        "image": "images/foto_3_03.png",
-                        "description": "Image 04 LV"
-                    },
-                    {
-                        "image": "images/foto_4_01.png",
-                        "description": "Image 05 LV"
-                    },
-                    {
-                        "image": "images/600x400.png",
-                        "description": "600x400 LV"
-                    },
-                    {
-                        "image": "images/2500x400.png",
-                        "description": "2500x400 LV"
-                    },
-                    {
-                        "image": "images/100x1200.png",
-                        "description": "100x1200 LV"
-                    }
-                ]
+                "pictureGallery":{
+                    "title" : "Bilžu galerija",
+                    "pictures":[
+                        {
+                            "image": "images/latvia.png",
+                            "description": "Image 00 LV"
+                        },
+                        {
+                            "image": "images/foto_1_10.png",
+                            "description": "Image 01 LV"
+                        },
+                        {
+                            "image": "images/foto_2_03.png",
+                            "description": "Image 02 LV"
+                        },
+                        {
+                            "image": "images/foto_2_04.png",
+                            "description": "Image 03 LV"
+                        },
+                        {
+                            "image": "images/foto_3_03.png",
+                            "description": "Image 04 LV"
+                        },
+                        {
+                            "image": "images/foto_4_01.png",
+                            "description": "Image 05 LV"
+                        },
+                        {
+                            "image": "images/600x400.png",
+                            "description": "600x400 LV"
+                        },
+                        {
+                            "image": "images/2500x400.png",
+                            "description": "2500x400 LV"
+                        },
+                        {
+                            "image": "images/100x1200.png",
+                            "description": "100x1200 LV"
+                        }
+                    ]
+                }
         },
     "whereIsIss":{
         "titleName" : "Kur atrodas ISS"

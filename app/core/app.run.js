@@ -52,6 +52,11 @@
             } else {
                  var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
                  $location.path(prevUrl);
+//                 console.log("previousURL "+prevUrl);
+//                 if(prevUrl === '/'){
+//                     history.length = 0;
+//                     $location.path("/");
+//                 }
             }   
         };
         

@@ -6,12 +6,12 @@
         .controller('picturePopupController', picturePopupController);
 //        .animation('.slide-animation', slideAnimation);
 
-        function picturePopupController($scope, name, width, height, langService, resize){
+        function picturePopupController($scope, pic, langService, resize){
             
-            var tempArr = langService.data.factOrMyth.pictureGallery;
+            //var tempArr = langService.data.factOrMyth.pictureGallery.pictures;
             
-            var imageWidth = width;
-            var imageHeight = height;
+            var imageWidth = pic.width;
+            var imageHeight = pic.height;
             
             resize.checkIfFitsInWindow(imageWidth, imageHeight);
             
@@ -21,15 +21,17 @@
             $scope.widthx = imageWidth;
             $scope.heightx = imageHeight;
             
-            angular.forEach(tempArr, function(value, key) {
-
-                if(value.description === name){
-                    $scope.imageSrc = value.image;
-//                    console.log("br: "+value.description);
-                } 
-            });
+            $scope.imageSrc = pic.image;
+            
+//            angular.forEach(tempArr, function(value, key) {
+//
+//                if(value.description === name){
+//                    $scope.imageSrc = value.image;
+////                    console.log("br: "+value.description);
+//                } 
+//            });
         }
         
-    picturePopupController.$inject = ['$scope', 'name', 'width', 'height', 'langService', 'resize'];
+    picturePopupController.$inject = ['$scope', 'pic', 'langService', 'resize'];
        
 })();

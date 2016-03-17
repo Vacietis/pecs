@@ -5,7 +5,7 @@
         .module('videoExhibit')
         .controller('videoExhibitController', videoExhibitController);
 
-        function videoExhibitController($scope, langService, ngDialog, $controller, $route, $timeout){
+        function videoExhibitController($scope, langService, ngDialog, $controller, $route, $timeout, $rootScope){
             
             $scope.videoList = langService;
             
@@ -23,7 +23,9 @@
                $scope.loaded = true; 
             }, 500);
             
-            
+            $scope.videoPlayClick = function(){
+                $rootScope.$broadcast('videoIsClicked',{});
+            }
             
             $scope.showVideoPopup = function(videoObj){
                 if( $scope.swiping ) { return; }
@@ -45,6 +47,6 @@
             }
         }
         
-    videoExhibitController.$inject = ['$scope', 'langService', 'ngDialog', '$controller', '$route', '$timeout'];
+    videoExhibitController.$inject = ['$scope', 'langService', 'ngDialog', '$controller', '$route', '$timeout', '$rootScope'];
        
 })();

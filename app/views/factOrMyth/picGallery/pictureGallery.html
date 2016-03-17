@@ -1,4 +1,5 @@
-<div ng-class="{slickLoaded: loaded}" class="slick-wrapper">        
+<div class="headName">{{lang.data.factOrMyth.pictureGallery.title}} ++ {{pg.loaded}} ++ </div>
+<div ng-class="{slickLoaded: pg.loaded}" class="slick-wrapper">        
     <slick dots="true" infinite="true" speed="150" slides-to-show="1" 
            touch-move="true" slides-to-scroll="1" center-padding="250px" 
            center-mode="true" arrows="false" focus-on-select="false" break-point="500"
@@ -6,21 +7,21 @@
         <!--center-padding controlle cik daudz grib redzet nakamas bildes -->
      
     
-            <div ng-repeat="pic in slides"
+            <div ng-repeat="pic in pg.slides"
                 ng-swipe-left="swiping=true;" ng-swipe-right="swiping=true;" >
                 <div inner="pic" src="{{pic.image}}" ng-style="{height: '501px'}"
-                     ng-click="showGalleryPopup(pic.description, pic)" ></div>
+                     ng-click="pg.showGalleryPopup(pic)" ></div>
                 <!--<images src="{{pic.image}}"></images>-->
                 <!--<p class="galleryText">{{pic.description}}</p>-->
             </div> 
         
-            <p class="galleryText" ng-repeat="picText in slidesText.data.factOrMyth.pictureGallery"
-               ng-show="activeSlide == $index">{{picText.description}}</p>
+            <p class="galleryText" ng-repeat="picText in pg.slidesText.data.factOrMyth.pictureGallery.pictures"
+               ng-show="pg.activeSlide == $index">{{picText.description}}</p>
         
     </slick>
 </div>
     
-    <div class="rightBlur" ng-show="loaded"></div>
-    <div class="leftBlur" ng-show="loaded"></div>
+    <div class="rightBlur" ng-show="pg.loaded"></div>
+    <div class="leftBlur" ng-show="pg.loaded"></div>
     
 <!--</div>-->

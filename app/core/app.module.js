@@ -6,6 +6,7 @@
         'ngAnimate',
         'factOrMyth',
         'moonMissions',
+        'compare',
         'fomTest',
         'dragTop',
         'picGallery',

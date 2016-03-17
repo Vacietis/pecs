@@ -6,126 +6,56 @@
         .controller('picGalleryController', picGalleryController);
 //        .animation('.slide-animation', slideAnimation);
 
-        function picGalleryController($scope, ngDialog, langService, $controller, $timeout){
+        function picGalleryController($scope, ngDialog, langService, $timeout, resize){
             
-            //json for dummy images
-//            {
-//                "image": "images/600x400.png",
-//                "description": "600x400 LV"
-//            },
-//            {
-//                "image": "images/2500x400.png",
-//                "description": "2500x400 LV"
-//            },
-//            {
-//                "image": "images/100x1200.png",
-//                "description": "100x1200 LV"
-//            }
-
-            $scope.swiping = false;
+            var pg = this;
             
-            $scope.activeSlide = 0
+            // for video gallery to fade in
+            pg.loaded = false;
+            
+            $timeout(function(){
+               pg.loaded = true; 
+            }, 500);
+            console.log("pg.loaded "+pg.loaded);
 
+            pg.swiping = false;
+            
+            pg.activeSlide = 0
 
-            $scope.clickToOpen = function () {
+            pg.clickToOpen = function () {
                 ngDialog.open({ template: 'app/views/factOrMyth/fomTest/popUp.html' });
             };
             
-            $scope.slides = langService.data.factOrMyth.pictureGallery;
-            $scope.slidesText = langService;
+            // slides object fills the image gallery source and 
+            // slides object won't be changed when language button will be pressed 
+            pg.slides = langService.data.factOrMyth.pictureGallery.pictures;
             
-            $scope.loaded = false;
-            $timeout(function(){
-               $scope.loaded = true; 
-            }, 500);
+            //slidesText object fills image description and will change on lang click
+            pg.slidesText = langService;
                      
-            $scope.showGalleryPopup = function(videPar, pic){
+            pg.showGalleryPopup = function(pic){
 
                 if( $scope.swiping ) { 
                     return;
                 }
                 
+                console.log("1");
+
+                resize.checkIfFitsInWindow(pic.width, pic.height);
+
+                pg.widthx = resize.objectsResizedWidth;
+                pg.heightx = resize.objectsResizedHeight;
+                
+                pg.pic = pic;
+                
                 ngDialog.open({ 
-                    scope: $scope,
-                    template: 'app/views/factOrMyth/picGallery/picGallery.popup.html',
-                    className: 'ngdialog-theme-default videongDialog',
-                    controller: $controller('picturePopupController', {
-                        $scope: $scope,
-                        name: videPar,
-                        width: pic.width,
-                        height: pic.height
-                    })
+                    scope: pg,
+                    template: 'app/views/factOrMyth/picGallery/picGallery.popup.html'
                 });
             }
             
-//            $scope.slides = [
-//                {image: 'images/foto_1_07final.png', description: 'Image 00'},
-//                {image: 'images/foto_1_10.png', description: 'Image 01'},
-//                {image: 'images/foto_2_03.png', description: 'Image 02'},
-//                {image: 'images/foto_2_04.png', description: 'Image 03'},
-//                {image: 'images/foto_3_03.png', description: 'Image 04'}
-//            ];
-            
-//            $scope.direction = 'left';
-//            $scope.currentIndex = 0;
-//            
-//            $scope.setCurrentSlideIndex = function(index){
-//                $scope.direction = (index > $scope.currentIndex) ? 'left' : 'right';
-//                $scope.currentIndex = index;
-//            }
-//            
-//            $scope.isCurrentIndex = function(index){
-//                return $scope.currentIndex === index;
-//            }
-//            
-//            $scope.prevSlide = function(){
-//                $scope.direction = 'left';
-//                $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
-//            }
-//            $scope.nextSlide = function(){
-//                $scope.direction = 'right';
-//                $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
-//            }
-            
         }
         
-//        function slideAnimation(){
-//            return {
-//                addClass: function (element, className, done) {
-//                    if (className == 'ng-hide') {
-//                        var scope = element.scope();
-//                        // ANIMATION CODE GOES HERE   
-//                        var finishPoint = element.parent().width();
-//                        if(scope.direction !== 'right') {
-//                            finishPoint = -finishPoint;
-//                        }
-//                        TweenMax.to(element, 0.5, {left: finishPoint, onComplete: done });
-//                    }
-//                    else {
-//                        done();
-//                    }
-//                },
-//                removeClass: function (element, className, done) {
-//                    if (className == 'ng-hide') {
-//                        var scope = element.scope();
-//                        // ANIMATION CODE GOES HERE
-//                        element.removeClass('ng-hide');
-//                        
-//                        var startPoint = element.parent().width();
-//                        if(scope.direction === 'right') {
-//                            startPoint = -startPoint;
-//                        }
-//
-//                        TweenMax.set(element, { left: startPoint });
-//                        TweenMax.to(element, 0.5, {left: 0, onComplete: done });
-//                    }
-//                    else {
-//                        done();
-//                    }
-//                }
-//            };
-//        }
-        
-    picGalleryController.$inject = ['$scope', 'ngDialog', 'langService', '$controller', '$timeout'];
+    picGalleryController.$inject = ['$scope', 'ngDialog', 'langService', '$controller', '$timeout', 'resize'];
        
 })();

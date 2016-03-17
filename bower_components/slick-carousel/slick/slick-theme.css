@@ -114,7 +114,6 @@
     height: auto;
     /* background-color: red; */
     margin: auto;
-    margin-top: 100px;
     /* padding: 10px; */
 }
 
@@ -140,24 +139,7 @@
     padding: 0;
     cursor: pointer;
 }
-.slick-dots li button
-{
-    /* font-size: 0; */
-    /* line-height: 0; */
-    /* display: block; */
-    width: 50px;
-    height: 50px;
-    /* padding: 5px; */
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    style: non;
-    background: none;
-    background-image: url('/InfoKiosk/images/roundFull.png');
-    background-size: 100% 100%;
-    /* background: transparent; */
-}
+
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {

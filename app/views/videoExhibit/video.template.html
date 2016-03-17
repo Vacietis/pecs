@@ -1,6 +1,9 @@
+
+
 <div ng-repeat="part in videoList.data.videoExhibit.videoParts" ng-show="clickedPath == part.code" ng-cloak>
       
     <!--<div class="loadingGIf" ng-show="!loaded"></div>-->
+    <div class="headName">{{part.title}}</div>
     
     <div ng-class="{slickLoaded: loaded}" class="slick-wrapper">    
         <slick dots="true" infinite="true" speed="300" slides-to-show="1" 
@@ -8,15 +11,14 @@
                center-mode="true" arrows="false" focus-on-select="false" break-point="500">
             <!--center-padding controlle cik daudz grib redzet nakamas bildes -->
 
-
-            <div class="videoSlick" ng-repeat="video in part.videoList" 
-                 ng-swipe-left="swiping=true;" ng-swipe-right="swiping=true;" 
+            <div class="videoSlick" 
+                 ng-repeat="video in part.videoList" 
+                 ng-swipe-left="swiping=true;" 
+                 ng-swipe-right="swiping=true;" 
                  ng-click="showVideoPopup(video)">
+                
                 <img src="{{video.objImgPath}}" on-load="video.video" saturs="video">
-
-<!--                <video on-load="video.video" poster="{{video.objImgPath}}" saturs="video">
-                    <source src="{{video.video}}" type="video/mp4">
-                </video>-->
+                
             </div> 
 
         </slick>

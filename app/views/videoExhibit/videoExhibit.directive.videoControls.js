@@ -23,8 +23,12 @@
                 var isPlaying = false;
                 
                 scope.volumeIsClicked = false;
-                
+
                 scope.currentVideoVolume = 50;
+                
+                scope.$on('videoIsClicked',function(event, data){
+                    scope.customPlay();
+                });
                 
                 scope.customPlay = function(){
                     if(!isPlaying){
@@ -39,11 +43,9 @@
                 };
                 
                 scope.customVolume = function(){
-                    if(!scope.volumeIsClicked){
-                        scope.volumeIsClicked = true;
-                    } else {
-                        scope.volumeIsClicked = false;
-                    }
+
+                    scope.volumeIsClicked = !scope.volumeIsClicked;
+                    
                 };
                 
                 currentVideo.on('timeupdate', function(){
