@@ -17,7 +17,45 @@
 //                });
 
             $rootScope.isHomePage = true;
-            $rootScope.isQuizPage = false
+            $rootScope.isQuizPage = false;
+            //$rootScope.langselected = 
+            
+            $rootScope.$on('languageIsChanged',function(event, data){
+//                console.log("data.code "+data.code);
+//                var temp = data.code;
+//                
+//                console.log("temp = $('."+temp+"')");
+
+                angular.forEach($rootScope.languages, function(value, key) {
+
+                    if(key === data.code){
+//                        $("."+key).attr('disabled','disabled');
+                        $rootScope.langselected = key;
+                    } else{
+//                        $("."+key).removeAttr('disabled');
+                    }
+
+                });
+                
+//                console.log(data.code);
+//                if(data.code === "eng"){
+//                    $(".eng").attr('disabled','disabled');
+//                    $(".lv").removeAttr('disabled'); 
+//                } else {
+//                    $(".lv").attr('disabled','disabled');
+//                    $(".eng").removeAttr('disabled'); 
+//                }
+                
+                
+//                if(data.code = 'lv'){
+//                    
+//                }
+//                
+//                ve.loaded = false;
+//                $timeout(function(){
+//                   ve.loaded = true; 
+//                }, 500);
+            });
 
             $rootScope.$on('$routeChangeStart', function() { 
                 $rootScope.currentPath = $location.path();
@@ -27,7 +65,8 @@
                 } else if($rootScope.currentPath === '/factMyth/quiz'){
                     $rootScope.isQuizPage = true;
                     $rootScope.isHomePage = false;
-                } else{
+                } 
+                else{
                     $rootScope.isHomePage = false;
                     $rootScope.isQuizPage = false;
                 }

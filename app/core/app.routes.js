@@ -19,7 +19,7 @@
             controller : 'spaceHistoryController'
         }).when('/vid', {
             templateUrl: 'app/views/videoExhibit/videoExhibit.html',
-            controller : 'videoExhibitController'
+            controller : 'VideoExhibitController as ve'
         }).when('/iss', {
             templateUrl: 'app/views/whereIsISS/whereIsIss.iss.html',
             controller : 'issController'

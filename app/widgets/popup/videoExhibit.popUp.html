@@ -1,6 +1,6 @@
-<div class="videoClass" ng-click="videoPlayClick()">
+<div class="videoClass" ng-click="ve.videoPlayClick()">
     <video id="video-popup" ng-style="{width: {{widthx}} + 'px',height: {{heightx}} + 'px'}">
-        <source ng-src="{{videoSrc}}" type="video/mp4">
+        <source ng-src="{{videoObj.video}}" type="video/mp4">
     </video>
 </div>
 <video-controls vid="video-popup" duration="videoDur"></video-controls>

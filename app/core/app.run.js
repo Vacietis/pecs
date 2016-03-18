@@ -5,11 +5,13 @@
         .module('mainApp')
         .run(startRun);
 
-    function startRun($rootScope, $location, $http, langService, ngDialog, $controller){
-        $rootScope.defaultLanguage = 'eng';
+    function startRun($rootScope, $location, $http, langService, ngDialog, $controller, message){
+        console.log("run");
         var history = [];
         $rootScope.currentPath = null;
         $rootScope.lang = langService;
+        
+        console.log(message.text);
     
         // to prevent inspect element and other stuff
 //        document.addEventListener('contextmenu', function(e){
@@ -81,6 +83,7 @@
                 
                 history.length = 0;
                 $location.path("/");
+        
             }   
             
         };
@@ -120,13 +123,9 @@
         
         
 
-        $rootScope.languages = [];
-        $http.get('app/core/config.json').then(function(response) {
-            $rootScope.languages = response.data.languages;
-            $rootScope.debugLatvianHistory = response.data.latvianSpaceHistory;
-        });
+        
     }
     
-    startRun.$inject = ['$rootScope', '$location', '$http', 'langService', 'ngDialog', '$controller'];
+    startRun.$inject = ['$rootScope', '$location', '$http', 'langService', 'ngDialog', '$controller', 'message'];
     
 })();

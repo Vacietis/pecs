@@ -3,10 +3,9 @@
 
     angular
         .module('picGallery')
-        .controller('picGalleryController', picGalleryController);
-//        .animation('.slide-animation', slideAnimation);
+        .controller('PicGalleryController', PicGalleryController);
 
-        function picGalleryController($scope, ngDialog, langService, $timeout, resize){
+        function PicGalleryController($scope, ngDialog, langService, $timeout, resize){
             
             var pg = this;
             
@@ -38,24 +37,22 @@
                 if( $scope.swiping ) { 
                     return;
                 }
-                
-                console.log("1");
 
                 resize.checkIfFitsInWindow(pic.width, pic.height);
 
-                pg.widthx = resize.objectsResizedWidth;
-                pg.heightx = resize.objectsResizedHeight;
+                $scope.widthx = resize.objectsResizedWidth;
+                $scope.heightx = resize.objectsResizedHeight;
                 
-                pg.pic = pic;
+                $scope.pic = pic;
                 
                 ngDialog.open({ 
-                    scope: pg,
-                    template: 'app/views/factOrMyth/picGallery/picGallery.popup.html'
+                    scope: $scope,
+                    template: 'app/widgets/popup/picGallery.popup.html'
                 });
             }
             
         }
         
-    picGalleryController.$inject = ['$scope', 'ngDialog', 'langService', '$controller', '$timeout', 'resize'];
+    PicGalleryController.$inject = ['$scope', 'ngDialog', 'langService', '$timeout', 'resize'];
        
 })();

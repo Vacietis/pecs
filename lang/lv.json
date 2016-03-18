@@ -130,7 +130,7 @@
         "title" : "Video galerija",
         "videoParts" :[
             {
-                    "title": "Sun",
+                    "title": "Saule",
                     "code": "sun",
                     "videoList": [
                             {
@@ -141,22 +141,22 @@
                             {
                                 "videoTitle" : "video2",
                                 "video" : "images/SampleVideo.mp4",
-                                "objImgPath" : "images/foto_1_10.png"
+                                "objImgPath" : "images/foto_2_03.png"
                             },
                             {
                                 "videoTitle" : "video3",
                                 "video" : "images/SampleVideo.mp4",
-                                "objImgPath" : "images/foto_1_10.png"
+                                "objImgPath" : "images/foto_2_04.png"
                             },
                             {
                                 "videoTitle" : "video4",
                                 "video" : "images/fhdvideo.mp4",
-                                "objImgPath" : "images/foto_2_03.png"
+                                "objImgPath" : "images/foto_3_03.png"
                             }
                         ]
             },
             {
-                    "title" : "Moon",
+                    "title" : "Mēness",
                     "code": "moon",
                     "videoList": [
                             {

@@ -1,12 +1,26 @@
-<a ng-class='{ disabled: isHomePage}' class="btn btn-info btn-lg" ng-click='back()'>
+<a ng-class='{ disabled: isHomePage}' 
+   class="btn btn-info btn-lg"
+   ng-click='back()' >
+    
     <span class="glyphicon glyphicon-hand-left"></span> BACK
+    
   </a>
-  <a  class="btn btn-info btn-lg" ng-click='home()' ng-disabled="isHomePage">
+
+<a ng-class='{ disabled: isHomePage}'
+    class="btn btn-info btn-lg"
+    ng-click='home()' >
+    
     <span class="glyphicon glyphicon-home"></span> HOME
-  </a>
+
+</a>
 
 
-  <a ng-repeat="(key, value) in languages" class="btn btn-info btn-lg" 
-     ng-click='lang.changeLanguage(key)' ng-disabled="isQuizPage" ng-cloak>
-    <span class="glyphicon glyphicon-flag"></span> {{value}}
-  </a>
+<a ng-repeat="(key, value) in languages"
+   ng-class='{ disabled: isQuizPage, disabled: key === langselected}'
+   class="btn btn-info btn-lg {{key}} " 
+   ng-click='lang.changeLanguage(key)'
+   ng-cloak>
+
+   <span class="glyphicon glyphicon-flag"></span> {{value}}
+   
+</a>

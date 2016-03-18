@@ -24,7 +24,7 @@
             controller: 'otherScienceController'
         }).when('/factMyth/pictureGallery', {
             templateUrl: 'app/views/factOrMyth/picGallery/pictureGallery.html',
-            controller:'picGalleryController as pg'
+            controller:'PicGalleryController as pg'
         });
                 
     }

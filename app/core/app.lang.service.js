@@ -5,13 +5,15 @@
         .module('mainApp')
         .factory('langService', langService);
 
-    function langService($http){
+    function langService($http, $rootScope){
         
         var defaultLanguage = 'lv';
         
+        $rootScope.languageIsChanged = false;
+        
         var serviceObj = {
             data : {},
-            changeLanguage : change,
+            changeLanguage : change
         }
         
         loadDefaultLanguage();
@@ -28,6 +30,14 @@
             $http.get('lang/'+langCode+'.json').then(function(response) {
                 serviceObj.data = response.data;
             });
+            
+            $rootScope.$broadcast('languageIsChanged',{code: langCode});
+            
+           
+           
+//            $rootScope.languageIsChanged = !$rootScope.languageIsChanged;
+              
+  
         }
         
         /**
@@ -42,5 +52,5 @@
         
     }
     
-    langService.$inject = ['$http'];
+    langService.$inject = ['$http', '$rootScope'];
 })();

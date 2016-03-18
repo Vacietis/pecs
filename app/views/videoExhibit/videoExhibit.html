@@ -1,6 +1,6 @@
-<div class="headName">{{videoList.data.videoExhibit.title}}</div>
+<div class="headName">{{ve.videoList.data.videoExhibit.title}}</div>
 <div class="center-content">
-    <div class="col-md-6 main-items" ng-repeat="video in videoList.data.videoExhibit.videoParts">
+    <div class="col-md-6 main-items" ng-repeat="video in ve.videoList.data.videoExhibit.videoParts">
         <a class="inner-div" href="#vid/{{video.code}}" >{{video.title}}</a>
     </div>
 </div>
