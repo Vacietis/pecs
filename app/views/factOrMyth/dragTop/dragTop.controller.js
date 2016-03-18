@@ -20,21 +20,22 @@
               $scope.showLoading = false;
               $scope.dbIsReady = false;
               
+              $scope.languageContent = langService;
 
-              $scope.clickToOpenDragGame = function(isShown){
+              $scope.clickToOpenDragGame = function(){
                   ngDialog.open({ 
                     scope: $scope,
                     template: 'app/views/factOrMyth/dragTop/dragTop.popup.html',
-                    className: 'ngdialog-theme-default dragngDialog',
-                     controller: $controller('PopupDragController', {
-                        $scope: $scope,
-                        isShown: isShown
-                        })
+                    className: 'ngdialog-theme-default dragngDialog'
+//                     controller: $controller('PopupDragController', {
+//                        $scope: $scope,
+//                        isShown: isShown
+//                        })
                     
                     });
               }
               
-              $scope.clickToOpenDragGame(false);
+              $scope.clickToOpenDragGame();
               
               $scope.closePop = function(){
                   ngDialog.close();

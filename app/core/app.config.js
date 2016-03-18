@@ -7,7 +7,7 @@
 
     function startConfig(messageProvider){
         
-        messageProvider.setText("Hello fgfgnfg world!");
+        messageProvider.setText("Hello world!");
         
         
 //        console.log("config");

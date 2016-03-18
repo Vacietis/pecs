@@ -5,11 +5,10 @@
         .module('mainApp')
         .factory('langService', langService);
 
-    function langService($http, $rootScope){
+    function langService($http, configuration){
         
-        var defaultLanguage = 'lv';
-        
-        $rootScope.languageIsChanged = false;
+        var defaultLanguage = configuration.defaultLanguage;
+        console.log("defaultLanguage from langService "+configuration.defaultLanguage);
         
         var serviceObj = {
             data : {},
@@ -31,12 +30,7 @@
                 serviceObj.data = response.data;
             });
             
-            $rootScope.$broadcast('languageIsChanged',{code: langCode});
-            
-           
-           
-//            $rootScope.languageIsChanged = !$rootScope.languageIsChanged;
-              
+//            $rootScope.$broadcast('languageIsChanged',{code: langCode});       
   
         }
         
@@ -52,5 +46,5 @@
         
     }
     
-    langService.$inject = ['$http', '$rootScope'];
+    langService.$inject = ['$http', 'configuration'];
 })();

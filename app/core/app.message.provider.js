@@ -13,7 +13,9 @@
                 text = textString;
             }
             this.$get = [function(){
-                return text;
+                return {
+                    text : text
+                }
             }]
         }
        

@@ -5,127 +5,35 @@
         .module('mainApp')
         .run(startRun);
 
-    function startRun($rootScope, $location, $http, langService, ngDialog, $controller, message){
-        console.log("run");
-        var history = [];
-        $rootScope.currentPath = null;
-        $rootScope.lang = langService;
+    function startRun($rootScope, configuration, langService, ngDialog, message, $timeout){
         
-        console.log(message.text);
+   
+        $timeout(function(){
+           $rootScope.debugLatvianHistory = configuration.debugLatvianHistory;
+           $rootScope.lang = langService;
+
+            console.log("$rootScope.debugLatvianHistory "+$rootScope.debugLatvianHistory);
+            console.log("$rootScope.lang "+$rootScope.lang);
+
+        }, 2000);
+        
+        
+        console.log("console from provider in conf() "+message.text);
     
         // to prevent inspect element and other stuff
 //        document.addEventListener('contextmenu', function(e){
 //            e.preventDefault();
 //        })
-
-        $rootScope.$on('$routeChangeSuccess', function() {
-            
-            //jauztaisa ifs lai pusho masiva tikai uniqe vertibas
-            if (history.indexOf($location.$$path) === -1) {
-                history.push($location.$$path)
-//                console.log("history vertibas : "+history);
-            }
-//            angular.forEach(history, function(value, key) {
-//                console.log("history vertibas : "+value);
-//            })
-//            history.push($location.$$path);
-            
-//            if(history.length == 0){
-//                history.push($location.$$path);
-//            } else {
-//                angular.forEach(history, function(value, key) {
 //
-//                    if(value !== $location.$$path){
-//                        console.log("JAUNS array elements : "+$location.$$path);   
-//                        history.push($location.$$path);
-//                    } else {
-//                        console.log("esošie: "+$location.$$path);
-//                    }
-//                    
-//                });
-//            }
-        });
-
-        $rootScope.back = function () {
-            if($rootScope.currentPath === '/factMyth/quiz' && $rootScope.testInProgress){
-                ngDialog.open({ 
-                    template: 'app/widgets/popup/check.Popup.html',
-                    });
-            } else {
-                 var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
-                 $location.path(prevUrl);
-//                 console.log("previousURL "+prevUrl);
-//                 if(prevUrl === '/'){
-//                     history.length = 0;
-//                     $location.path("/");
-//                 }
-            }   
-        };
-        
-        $rootScope.goBackHistory = function(){
-             var prevUrl = history.length > 1 ? history.splice(-2)[0] : "/";
-             $location.path(prevUrl);
-             ngDialog.close();
-             $rootScope.testInProgress = false;
-        }
         
         $rootScope.closePopup = function(){
+            
             ngDialog.close();
+            
         }
-
-        $rootScope.home = function () {
-            
-            if($rootScope.currentPath === '/factMyth/quiz' && $rootScope.testInProgress){
-                ngDialog.open({ 
-                    template: 'app/widgets/checkPopup/check.Popup.html',
-                    });
-            } else {
-                
-                history.length = 0;
-                $location.path("/");
-        
-            }   
-            
-        };
-        
-        
-        
-//        $rootScope.$on('$routeChangeStart', function() { 
-//            $rootScope.currentPath = $location.path();
-//            if($rootScope.currentPath === '/'){
-//                $rootScope.isHomePage = true;
-//                $rootScope.isQuizPage = false;
-//            }
-//        });
-        
-//        $routeScope.checkPath = function(path){
-//            $rootScope.currentPath = $location.path();
-//        }
-        
-//        $rootScope.isActive = function(viewLocation) {
-//            return viewLocation === $location.path();
-//        };
-        
-//        $rootScope.isHomePage = $location.path() === '#/';
-
-//        $rootScope.stendi = [];
-//        $http.get('lang/'+$rootScope.defaultLanguage+'.json').then(function(response) {
-//            $rootScope.stendi = response.data.stendi;
-//            
-//        });
-//
-//        $rootScope.langChange = function (language) {
-//            $http.get('lang/'+language+'.json').then(function(response) {
-//                $rootScope.stendi = response.data.stendi;
-//                console.log(response.data.stendi);
-//            });
-//        };
-        
-        
-
         
     }
     
-    startRun.$inject = ['$rootScope', '$location', '$http', 'langService', 'ngDialog', '$controller', 'message'];
+    startRun.$inject = ['$rootScope', 'configuration', 'langService', 'ngDialog', 'message', '$timeout'];
     
 })();

@@ -5,83 +5,98 @@
         .module('mainApp')
         .directive('navigation', navigation);
 
-    function navigation($rootScope, $location){
+    function navigation($rootScope, location, ngDialog, configuration){
         return {
             retrict : 'E',
             templateUrl: 'app/widgets/templates/template.navigation.html',
             link: function($scope, $element, $attrs) {
-//                var elementPath = $attrs.href.substring(1);
-//                $scope.$location = location;
-//                $scope.$watch('$location.path()', function(locationPath) {
-//                    (elementPath === locationPath) ? $element.addClass("current") : $element.removeClass("current");
-//                });
 
-            $rootScope.isHomePage = true;
-            $rootScope.isQuizPage = false;
-            //$rootScope.langselected = 
-            
-            $rootScope.$on('languageIsChanged',function(event, data){
-//                console.log("data.code "+data.code);
-//                var temp = data.code;
-//                
-//                console.log("temp = $('."+temp+"')");
+                $scope.isHomePage = true;
+                $scope.isQuizPage = false;
 
-                angular.forEach($rootScope.languages, function(value, key) {
+                $scope.$on('$routeChangeStart', function() { 
 
-                    if(key === data.code){
-//                        $("."+key).attr('disabled','disabled');
-                        $rootScope.langselected = key;
-                    } else{
-//                        $("."+key).removeAttr('disabled');
-                    }
-
+                    $scope.state = location.checkLocation();
+                    $scope.isHomePage = location.isHome;
+                    $scope.isQuizPage = location.isQuiz;
+                    
                 });
                 
-//                console.log(data.code);
-//                if(data.code === "eng"){
-//                    $(".eng").attr('disabled','disabled');
-//                    $(".lv").removeAttr('disabled'); 
-//                } else {
-//                    $(".lv").attr('disabled','disabled');
-//                    $(".eng").removeAttr('disabled'); 
-//                }
                 
+                $scope.languages = configuration.languageArray;
+                $scope.langselected = configuration.defaultLanguage;
                 
-//                if(data.code = 'lv'){
-//                    
-//                }
-//                
-//                ve.loaded = false;
-//                $timeout(function(){
-//                   ve.loaded = true; 
-//                }, 500);
-            });
+                /**
+                 * gets the configure file to fill language buttons 
+                 * and latvian history button if exhibit is located in LV
+                 */
+//                $http.get('app/core/config.json').then(function(response) {
+//                    $scope.languages = response.data.languages;
+//                    $rootScope.debugLatvianHistory = response.data.latvianSpaceHistory;
+//                });
+                
 
-            $rootScope.$on('$routeChangeStart', function() { 
-                $rootScope.currentPath = $location.path();
-                if($rootScope.currentPath === '/'){
-                    $rootScope.isHomePage = true;
-                    $rootScope.isQuizPage = false;
-                } else if($rootScope.currentPath === '/factMyth/quiz'){
-                    $rootScope.isQuizPage = true;
-                    $rootScope.isHomePage = false;
-                } 
-                else{
-                    $rootScope.isHomePage = false;
-                    $rootScope.isQuizPage = false;
+                $scope.back = function () {
+
+                    if(location.getCurrentPath() === '/factMyth/quiz' && $rootScope.testInProgress){
+
+                        ngDialog.open({ 
+                            template: 'app/widgets/popup/check.Popup.html',
+                        });
+
+                    } else {
+
+                        location.goToPreviousUrl();
+
+                    }   
+                 };
+
+                $scope.goBackHistory = function(){
+                     location.goToPreviousUrl();
+                     ngDialog.close();
+
+                     // for quiz test
+                     $rootScope.testInProgress = false;
                 }
-            });
-        
-//        $routeScope.checkPath = function(path){
-//            $rootScope.currentPath = $location.path();
-//        }
-        
-//        $rootScope.isActive = function(viewLocation) {
-//            return viewLocation === $location.path();
-//        };
-        
+                
+                $scope.home = function () {
             
-            }
+                    if(location.getCurrentPath() === '/factMyth/quiz' && $rootScope.testInProgress){
+
+                        ngDialog.open({ 
+                            template: 'app/widgets/popup/check.Popup.html',
+                        });
+
+                    } else {
+
+                        location.goToPreviousUrl();
+
+                    }   
+
+                };
+                
+                $scope.languageIsclicked = function(par){
+                    
+                    angular.forEach($rootScope.languages, function(value, key) {
+
+                        if(key === par) $scope.langselected = key;
+    //                        $("."+key).attr('disabled','disabled');
+
+                    });
+                    
+                }
+                
+                /**
+                 * event triggers when the one of language buttons is clicked
+                 */
+//                $rootScope.$on('languageIsChanged',function(event, data){
+
+                   
+
+//                });
+
+
+                }
           
         };
     }

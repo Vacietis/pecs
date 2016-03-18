@@ -16,9 +16,9 @@
 
 
 <a ng-repeat="(key, value) in languages"
-   ng-class='{ disabled: isQuizPage, disabled: key === langselected}'
+   ng-class='{ disabled: key === langselected || isQuizPage}'
    class="btn btn-info btn-lg {{key}} " 
-   ng-click='lang.changeLanguage(key)'
+   ng-click='lang.changeLanguage(key); languageIsclicked(key)'
    ng-cloak>
 
    <span class="glyphicon glyphicon-flag"></span> {{value}}
