@@ -6,9 +6,7 @@
         .factory('configuration', configuration);
 
     function configuration($http){
-        
-        
-        console.log("from configuration ");
+
         var languageArray = [];
         var debugLatvianHistory;
         var defaultLanguage;

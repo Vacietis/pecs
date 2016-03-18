@@ -10,6 +10,9 @@
             retrict : 'E',
             templateUrl: 'app/widgets/templates/template.navigation.html',
             link: function($scope, $element, $attrs) {
+                
+                //for Space mission if you are in LV
+                $rootScope.debugLatvianHistory = configuration.debugLatvianHistory;
 
                 $scope.isHomePage = true;
                 $scope.isQuizPage = false;
