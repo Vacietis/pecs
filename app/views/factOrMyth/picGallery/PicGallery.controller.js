@@ -19,7 +19,7 @@
 
             pg.swiping = false;
             
-            pg.activeSlide = 0
+            pg.activeSlide = 0;
 
             pg.clickToOpen = function () {
                 ngDialog.open({ template: 'app/views/factOrMyth/fomTest/popUp.html' });

@@ -323,32 +323,35 @@
                     }
                 ]
             },
-            "pictureGallery":[
-                {
-                    "image": "images/foto_1_07final.png",
-                    "description": "Image 00 ENG"
-                },
-                {
-                    "image": "images/foto_1_10.png",
-                    "description": "Image 01 ENG"
-                },
-                {
-                    "image": "images/foto_2_03.png",
-                    "description": "Image 02 ENG"
-                },
-                {
-                    "image": "images/foto_2_04.png",
-                    "description": "Image 03 ENG"
-                },
-                {
-                    "image": "images/foto_3_03.png",
-                    "description": "Image 04 ENG" 
-                },
-                {
-                    "image": "images/foto_4_01.png",
-                    "description": "Image 05 ENG"
-                }
-            ]
+            "pictureGallery":{
+                "title": "Picture Gallery",
+                "pictures":[
+                    {
+                        "image": "images/foto_1_07final.png",
+                        "description": "Image 00 ENG"
+                    },
+                    {
+                        "image": "images/foto_1_10.png",
+                        "description": "Image 01 ENG"
+                    },
+                    {
+                        "image": "images/foto_2_03.png",
+                        "description": "Image 02 ENG"
+                    },
+                    {
+                        "image": "images/foto_2_04.png",
+                        "description": "Image 03 ENG"
+                    },
+                    {
+                        "image": "images/foto_3_03.png",
+                        "description": "Image 04 ENG" 
+                    },
+                    {
+                        "image": "images/foto_4_01.png",
+                        "description": "Image 05 ENG"
+                    }
+                ]
+            }
     },
     "whereIsIss":{
         "titleName" : "Kur atrodas ISS"

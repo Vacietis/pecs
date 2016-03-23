@@ -1,0 +1,243 @@
+{
+    "historyOfMoneyCirculation":{
+        "title": "Apgrozības naudas vēsture",
+        "chronology" : {
+            "title": "Latu tapšanas un apgrozības hronoloģija",
+            "years":[
+                {
+                    "year": "1922",
+                    "readyBills": {
+                        "title" : "Pirma banknote",
+                        "title" : "Otrā banknote"
+                    },
+                    "readyCoins" : {
+                        "title" : "Pirma monēta",
+                        "title" : "Otrā monēta"
+                    }
+                },
+                {
+                    "year": "1940",
+                    "readyBills": {
+                        "title" : "Pēdējā banknote"
+                    },
+                    "readyCoins" : {
+                        "title" : "Pēdējā monēta"
+                    }
+                }
+            ]
+        },
+        "moneyCirculation": {
+            "text": "informatīvs saturs ar daudz tekstu",
+            "pictureGallery": {
+                "paperBills":{
+                    "title": "Papīra naudas zīmes (1922-1940)",
+                    "bills": [
+                        {
+                            "nominal": "5",
+                            "type" : "Latvijas valsts kases zīme",
+                            "pictures":[
+                                {
+                                    "year": "1926. gads",
+                                    "author": "R. Zariņš, K. Krauze",
+                                    "image": "image.png"
+                                },
+                                {
+                                    "year": "1940. gads",
+                                    "author": "H. Gricēvičs",
+                                    "image": "image.png"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "coinsAndAuthors":{
+                    "title": "Monētas; autori",
+                    "coins": [
+                        {
+                            "nominal": "0,01",
+                            "type" : "1 santīms",
+                            "pictures":[
+                                {
+                                    "year": "1922. gads",
+                                    "author": "R. Zariņš",
+                                    "image": "image.png"
+                                },
+                                {
+                                    "year": "1924. gads",
+                                    "author": "H. Gricēvičs",
+                                    "image": "image.png"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "silverFiveLatsCoin":{
+            "coinDescription": "5 latu monētas apraksts",
+            "imageGallery":[
+                {
+                    "image": "image.png",
+                    "title": "bildes apraksts"
+                },
+                {
+                    "image": "image.png",
+                    "title": "bildes apraksts"
+                },
+                {
+                    "image": "image.png",
+                    "title": "bildes apraksts"
+                }
+            ],
+            "designAuthor": {
+                "name": "Rihards Zariņš",
+                "description": "Apraksts par cilvēku",
+                "image": "image.png"
+            },
+            "imagePrototype": {
+                "name": "Zelma Braucere",
+                "description": "Apraksts par cilvēku",
+                "image": "image.png"
+            },
+            "witness": {
+                "name": "Ausma Švānberga",
+                "description": "Apraksts par cilvēku",
+                "image": "image.png"
+            }      
+        }
+    },
+    "EuroCollectionCoins": {
+        "title": "Eiro kolekcijas monētas",
+        "collectionCoins":{
+            "title": "Kolekcijas monētas",
+            "coinsGallery":[
+                {
+                    "name": "Ainažu jūraskola",
+                    "description": "monētas apraksts",
+                    "image": "image.png",
+                    "graphicsAuthor": "Visvaldis Asaris",
+                    "plasticsAuthors": "Ivars Drulle",
+                    "material": "sudrabs",
+                    "releaseDate": "1990",
+                    "award": "Gada monēta"
+                },
+                {
+                    "name": "Baltā grāmata",
+                    "description": "monētas apraksts",
+                    "image": "image.png",
+                    "graphicsAuthor": "Ilmārs Blumbergs",
+                    "plasticsAuthors": "Ligita Franckeviča",
+                    "material": "zelts",
+                    "releaseDate": "1995",
+                    "award": ""
+                }
+            ]
+        },
+        "2EuroCoins":{
+            "title": "2 eiro piemiņas monētas",
+            "coinsGallery":[
+                {
+                    "name": "Rīga - Eiropas kultūras galvaspilsēta 2014",
+                    "description": "monētas apraksts",
+                    "image": "image.png",
+                    "graphicsAuthor": "Visvaldis Asaris",
+                    "plasticsAuthors": "Ivars Drulle",
+                    "material": "sudrabs",
+                    "releaseDate": "1990",
+                    "award": "Gada monēta"
+                },
+                {
+                    "name": "Latvijas prezidentūra ES Padomē",
+                    "description": "monētas apraksts",
+                    "image": "image.png",
+                    "graphicsAuthor": "Ilmārs Blumbergs",
+                    "plasticsAuthors": "Ligita Franckeviča",
+                    "material": "zelts",
+                    "releaseDate": "1995",
+                    "award": ""
+                }
+            ]
+        },
+        "latvianEuroCoins":{
+            "title": "LAtvijas eiro apgrozības monētas",
+            "coinsGallery":[
+                {
+                    "name": "2 eiro",
+                    "description": "monētas apraksts",
+                    "image": "image.png",
+                    "graphicsAuthor": "Visvaldis Asaris",
+                    "plasticsAuthors": "Ivars Drulle",
+                    "material": "sudrabs",
+                    "releaseDate": "1990",
+                    "award": "Gada monēta"
+                },
+                {
+                    "name": "1 eiro",
+                    "description": "monētas apraksts",
+                    "image": "image.png",
+                    "graphicsAuthor": "Ilmārs Blumbergs",
+                    "plasticsAuthors": "Ligita Franckeviča",
+                    "material": "zelts",
+                    "releaseDate": "1995",
+                    "award": ""
+                }
+            ]
+        },
+        "coinArtists":{
+            "title": "Monētu mākslinieki",
+            "graphicsAuthors": [
+                {
+                    "name": "Visvaldis Asaris",
+                    "bio": "biogrāfija",
+                    "image": "image.png",
+                    "video": "video.mp4"
+                },
+                {
+                    "name": "Ilmārs Blumbergs",
+                    "bio": "biogrāfija",
+                    "image": "image.png",
+                    "video": "video.mp4"
+                }
+            ],
+            "plasticsAuthors":[
+                {
+                    "name": "Ivars Drulle",
+                    "bio": "biogrāfija",
+                    "image": "image.png",
+                    "video": "video.mp4"
+                },
+                {
+                    "name": "Ligita Franckeviča",
+                    "bio": "biogrāfija",
+                    "image": "image.png",
+                    "video": "video.mp4"
+                }
+            ],
+            "coinAwards":{
+                "title": "Godalgotās monētas",
+                "internationalAward":{
+                    "title": "Startautisko konkursu balva",
+                    "description": "balvas apraksts"
+                }, 
+                "latvianAward": {
+                    "title": "Latvijas gada monēta",
+                    "description": "balvas apraksts"
+                },
+                "coinOfTheYear":{
+                    "title": "Gada monēta",
+                    "description": "balvas apraksts"
+                },
+                "coinConstellation":{
+                    "title": "monētas zvaigznājs",
+                    "description": "balvas apraksts"
+                }
+                
+            }
+        },
+        "materials":{
+            "gold": "zelts",
+            "silver": "sudrabs"
+        }
+        
+    }
+}

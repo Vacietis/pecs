@@ -7,17 +7,17 @@
 
         function compareControler($window, $scope, temp){
             
-            var CONF = EURO_MAP_DATA.config;
+//            var CONF = EURO_MAP_DATA.config;
+//            
+//            var COUNTRIES = EURO_MAP_DATA.countries;
             
-            var COUNTRIES = EURO_MAP_DATA.countries;
-            
-            console.log("conf"+CONF.mapWidth);
+//            console.log("conf"+CONF.mapWidth);
             
             var co = this;
             
             co.tempText = "yuhuuuu";
             
-            co.imageArray = COUNTRIES;
+//            co.imageArray = COUNTRIES;
             
             co.testingValue = temp;
             console.log(co.testingValue);
